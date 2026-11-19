@@ -888,6 +888,19 @@
       ]
     },
     {
+      "key": "rcyc-2011-optimist-overall-results",
+      "season": "2011",
+      "slug": "optimist-overall-results",
+      "name": "Optimist Overall Results 2011",
+      "pages": [
+        {
+          "name": "Overall",
+          "url": "https://www.royalcork.com/Results/2011/Oppie/opov2011os.html",
+          "title": "Optimist Overall League 2011"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2011-optimist-september-saturday-burns-trophy",
       "season": "2011",
       "slug": "optimist-september-saturday-burns-trophy",
@@ -2548,6 +2561,19 @@
       ]
     },
     {
+      "key": "rcyc-2013-optimist-overall-results",
+      "season": "2013",
+      "slug": "optimist-overall-results",
+      "name": "Optimist Overall Results 2013",
+      "pages": [
+        {
+          "name": "Overall",
+          "url": "https://www.royalcork.com/wp-content/uploads/2013/02/Overall-2013nh.html",
+          "title": "Overall Results 2013"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2013-orienteering-race",
       "season": "2013",
       "slug": "orienteering-race",
@@ -3641,6 +3667,19 @@
           "slug": "main-fleet",
           "url": "https://www.royalcork.com/wp-content/uploads/2014/04/AMM14nh14.html",
           "title": "June LeagueTuesday Main Fleet 2014"
+        }
+      ]
+    },
+    {
+      "key": "rcyc-2014-optimist-overall-results",
+      "season": "2014",
+      "slug": "optimist-overall-results",
+      "name": "Optimist Overall Results 2014",
+      "pages": [
+        {
+          "name": "Overall",
+          "url": "https://www.royalcork.com/wp-content/uploads/2014/04/Overall-2013nh1.html",
+          "title": "Overall 2014"
         }
       ]
     },
@@ -5096,6 +5135,19 @@
       ]
     },
     {
+      "key": "rcyc-2015-optimist-overall-results",
+      "season": "2015",
+      "slug": "optimist-overall-results",
+      "name": "Optimist Overall Results 2015",
+      "pages": [
+        {
+          "name": "Overall",
+          "url": "https://www.royalcork.com/wp-content/uploads/2015/01/over15nh1.html",
+          "title": "Overall 2015"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2015-optimist-september-league",
       "season": "2015",
       "slug": "optimist-september-league",
@@ -6470,6 +6522,19 @@
       ]
     },
     {
+      "key": "rcyc-2016-optimist-overall-results",
+      "season": "2016",
+      "slug": "optimist-overall-results",
+      "name": "Optimist Overall Results 2016",
+      "pages": [
+        {
+          "name": "Overall",
+          "url": "https://www.royalcork.com/wp-content/uploads/2016/03/Overall-Results-2016.html",
+          "title": "Overall Results 2016"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2016-optimist-september-league",
       "season": "2016",
       "slug": "optimist-september-league",
@@ -7723,6 +7788,19 @@
           "name": "Overall",
           "url": "https://www.royalcork.com/wp-content/uploads/2017/01/May-League-Copper-Fleet.html",
           "title": "May League Copper Fleet 2017"
+        }
+      ]
+    },
+    {
+      "key": "rcyc-2017-optimist-overall-results",
+      "season": "2017",
+      "slug": "optimist-overall-results",
+      "name": "Optimist Overall Results 2017",
+      "pages": [
+        {
+          "name": "Overall",
+          "url": "https://www.royalcork.com/wp-content/uploads/2017/01/Overall-Optimist-Results-2017.html",
+          "title": "Series 200"
         }
       ]
     },
@@ -16706,10 +16784,6 @@
       "reason": "Not a results page."
     },
     {
-      "url": "https://www.royalcork.com/Results/2011/Oppie/opov2011os.html",
-      "reason": "A season ranking across every league, over more races (more than 60) than an as-published series can carry."
-    },
-    {
       "url": "https://www.royalcork.com/Results/2011/Oppie/rcyc%20ranking%20July%2011.htm",
       "reason": "Not a results page."
     },
@@ -17030,10 +17104,6 @@
       "reason": "The link is broken: the page is no longer on the server."
     },
     {
-      "url": "https://www.royalcork.com/wp-content/uploads/2013/02/Overall-2013nh.html",
-      "reason": "A season ranking across every league, over more races (more than 60) than an as-published series can carry."
-    },
-    {
       "url": "https://www.royalcork.com/wp-content/uploads/2013/02/RCYC-OPTIMIST-FLEET-ALLOCATIONS-1ST-OF-JUNE-20131.htm",
       "reason": "Not a results page."
     },
@@ -17050,20 +17120,12 @@
       "reason": "The link is broken: the page is no longer on the server."
     },
     {
-      "url": "https://www.royalcork.com/wp-content/uploads/2014/04/Overall-2013nh1.html",
-      "reason": "A season ranking across every league, over more races (more than 60) than an as-published series can carry."
-    },
-    {
       "url": "https://www.royalcork.com/wp-content/uploads/2014/04/RCYC-Optimist-Fleet-Allocations-1st-October-2014.htm",
       "reason": "Not a results page."
     },
     {
       "url": "https://www.royalcork.com/wp-content/uploads/2015/01/Fleet-Allocations-November-2015.htm",
       "reason": "Not a results page."
-    },
-    {
-      "url": "https://www.royalcork.com/wp-content/uploads/2015/01/over15nh1.html",
-      "reason": "A season ranking across every league, over more races (more than 60) than an as-published series can carry."
     },
     {
       "url": "https://www.royalcork.com/wp-content/uploads/2015/05/SI-and-NOR-20151.pdf",
@@ -17074,16 +17136,8 @@
       "reason": "A PDF or an image, which the archive does not read."
     },
     {
-      "url": "https://www.royalcork.com/wp-content/uploads/2016/03/Overall-Results-2016.html",
-      "reason": "A season ranking across every league, over more races (more than 60) than an as-published series can carry."
-    },
-    {
       "url": "https://www.royalcork.com/wp-content/uploads/2017/01/March-2017-Sailor-Listing.pdf",
       "reason": "A PDF or an image, which the archive does not read."
-    },
-    {
-      "url": "https://www.royalcork.com/wp-content/uploads/2017/01/Overall-Optimist-Results-2017.html",
-      "reason": "A season ranking across every league, over more races (more than 60) than an as-published series can carry."
     },
     {
       "url": "https://www.royalcork.com/wp-content/uploads/2017/01/Sailors-Listing-after-July-August-league-promotions-1.pdf",

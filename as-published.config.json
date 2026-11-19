@@ -1001,6 +1001,25 @@
       ]
     },
     {
+      "key": "rcyc-2011-optimist-overall-results",
+      "id": "99e1550b-f9d6-5dd2-a97a-87fe54ec84c3",
+      "publishedSlug": "2011",
+      "name": "Optimist Overall Results 2011",
+      "venue": "Crosshaven",
+      "venueUrl": "https://www.royalcork.com",
+      "venueLogoUrl": "https://logos.sailscoring.ie/royal-cork-yc.svg",
+      "startDate": "2011",
+      "source": "sailwave",
+      "ownerNames": true,
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "optimist-overall-results",
+          "file": "sources/www.royalcork.com/Results/2011/Oppie/opov2011os.html"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2011-optimist-september-saturday-burns-trophy",
       "id": "f366e863-5d82-5be0-bf9d-2db15b599408",
       "publishedSlug": "2011",
@@ -2966,6 +2985,25 @@
       ]
     },
     {
+      "key": "rcyc-2013-optimist-overall-results",
+      "id": "06a773fd-18a8-59da-927b-d542caae69f6",
+      "publishedSlug": "2013",
+      "name": "Optimist Overall Results 2013",
+      "venue": "Crosshaven",
+      "venueUrl": "https://www.royalcork.com",
+      "venueLogoUrl": "https://logos.sailscoring.ie/royal-cork-yc.svg",
+      "startDate": "2013",
+      "source": "sailwave",
+      "ownerNames": true,
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "optimist-overall-results",
+          "file": "sources/www.royalcork.com/wp-content/uploads/2013/02/Overall-2013nh.html"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2013-orienteering-race",
       "id": "1219ec72-6ea5-5216-a66b-0377877112af",
       "publishedSlug": "2013",
@@ -4236,6 +4274,25 @@
         {
           "path": "optimist-june-league-tuesday",
           "label": "Optimist June Tuesday League 2014"
+        }
+      ]
+    },
+    {
+      "key": "rcyc-2014-optimist-overall-results",
+      "id": "ed7a856c-f60a-5b3f-b142-e2c7a0615898",
+      "publishedSlug": "2014",
+      "name": "Optimist Overall Results 2014",
+      "venue": "Crosshaven",
+      "venueUrl": "https://www.royalcork.com",
+      "venueLogoUrl": "https://logos.sailscoring.ie/royal-cork-yc.svg",
+      "startDate": "2014",
+      "source": "sailwave",
+      "ownerNames": true,
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "optimist-overall-results",
+          "file": "sources/www.royalcork.com/wp-content/uploads/2014/04/Overall-2013nh1.html"
         }
       ]
     },
@@ -6009,6 +6066,25 @@
       ]
     },
     {
+      "key": "rcyc-2015-optimist-overall-results",
+      "id": "a7478ba1-73bc-5834-9bd4-56001732cdc5",
+      "publishedSlug": "2015",
+      "name": "Optimist Overall Results 2015",
+      "venue": "Crosshaven",
+      "venueUrl": "https://www.royalcork.com",
+      "venueLogoUrl": "https://logos.sailscoring.ie/royal-cork-yc.svg",
+      "startDate": "2015",
+      "source": "sailwave",
+      "ownerNames": true,
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "optimist-overall-results",
+          "file": "sources/www.royalcork.com/wp-content/uploads/2015/01/over15nh1.html"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2015-optimist-september-league",
       "id": "6692db3f-5f25-54db-974d-67e51c78fbe8",
       "publishedSlug": "2015",
@@ -7635,6 +7711,25 @@
       ]
     },
     {
+      "key": "rcyc-2016-optimist-overall-results",
+      "id": "4010d48e-d844-5347-867d-21aee4aac303",
+      "publishedSlug": "2016",
+      "name": "Optimist Overall Results 2016",
+      "venue": "Crosshaven",
+      "venueUrl": "https://www.royalcork.com",
+      "venueLogoUrl": "https://logos.sailscoring.ie/royal-cork-yc.svg",
+      "startDate": "2016",
+      "source": "sailwave",
+      "ownerNames": true,
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "optimist-overall-results",
+          "file": "sources/www.royalcork.com/wp-content/uploads/2016/03/Overall-Results-2016.html"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2016-optimist-september-league",
       "id": "8d50728a-b108-5012-8a47-487ffd1522ac",
       "publishedSlug": "2016",
@@ -9120,6 +9215,25 @@
           "name": "Overall",
           "subPath": "optimist-may-league-copper-fleet",
           "file": "sources/www.royalcork.com/wp-content/uploads/2017/01/May-League-Copper-Fleet.html"
+        }
+      ]
+    },
+    {
+      "key": "rcyc-2017-optimist-overall-results",
+      "id": "37651564-9871-55bf-a10b-875061e6bd1d",
+      "publishedSlug": "2017",
+      "name": "Optimist Overall Results 2017",
+      "venue": "Crosshaven",
+      "venueUrl": "https://www.royalcork.com",
+      "venueLogoUrl": "https://logos.sailscoring.ie/royal-cork-yc.svg",
+      "startDate": "2017",
+      "source": "sailwave",
+      "ownerNames": true,
+      "fleets": [
+        {
+          "name": "Overall",
+          "subPath": "optimist-overall-results",
+          "file": "sources/www.royalcork.com/wp-content/uploads/2017/01/Overall-Optimist-Results-2017.html"
         }
       ]
     },

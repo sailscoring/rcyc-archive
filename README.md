@@ -84,7 +84,7 @@ Dinghy Frostbites, the Autumn League — are not archived here.
 ## Status
 
 Every result the club's index pages link, 2011–2026, and Cork Week 2004–2026:
-**534 series, 1,671 pages**, about 25,000 competitor rows. 208 linked pages
+**540 series, 1,677 pages**, about 25,000 competitor rows. 202 linked pages
 are not carried, each for a stated reason (CLARIFICATIONS §5).
 
 | Season | Series | Pages |
@@ -93,13 +93,13 @@ are not carried, each for a stated reason (CLARIFICATIONS §5).
 | 2006 | 1 | 21 |
 | 2008 | 1 | 26 |
 | 2010 | 1 | 13 |
-| 2011 | 25 | 32 |
+| 2011 | 26 | 33 |
 | 2012 | 22 | 124 |
-| 2013 | 28 | 104 |
-| 2014 | 30 | 162 |
-| 2015 | 38 | 151 |
-| 2016 | 43 | 181 |
-| 2017 | 37 | 141 |
+| 2013 | 29 | 105 |
+| 2014 | 31 | 163 |
+| 2015 | 39 | 152 |
+| 2016 | 44 | 182 |
+| 2017 | 38 | 142 |
 | 2018 | 46 | 130 |
 | 2019 | 35 | 76 |
 | 2020 | 35 | 59 |

@@ -40,6 +40,17 @@ per event**, with a page per class.
 - **The At Home and the Tricentenary Regatta are two series each**: the
   keelboats' (`/at-home`) and the dinghies' (`/at-home-dinghies`), as the
   club lists them on two pages.
+- **The Optimist season rankings** (2011, 2013–2017) are a series each,
+  `/optimist-overall-results`: one standings over every Optimist race of the
+  year, 68–95 races, the leagues' scores ranked together with about a
+  quarter of each sailor's races discarded. The races are the leagues'
+  own, archived beside them; the ranking is only here. Each is filed under
+  the season its heading names and its index lists it — each was generated
+  that October or November, though the upload folders read earlier
+  (`2013/02`, `2014/04`). The club heads them variously ("Optimist Overall
+  League 2011", "Overall 2014", and in 2017 Sail100's placeholder "Series
+  200"); they are all named "Optimist Overall Results {year}". 2011's marks
+  a race not sailed with the score alone (69), no code.
 - **Files with an empty standings section** — a class set up and never
   sailed — are published without it.
 
@@ -114,7 +125,6 @@ Every link is in `series.json`, published or skipped with its reason:
 | 13 | PDFs and images. |
 | 11 | Ranking lists, fleet allocations, coaching schedules and a pursuit race's start times. |
 | 9 | Pages written over with another year's result (§6). |
-| 6 | The Optimist season rankings, 2011–2017: one standings over every league of the year, 68–95 races, more than an as-published series can carry (60). |
 | 2 | Cove Sailing Club's 2025 Blackrock Race and Triple Crown, on HalSail. |
 | 2 | Results published in Sail Scoring itself, linked by their Sail Scoring address: the 2026 Winter League and Dinghy Frostbites. |
 | 1 | The 2026 Autumn League, scored in Sail Scoring as well (`/p/rcyc/2026/rcyc-autumn-league`). |
