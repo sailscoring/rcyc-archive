@@ -1,0 +1,5807 @@
+
+
+
+<!doctype html>
+<html lang="en-US">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<title>Sailwave results for Royal Cork Yacht Club May League 2026 at Royal Cork Yacht Club 2026</title>
+
+<style type="text/css">
+body {font: 72% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
+td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+p {text-align: center;}
+th {background-color: #aaf;}
+.contents {text-align: left; margin-left: 20%;}
+.even {background-color: #bbf;}
+.odd {background-color: #ddf;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=RatingsShow
+//  dependencies=jQuery
+//  description=Show ratings for individual results
+//  author=Jon Eskdale
+//  date=2025-02-026
+//  version=1.0  For use with Sailwave from V2.38.x
+
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  BlueSky=sailwave
+//
+
+$(document).ready(function() {
+
+$(function () {
+
+  $(".summarytable tbody tr td").each(function(x){
+    if(typeof $(this).data('rat') != 'undefined'){
+        var newtext = $(this).text() + '<br><small><span style="color:#f00;">' + $(this).data('rat') + '</span></small>';
+        $(this).html(newtext);
+      };
+  })
+
+});
+});
+//
+//  name=HighlightWins3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2015-08-18
+//  version=1.6 2018-11-15
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var winsSelector = '.summaryrace';
+var winsText     = /\b1\.0/;
+var twoText              = /\b2\.0/;
+var threeText    = /\b3\.0/;
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+//var twoColour  = '#ffe768';
+//var threeColour  = '#fff0a1';
+
+// create array of race column numbers for first table (summarytable)
+var ths = document.getElementsByTagName('col');
+var column =[];
+for (var i=0; i<ths.length; i++) {
+        if (ths[i].classList[0] === "race") {
+                column.push(i);
+        } else {
+                if (column.length !=0) {
+                        break;
+                }
+        }
+}
+//console.log(column);
+
+//  Set a class of summaryrace for all race cells in summary table body
+//
+for (var i=0; i<column.length; i++) {
+        $(".summarytable tbody tr td:nth-child(" + (column[i]+1) +")").addClass("summaryrace");
+}
+
+// Change the background color for cells with class of summaryrace and that match regular expression text
+$(function () {
+
+  $(winsSelector).filter(function() {
+    return winsText.test($(this).text());
+  }).css("background", winsColour);
+  $(winsSelector).filter(function() {
+        return twoText.test($(this).text());
+  }).css("background", twoColour);
+  $(winsSelector).filter(function() {
+        return threeText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
+</script>
+<link rel="shortcut icon" type="image/ico" href="https://www.sailwave.com/favicon.ico"/>
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="wrap">
+
+
+<h1>Royal Cork Yacht Club May League 2026</h1>
+<h2>Royal Cork Yacht Club</h2>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are provisional as of 22:03 on August 12, 2026</h3>
+<div class="contents">Contents
+<ul>
+<li><a href="#summaryicra_non_spinnaker_echo">ICRA Non-Spinnaker Echo Fleet</a></li>
+<li><a href="#summaryicra_non_spinnaker_irc">ICRA Non-Spinnaker IRC Fleet</a></li>
+<li><a href="#summaryicra_spinnaker_echo">ICRA Spinnaker Echo Fleet</a></li>
+<li><a href="#summaryicra_spinnaker_irc">ICRA Spinnaker IRC Fleet</a></li>
+<li><a href="#summaryspin_echo___all_boats">Spin Echo - All Boats Fleet</a></li>
+<li><a href="#summaryopen_kb_classification___spinnaker_irc">Open KB Classification - Spinnaker IRC Fleet</a></li>
+<li><a href="#summaryopen_kb_classification_spinnaker_echo">Open KB Classification Spinnaker Echo Fleet</a></li>
+</ul>
+</div>
+<h3 class="summarytitle" id="summaryicra_non_spinnaker_echo">ICRA Non-Spinnaker Echo Fleet</h3>
+<div class="caption summarycaption">Sailed: 5, Discards: 1, To count: 4, Rating system: ECHO, Entries: 7, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th><a class="racelink" href="#r1icra_non_spinnaker_echo">April 30th</a></th>
+<th><a class="racelink" href="#r2icra_non_spinnaker_echo">May 7th</a></th>
+<th><a class="racelink" href="#r3icra_non_spinnaker_echo">May 14th</a></th>
+<th><a class="racelink" href="#r4icra_non_spinnaker_echo">May 21st</a></th>
+<th><a class="racelink" href="#r5icra_non_spinnaker_echo">May 28th</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>1.000</td>
+<td>1.002</td>
+<td  class="rank2">2.0</td>
+<td data-rat="0.991" class="rank1">1.0</td>
+<td data-rat="0.991" class="rank2">(4.0 RET)</td>
+<td data-rat="0.991" class="rank1">1.0</td>
+<td data-rat="0.997" class="rank2">2.0</td>
+<td>10.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>1.011</td>
+<td>0.988</td>
+<td  class="rank3">3.0</td>
+<td data-rat="0.994" class="rank2">2.0</td>
+<td data-rat="0.994" class="rank2">4.0 RET</td>
+<td data-rat="0.994">(5.0)</td>
+<td data-rat="0.993">4.0</td>
+<td>18.0</td>
+<td>13.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>Magnet</td>
+<td>MG 335</td>
+<td>IRL9896</td>
+<td>RCYC</td>
+<td>Kieran  & Fiorentina O'Brien</td>
+<td>0.979</td>
+<td>0.983</td>
+<td>(8.0 DNC)</td>
+<td data-rat="0.979" class="rank3">8.0 DNC</td>
+<td data-rat="0.979" class="rank1">1.0</td>
+<td data-rat="0.979">4.0</td>
+<td data-rat="0.980" class="rank3">3.0</td>
+<td>24.0</td>
+<td>16.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>Luas</td>
+<td>HB31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.952</td>
+<td>0.961</td>
+<td>(8.0 DNC)</td>
+<td data-rat="0.952" class="rank3">8.0 DNC</td>
+<td data-rat="0.952">8.0 DNC</td>
+<td data-rat="0.952" class="rank3">3.0</td>
+<td data-rat="0.955" class="rank1">1.0</td>
+<td>28.0</td>
+<td>20.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>Split Point</td>
+<td>Dufour 34</td>
+<td>9992</td>
+<td>RCYC</td>
+<td>Seamus Gilroy</td>
+<td>0.844</td>
+<td>0.859</td>
+<td  class="rank1">1.0</td>
+<td data-rat="0.870" class="rank3">(8.0 DNC)</td>
+<td data-rat="0.870">8.0 DNC</td>
+<td data-rat="0.870">6.0</td>
+<td data-rat="0.859">8.0 DNC</td>
+<td>31.0</td>
+<td>23.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>6th</td>
+<td>Impulsive</td>
+<td>Impala 28 ODD</td>
+<td>IRL9570</td>
+<td>RCYC</td>
+<td>John & Antony Keating</td>
+<td>0.885</td>
+<td>0.887</td>
+<td>(8.0 DNC)</td>
+<td data-rat="0.885" class="rank3">8.0 DNC</td>
+<td data-rat="0.885">8.0 DNC</td>
+<td data-rat="0.885" class="rank2">2.0</td>
+<td data-rat="0.887">8.0 DNC</td>
+<td>34.0</td>
+<td>26.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>7th</td>
+<td>Humdinger</td>
+<td>H Boat 1.3</td>
+<td>1844</td>
+<td>RCYC</td>
+<td>Conor McNeice</td>
+<td>0.874</td>
+<td>0.866</td>
+<td>(8.0 DNC)</td>
+<td data-rat="0.874" class="rank3">8.0 DNC</td>
+<td data-rat="0.874">8.0 DNC</td>
+<td data-rat="0.874">8.0 DNC</td>
+<td data-rat="0.874">5.0</td>
+<td>37.0</td>
+<td>29.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryicra_non_spinnaker_irc">ICRA Non-Spinnaker IRC Fleet</h3>
+<div class="caption summarycaption">Sailed: 5, Discards: 1, To count: 4, Rating system: IRC, Entries: 7, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th><a class="racelink" href="#r1icra_non_spinnaker_irc">April 30th</a></th>
+<th><a class="racelink" href="#r2icra_non_spinnaker_irc">May 7th</a></th>
+<th><a class="racelink" href="#r3icra_non_spinnaker_irc">May 14th</a></th>
+<th><a class="racelink" href="#r4icra_non_spinnaker_irc">May 21st</a></th>
+<th><a class="racelink" href="#r5icra_non_spinnaker_irc">May 28th</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.909</td>
+<td>&nbsp;</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank2">(4.0 RET)</td>
+<td  class="rank1">1.0</td>
+<td  class="rank3">3.0</td>
+<td>10.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>Magnet</td>
+<td>MG 335</td>
+<td>IRL9896</td>
+<td>RCYC</td>
+<td>Kieran & Fiorentina O'Brien</td>
+<td>0.918</td>
+<td>&nbsp;</td>
+<td>(8.0 DNC)</td>
+<td  class="rank3">8.0 DNC</td>
+<td  class="rank1">1.0</td>
+<td  class="rank2">2.0</td>
+<td  class="rank2">2.0</td>
+<td>21.0</td>
+<td>13.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.978</td>
+<td>&nbsp;</td>
+<td  class="rank3">3.0</td>
+<td  class="rank2">2.0</td>
+<td  class="rank2">(4.0 RET)</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>17.0</td>
+<td>13.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>Luas</td>
+<td>HB31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.898</td>
+<td>&nbsp;</td>
+<td>(8.0 DNC)</td>
+<td  class="rank3">8.0 DNC</td>
+<td>8.0 DNC</td>
+<td  class="rank3">3.0</td>
+<td  class="rank1">1.0</td>
+<td>28.0</td>
+<td>20.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>Split Point</td>
+<td>Dufour 34</td>
+<td>9992</td>
+<td>RCYC</td>
+<td>Seamus Gilroy</td>
+<td>0.943</td>
+<td>&nbsp;</td>
+<td  class="rank2">2.0</td>
+<td  class="rank3">(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td>6.0</td>
+<td>8.0 DNC</td>
+<td>32.0</td>
+<td>24.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>6th</td>
+<td>Humdinger</td>
+<td>H Boat 1.3</td>
+<td>GBR4108L</td>
+<td>RCYC</td>
+<td>Conor McNeice</td>
+<td>0.820</td>
+<td>&nbsp;</td>
+<td>(8.0 DNC)</td>
+<td  class="rank3">8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>5.0</td>
+<td>37.0</td>
+<td>29.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>7th</td>
+<td>Impulsive</td>
+<td>Impala 28 ODD</td>
+<td>IRL9570</td>
+<td>RCYC</td>
+<td>John & Antony Keating</td>
+<td>0.866</td>
+<td>&nbsp;</td>
+<td>(8.0 DNC)</td>
+<td data-rat="0.885" class="rank3">8.0 DNC</td>
+<td data-rat="0.885">8.0 DNC</td>
+<td data-rat="0.884">5.0</td>
+<td data-rat="0.869">8.0 DNC</td>
+<td>37.0</td>
+<td>29.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryicra_spinnaker_echo">ICRA Spinnaker Echo Fleet</h3>
+<div class="caption summarycaption">Sailed: 5, Discards: 1, To count: 4, Rating system: ECHO, Entries: 12, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th><a class="racelink" href="#r1icra_spinnaker_echo">April 30th</a></th>
+<th><a class="racelink" href="#r2icra_spinnaker_echo">May 7th</a></th>
+<th><a class="racelink" href="#r3icra_spinnaker_echo">May 14th</a></th>
+<th><a class="racelink" href="#r4icra_spinnaker_echo">May 21st</a></th>
+<th><a class="racelink" href="#r5icra_spinnaker_echo">May 28th</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.891</td>
+<td>0.944</td>
+<td  class="rank1">1.0</td>
+<td data-rat="0.911" class="rank2">2.0</td>
+<td data-rat="0.931" class="rank2">2.0</td>
+<td data-rat="0.951">4.0</td>
+<td data-rat="0.947">(5.0)</td>
+<td>14.0</td>
+<td>9.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>1.012</td>
+<td>1.006</td>
+<td  class="rank3">3.0</td>
+<td data-rat="1.001">(8.0)</td>
+<td data-rat="0.981" class="rank1">1.0</td>
+<td data-rat="1.004" class="rank3">3.0</td>
+<td data-rat="1.000" class="rank2">2.0</td>
+<td>17.0</td>
+<td>9.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>0.984</td>
+<td>0.939</td>
+<td  class="rank2">2.0</td>
+<td data-rat="0.988">9.0</td>
+<td data-rat="0.964">4.0</td>
+<td data-rat="0.913" class="rank1">1.0</td>
+<td data-rat="0.939">(13.0 DNC)</td>
+<td>29.0</td>
+<td>16.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.009</td>
+<td>1.036</td>
+<td>6.0 OCS</td>
+<td data-rat="1.009" class="rank3">3.0</td>
+<td data-rat="1.028">7.0 RET</td>
+<td data-rat="1.028">(10.0 RET)</td>
+<td data-rat="1.028" class="rank1">1.0</td>
+<td>27.0</td>
+<td>17.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.993</td>
+<td>0.973</td>
+<td>4.0</td>
+<td data-rat="0.980">5.0</td>
+<td data-rat="0.975" class="rank3">3.0</td>
+<td data-rat="0.984">8.0</td>
+<td data-rat="0.973">(13.0 DNC)</td>
+<td>33.0</td>
+<td>20.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>6th</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.959</td>
+<td>0.950</td>
+<td>(13.0 DNC)</td>
+<td data-rat="0.959">6.0</td>
+<td data-rat="0.947">13.0 DNC</td>
+<td data-rat="0.947" class="rank2">2.0</td>
+<td data-rat="0.960">7.0</td>
+<td>41.0</td>
+<td>28.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>7th</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.941</td>
+<td>0.946</td>
+<td>(13.0 DNC)</td>
+<td data-rat="0.941">4.0</td>
+<td data-rat="0.951">13.0 DNC</td>
+<td data-rat="0.951">7.0</td>
+<td data-rat="0.944">4.0</td>
+<td>41.0</td>
+<td>28.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>8th</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>1.083</td>
+<td>1.062</td>
+<td>(13.0 DNC)</td>
+<td data-rat="1.083">7.0</td>
+<td data-rat="1.067">7.0 RET</td>
+<td data-rat="1.067">13.0 DNC</td>
+<td data-rat="1.067">6.0</td>
+<td>46.0</td>
+<td>33.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>9th</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.934</td>
+<td>0.929</td>
+<td>(13.0 DNC)</td>
+<td data-rat="0.934">13.0 DNC</td>
+<td data-rat="0.934">13.0 DNC</td>
+<td data-rat="0.934">6.0</td>
+<td data-rat="0.927" class="rank3">3.0</td>
+<td>48.0</td>
+<td>35.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>10th</td>
+<td>Illegal</td>
+<td>1/4 Ton</td>
+<td>1751</td>
+<td>RCYC</td>
+<td>Colman Garvey</td>
+<td>0.905</td>
+<td>0.932</td>
+<td>(13.0 DNC)</td>
+<td data-rat="0.905" class="rank1">1.0</td>
+<td data-rat="0.932">13.0 DNC</td>
+<td data-rat="0.932">13.0 DNC</td>
+<td data-rat="0.932">13.0 DNC</td>
+<td>53.0</td>
+<td>40.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>11th</td>
+<td>Grin & Bear It</td>
+<td>Elan 31</td>
+<td>IRL3103</td>
+<td>RCYC</td>
+<td>Denis Byrne</td>
+<td>0.949</td>
+<td>0.943</td>
+<td>(13.0 DNC)</td>
+<td data-rat="0.949">13.0 DNC</td>
+<td data-rat="0.949">13.0 DNC</td>
+<td data-rat="0.949">5.0</td>
+<td data-rat="0.943">13.0 DNC</td>
+<td>57.0</td>
+<td>44.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>12th</td>
+<td>Summer Light</td>
+<td>Laser 28</td>
+<td>GBR1244T</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>0.831</td>
+<td>0.831</td>
+<td>(13.0 DNC)</td>
+<td data-rat="0.831">13.0 DNC</td>
+<td data-rat="0.831">13.0 DNC</td>
+<td data-rat="0.831">13.0 DNC</td>
+<td data-rat="0.831">9.0 RET</td>
+<td>61.0</td>
+<td>48.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryicra_spinnaker_irc">ICRA Spinnaker IRC Fleet</h3>
+<div class="caption summarycaption">Sailed: 5, Discards: 1, To count: 4, Rating system: IRC, Entries: 13, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th><a class="racelink" href="#r1icra_spinnaker_irc">April 30th</a></th>
+<th><a class="racelink" href="#r2icra_spinnaker_irc">May 7th</a></th>
+<th><a class="racelink" href="#r3icra_spinnaker_irc">May 14th</a></th>
+<th><a class="racelink" href="#r4icra_spinnaker_irc">May 21st</a></th>
+<th><a class="racelink" href="#r5icra_spinnaker_irc">May 28th</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td  class="rank1">1.0</td>
+<td>(7.0)</td>
+<td  class="rank1">1.0</td>
+<td  class="rank3">3.0</td>
+<td  class="rank2">2.0</td>
+<td>14.0</td>
+<td>7.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.863</td>
+<td>&nbsp;</td>
+<td>(14.0 DNC)</td>
+<td  class="rank1">1.0</td>
+<td>14.0 DNC</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td>31.0</td>
+<td>17.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+<td>5.0</td>
+<td  class="rank2">2.0</td>
+<td>7.0</td>
+<td>(14.0 DNC)</td>
+<td>32.0</td>
+<td>18.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td  class="rank3">3.0</td>
+<td>4.0</td>
+<td  class="rank3">3.0</td>
+<td>(8.0)</td>
+<td>8.0</td>
+<td>26.0</td>
+<td>18.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td  class="rank2">2.0</td>
+<td>9.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>(14.0 DNC)</td>
+<td>34.0</td>
+<td>20.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>6th</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>6.0 OCS</td>
+<td  class="rank3">3.0</td>
+<td>7.0 RET</td>
+<td>(10.0 RET)</td>
+<td>5.0</td>
+<td>31.0</td>
+<td>21.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>7th</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>1.039</td>
+<td>&nbsp;</td>
+<td>(14.0 DNC)</td>
+<td>6.0</td>
+<td>7.0 RET</td>
+<td>14.0 DNC</td>
+<td>4.0</td>
+<td>45.0</td>
+<td>31.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>8th</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.864</td>
+<td>&nbsp;</td>
+<td>(14.0 DNC)</td>
+<td>14.0 DNC</td>
+<td>14.0 DNC</td>
+<td  class="rank2">2.0</td>
+<td  class="rank3">3.0</td>
+<td>47.0</td>
+<td>33.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>9th</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.969</td>
+<td>&nbsp;</td>
+<td>(14.0 DNC)</td>
+<td>8.0</td>
+<td>14.0 DNC</td>
+<td>4.0</td>
+<td>7.0</td>
+<td>47.0</td>
+<td>33.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>10th</td>
+<td>Illegal</td>
+<td>1/4 Ton</td>
+<td>1751</td>
+<td>RCYC</td>
+<td>Colman Garvey</td>
+<td>0.900</td>
+<td>&nbsp;</td>
+<td>(14.0 DNC)</td>
+<td  class="rank2">2.0</td>
+<td>14.0 DNC</td>
+<td>14.0 DNC</td>
+<td>14.0 DNC</td>
+<td>58.0</td>
+<td>44.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>11th</td>
+<td>Humdinger</td>
+<td>H Boat 1.3</td>
+<td>1844</td>
+<td>RCYC</td>
+<td>Conor McNeice</td>
+<td>0.829</td>
+<td>&nbsp;</td>
+<td>(14.0 DNC)</td>
+<td>14.0 DNC</td>
+<td>14.0 DNC</td>
+<td>14.0 DNC</td>
+<td>6.0</td>
+<td>62.0</td>
+<td>48.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>12th</td>
+<td>Grin & Bear It</td>
+<td>Elan 31</td>
+<td>IRL3103</td>
+<td>RCYC</td>
+<td>Denis Byrne</td>
+<td>0.930</td>
+<td>&nbsp;</td>
+<td>(14.0 DNC)</td>
+<td>14.0 DNC</td>
+<td>14.0 DNC</td>
+<td>6.0</td>
+<td>14.0 DNC</td>
+<td>62.0</td>
+<td>48.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>Summer Light</td>
+<td>Laser 28</td>
+<td>GBR1244T</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>0.893</td>
+<td>&nbsp;</td>
+<td>(14.0 DNC)</td>
+<td>14.0 DNC</td>
+<td>14.0 DNC</td>
+<td>14.0 DNC</td>
+<td>10.0 RET</td>
+<td>66.0</td>
+<td>52.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryspin_echo___all_boats">Spin Echo - All Boats Fleet</h3>
+<div class="caption summarycaption">Sailed: 5, Discards: 1, To count: 4, Rating system: IRC, Entries: 14, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>Rating</th>
+<th>Next Race H/Cap</th>
+<th><a class="racelink" href="#r1spin_echo___all_boats">April 30th</a></th>
+<th><a class="racelink" href="#r2spin_echo___all_boats">May 7th</a></th>
+<th><a class="racelink" href="#r3spin_echo___all_boats">May 14th</a></th>
+<th><a class="racelink" href="#r4spin_echo___all_boats">May 21st</a></th>
+<th><a class="racelink" href="#r5spin_echo___all_boats">May 28th</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>GBR5435R</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td  class="rank1">1.0</td>
+<td>(7.0)</td>
+<td  class="rank1">1.0</td>
+<td  class="rank3">3.0</td>
+<td  class="rank2">2.0</td>
+<td>14.0</td>
+<td>7.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td  class="rank3">3.0</td>
+<td data-rat="0.986">5.0</td>
+<td data-rat="0.988" class="rank3">3.0</td>
+<td data-rat="0.995">(8.0)</td>
+<td>6.0</td>
+<td>25.0</td>
+<td>17.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.863</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td  class="rank1">1.0</td>
+<td>15.0 DNC</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td>33.0</td>
+<td>18.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+<td>6.0</td>
+<td  class="rank2">2.0</td>
+<td>7.0</td>
+<td>(15.0 DNC)</td>
+<td>34.0</td>
+<td>19.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>6.0 OCS</td>
+<td  class="rank3">3.0</td>
+<td>9.0 RET</td>
+<td>(10.0 RET)</td>
+<td>4.0</td>
+<td>32.0</td>
+<td>22.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>6th</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td  class="rank2">2.0</td>
+<td>10.0</td>
+<td>6.0</td>
+<td>5.0</td>
+<td>(15.0 DNC)</td>
+<td>38.0</td>
+<td>23.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>7th</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.969</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td>9.0</td>
+<td>15.0 DNC</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>48.0</td>
+<td>33.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>8th</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.864</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td>15.0 DNC</td>
+<td>15.0 DNC</td>
+<td  class="rank2">2.0</td>
+<td  class="rank3">3.0</td>
+<td>50.0</td>
+<td>35.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>9th</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>1.009</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>15.0 DNC</td>
+<td>15.0 DNC</td>
+<td>53.0</td>
+<td>38.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>10th</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td>11.0</td>
+<td>9.0 RET</td>
+<td>15.0 DNC</td>
+<td>7.0</td>
+<td>57.0</td>
+<td>42.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>11th</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>1.004</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td>8.0</td>
+<td>5.0</td>
+<td>15.0 DNC</td>
+<td>15.0 DNC</td>
+<td>58.0</td>
+<td>43.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>12th</td>
+<td>Illegal</td>
+<td>1/4 Ton</td>
+<td>1751</td>
+<td>RCYC</td>
+<td>Colman Garvey</td>
+<td>0.905</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td  class="rank2">2.0</td>
+<td>15.0 DNC</td>
+<td>15.0 DNC</td>
+<td>15.0 DNC</td>
+<td>62.0</td>
+<td>47.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>Grin & Bear It</td>
+<td>Elan 31</td>
+<td>IRL3103</td>
+<td>RCYC</td>
+<td>Denis Byrne</td>
+<td>0.935</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td>15.0 DNC</td>
+<td>15.0 DNC</td>
+<td>6.0</td>
+<td>15.0 DNC</td>
+<td>66.0</td>
+<td>51.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>14th</td>
+<td>Summer Light</td>
+<td>Laser 28</td>
+<td>GBR1244T</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>0.893</td>
+<td>&nbsp;</td>
+<td>(15.0 DNC)</td>
+<td>15.0 DNC</td>
+<td>15.0 DNC</td>
+<td>15.0 DNC</td>
+<td>9.0 RET</td>
+<td>69.0</td>
+<td>54.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryopen_kb_classification___spinnaker_irc">Open KB Classification - Spinnaker IRC Fleet</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: IRC, Entries: 2, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="13">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th><a class="racelink" href="#r2open_kb_classification___spinnaker_irc">May 7th</a></th>
+<th><a class="racelink" href="#r3open_kb_classification___spinnaker_irc">May 14th</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>0.926</td>
+<td>&nbsp;</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>0.926</td>
+<td>&nbsp;</td>
+<td  class="rank2">2.0</td>
+<td  class="rank2">2.0</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryopen_kb_classification_spinnaker_echo">Open KB Classification Spinnaker Echo Fleet</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: ECHO, Entries: 2, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="13">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th><a class="racelink" href="#r2open_kb_classification_spinnaker_echo">May 7th</a></th>
+<th><a class="racelink" href="#r3open_kb_classification_spinnaker_echo">May 14th</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>1.009</td>
+<td>1.009</td>
+<td data-rat="1.009" class="rank1">1.0</td>
+<td data-rat="1.009" class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>1.004</td>
+<td>1.004</td>
+<td data-rat="1.004" class="rank2">2.0</td>
+<td data-rat="1.004" class="rank2">2.0</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1icra_non_spinnaker_echo">April 30th - ICRA Non-Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1900
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Split Point</td>
+<td>Dufour 34</td>
+<td>9992</td>
+<td>RCYC</td>
+<td>Seamus Gilroy</td>
+<td>0.844</td>
+<td>0.870</td>
+<td>1900</td>
+<td>20:13:25</td>
+<td>1:13:25</td>
+<td>1:01:58</td>
+<td>0:00:00</td>
+<td>0.844</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>1.000</td>
+<td>0.991</td>
+<td>1900</td>
+<td>20:12:00</td>
+<td>1:12:00</td>
+<td>1:12:00</td>
+<td>0:10:02</td>
+<td>0.861</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>1.011</td>
+<td>0.994</td>
+<td>1900</td>
+<td>20:13:37</td>
+<td>1:13:37</td>
+<td>1:14:26</td>
+<td>0:12:20</td>
+<td>0.842</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2icra_non_spinnaker_echo">May 7th - ICRA Non-Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1910
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.991</td>
+<td>0.991</td>
+<td>1910</td>
+<td>20:04:10</td>
+<td>0:54:10</td>
+<td>0:53:41</td>
+<td>0:00:00</td>
+<td>0.991</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.994</td>
+<td>0.994</td>
+<td>1910</td>
+<td>20:05:30</td>
+<td>0:55:30</td>
+<td>0:55:10</td>
+<td>0:01:30</td>
+<td>0.967</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r3icra_non_spinnaker_echo">May 14th - ICRA Non-Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Magnet</td>
+<td>MG 335</td>
+<td>IRL9896</td>
+<td>RCYC</td>
+<td>Kieran  & Fiorentina O'Brien</td>
+<td>0.979</td>
+<td>0.979</td>
+<td>1900</td>
+<td>19:51:45</td>
+<td>0:51:45</td>
+<td>0:50:40</td>
+<td>0:00:00</td>
+<td>0.979</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.991</td>
+<td>0.991</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.994</td>
+<td>0.994</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r4icra_non_spinnaker_echo">May 21st - ICRA Non-Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.991</td>
+<td>0.997</td>
+<td>1900</td>
+<td>20:17:06</td>
+<td>1:17:06</td>
+<td>1:16:24</td>
+<td>0:00:00</td>
+<td>0.991</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Impulsive</td>
+<td>Impala 28 ODD</td>
+<td>IRL9570</td>
+<td>RCYC</td>
+<td>John & Antony Keating</td>
+<td>0.885</td>
+<td>0.887</td>
+<td>1900</td>
+<td>20:27:17</td>
+<td>1:27:17</td>
+<td>1:17:15</td>
+<td>0:00:57</td>
+<td>0.875</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Luas</td>
+<td>HB31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.952</td>
+<td>0.955</td>
+<td>1900</td>
+<td>20:21:11</td>
+<td>1:21:11</td>
+<td>1:17:17</td>
+<td>0:00:55</td>
+<td>0.941</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Magnet</td>
+<td>MG 335</td>
+<td>IRL9896</td>
+<td>RCYC</td>
+<td>Kieran  & Fiorentina O'Brien</td>
+<td>0.979</td>
+<td>0.980</td>
+<td>1900</td>
+<td>20:19:21</td>
+<td>1:19:21</td>
+<td>1:17:41</td>
+<td>0:01:18</td>
+<td>0.963</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.994</td>
+<td>0.993</td>
+<td>1900</td>
+<td>20:18:59</td>
+<td>1:18:59</td>
+<td>1:18:31</td>
+<td>0:02:07</td>
+<td>0.967</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Split Point</td>
+<td>Dufour 34</td>
+<td>9992</td>
+<td>RCYC</td>
+<td>Seamus Gilroy</td>
+<td>0.870</td>
+<td>0.859</td>
+<td>1900</td>
+<td>20:34:24</td>
+<td>1:34:24</td>
+<td>1:22:08</td>
+<td>0:06:35</td>
+<td>0.809</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r5icra_non_spinnaker_echo">May 28th - ICRA Non-Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Luas</td>
+<td>HB31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.955</td>
+<td>0.961</td>
+<td>1900</td>
+<td>20:34:24</td>
+<td>1:34:24</td>
+<td>1:30:09</td>
+<td>0:00:00</td>
+<td>0.955</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.997</td>
+<td>1.002</td>
+<td>1900</td>
+<td>20:31:02</td>
+<td>1:31:02</td>
+<td>1:30:46</td>
+<td>0:00:37</td>
+<td>0.99</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Magnet</td>
+<td>MG 335</td>
+<td>IRL9896</td>
+<td>RCYC</td>
+<td>Kieran  & Fiorentina O'Brien</td>
+<td>0.980</td>
+<td>0.983</td>
+<td>1900</td>
+<td>20:33:20</td>
+<td>1:33:20</td>
+<td>1:31:28</td>
+<td>0:01:20</td>
+<td>0.966</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.993</td>
+<td>0.988</td>
+<td>1900</td>
+<td>20:35:10</td>
+<td>1:35:10</td>
+<td>1:34:30</td>
+<td>0:04:23</td>
+<td>0.947</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Humdinger</td>
+<td>H Boat 1.3</td>
+<td>1844</td>
+<td>RCYC</td>
+<td>Conor McNeice</td>
+<td>0.874</td>
+<td>0.866</td>
+<td>1900</td>
+<td>20:49:36</td>
+<td>1:49:36</td>
+<td>1:35:47</td>
+<td>0:06:27</td>
+<td>0.823</td>
+<td>5.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1icra_non_spinnaker_irc">April 30th - ICRA Non-Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1900
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.909</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:13:37</td>
+<td>1:13:37</td>
+<td>1:06:55</td>
+<td>0:00:00</td>
+<td>0.909</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Split Point</td>
+<td>Dufour 34</td>
+<td>9992</td>
+<td>RCYC</td>
+<td>Seamus Gilroy</td>
+<td>0.943</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:13:25</td>
+<td>1:13:25</td>
+<td>1:09:14</td>
+<td>0:02:27</td>
+<td>0.911</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.978</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:12:00</td>
+<td>1:12:00</td>
+<td>1:10:25</td>
+<td>0:03:35</td>
+<td>0.929</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2icra_non_spinnaker_irc">May 7th - ICRA Non-Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1910
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.909</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:05:30</td>
+<td>0:55:30</td>
+<td>0:50:27</td>
+<td>0:00:00</td>
+<td>0.909</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.978</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:04:10</td>
+<td>0:54:10</td>
+<td>0:52:59</td>
+<td>0:02:35</td>
+<td>0.931</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r3icra_non_spinnaker_irc">May 14th - ICRA Non-Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Magnet</td>
+<td>MG 335</td>
+<td>IRL9896</td>
+<td>RCYC</td>
+<td>Kieran & Fiorentina O'Brien</td>
+<td>0.918</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:51:45</td>
+<td>0:51:45</td>
+<td>0:47:30</td>
+<td>0:00:00</td>
+<td>0.918</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.909</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.978</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r4icra_non_spinnaker_irc">May 21st - ICRA Non-Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.909</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:18:59</td>
+<td>1:18:59</td>
+<td>1:11:48</td>
+<td>0:00:00</td>
+<td>0.909</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Magnet</td>
+<td>MG 335</td>
+<td>IRL9896</td>
+<td>RCYC</td>
+<td>Kieran & Fiorentina O'Brien</td>
+<td>0.918</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:19:21</td>
+<td>1:19:21</td>
+<td>1:12:51</td>
+<td>0:01:08</td>
+<td>0.905</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Luas</td>
+<td>HB31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.898</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:21:11</td>
+<td>1:21:11</td>
+<td>1:12:54</td>
+<td>0:01:14</td>
+<td>0.884</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.978</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:17:06</td>
+<td>1:17:06</td>
+<td>1:15:24</td>
+<td>0:03:41</td>
+<td>0.931</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Impulsive</td>
+<td>Impala 28 ODD</td>
+<td>IRL9570</td>
+<td>RCYC</td>
+<td>John & Antony Keating</td>
+<td>0.884</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:27:17</td>
+<td>1:27:17</td>
+<td>1:17:10</td>
+<td>0:06:04</td>
+<td>0.823</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Split Point</td>
+<td>Dufour 34</td>
+<td>9992</td>
+<td>RCYC</td>
+<td>Seamus Gilroy</td>
+<td>0.943</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:34:24</td>
+<td>1:34:24</td>
+<td>1:29:01</td>
+<td>0:18:16</td>
+<td>0.761</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r5icra_non_spinnaker_irc">May 28th - ICRA Non-Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Luas</td>
+<td>HB31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.898</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:34:24</td>
+<td>1:34:24</td>
+<td>1:24:46</td>
+<td>0:00:00</td>
+<td>0.898</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Magnet</td>
+<td>MG 335</td>
+<td>IRL9896</td>
+<td>RCYC</td>
+<td>Kieran & Fiorentina O'Brien</td>
+<td>0.918</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:33:20</td>
+<td>1:33:20</td>
+<td>1:25:41</td>
+<td>0:00:59</td>
+<td>0.908</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Big Mc</td>
+<td>Dehler 34</td>
+<td>IRL3492</td>
+<td>RCYC</td>
+<td>Frank & Celine McGrath</td>
+<td>0.909</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:35:10</td>
+<td>1:35:10</td>
+<td>1:26:30</td>
+<td>0:01:55</td>
+<td>0.891</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Prince of Tides</td>
+<td>Grand Soleil 37</td>
+<td>IRL15455</td>
+<td>RCYC</td>
+<td>Frank Caul & John Molloy</td>
+<td>0.978</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:31:02</td>
+<td>1:31:02</td>
+<td>1:29:02</td>
+<td>0:04:21</td>
+<td>0.931</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Humdinger</td>
+<td>H Boat 1.3</td>
+<td>GBR4108L</td>
+<td>RCYC</td>
+<td>Conor McNeice</td>
+<td>0.820</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:49:36</td>
+<td>1:49:36</td>
+<td>1:29:52</td>
+<td>0:06:13</td>
+<td>0.773</td>
+<td>5.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1icra_spinnaker_echo">April 30th - ICRA Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1900
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.891</td>
+<td>0.911</td>
+<td>1900</td>
+<td>20:09:06</td>
+<td>1:09:06</td>
+<td>1:01:34</td>
+<td>0:00:00</td>
+<td>0.891</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>0.984</td>
+<td>0.988</td>
+<td>1900</td>
+<td>20:07:07</td>
+<td>1:07:07</td>
+<td>1:06:03</td>
+<td>0:04:33</td>
+<td>0.917</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>1.012</td>
+<td>1.001</td>
+<td>1900</td>
+<td>20:09:29</td>
+<td>1:09:29</td>
+<td>1:10:19</td>
+<td>0:08:39</td>
+<td>0.886</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.993</td>
+<td>0.980</td>
+<td>1900</td>
+<td>20:11:13</td>
+<td>1:11:13</td>
+<td>1:10:43</td>
+<td>0:09:13</td>
+<td>0.865</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.009</td>
+<td>1.009</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>OCS</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2icra_spinnaker_echo">May 7th - ICRA Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1910
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Illegal</td>
+<td>1/4 Ton</td>
+<td>1751</td>
+<td>RCYC</td>
+<td>Colman Garvey</td>
+<td>0.905</td>
+<td>0.932</td>
+<td>1910</td>
+<td>19:58:25</td>
+<td>0:48:25</td>
+<td>0:43:49</td>
+<td>0:00:00</td>
+<td>0.905</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.911</td>
+<td>0.931</td>
+<td>1910</td>
+<td>19:59:22</td>
+<td>0:49:22</td>
+<td>0:44:58</td>
+<td>0:01:16</td>
+<td>0.888</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.009</td>
+<td>1.028</td>
+<td>1910</td>
+<td>19:55:07</td>
+<td>0:45:07</td>
+<td>0:45:31</td>
+<td>0:01:41</td>
+<td>0.971</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.941</td>
+<td>0.951</td>
+<td>1910</td>
+<td>19:59:54</td>
+<td>0:49:54</td>
+<td>0:46:57</td>
+<td>0:03:20</td>
+<td>0.878</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.980</td>
+<td>0.975</td>
+<td>1910</td>
+<td>20:01:05</td>
+<td>0:51:05</td>
+<td>0:50:04</td>
+<td>0:06:22</td>
+<td>0.858</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.959</td>
+<td>0.947</td>
+<td>1910</td>
+<td>20:03:43</td>
+<td>0:53:43</td>
+<td>0:51:31</td>
+<td>0:08:02</td>
+<td>0.816</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>1.083</td>
+<td>1.067</td>
+<td>1910</td>
+<td>19:58:07</td>
+<td>0:48:07</td>
+<td>0:52:07</td>
+<td>0:07:39</td>
+<td>0.911</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>1.001</td>
+<td>0.981</td>
+<td>1910</td>
+<td>20:03:07</td>
+<td>0:53:07</td>
+<td>0:53:10</td>
+<td>0:09:21</td>
+<td>0.825</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>0.988</td>
+<td>0.964</td>
+<td>1910</td>
+<td>20:04:50</td>
+<td>0:54:50</td>
+<td>0:54:11</td>
+<td>0:10:29</td>
+<td>0.799</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r3icra_spinnaker_echo">May 14th - ICRA Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.981</td>
+<td>1.004</td>
+<td>1900</td>
+<td>19:48:49</td>
+<td>0:48:49</td>
+<td>0:47:53</td>
+<td>0:00:00</td>
+<td>0.981</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.931</td>
+<td>0.951</td>
+<td>1900</td>
+<td>19:51:40</td>
+<td>0:51:40</td>
+<td>0:48:06</td>
+<td>0:00:14</td>
+<td>0.927</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.975</td>
+<td>0.984</td>
+<td>1900</td>
+<td>19:51:50</td>
+<td>0:51:50</td>
+<td>0:50:32</td>
+<td>0:02:43</td>
+<td>0.924</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>0.964</td>
+<td>0.913</td>
+<td>1900</td>
+<td>20:08:59</td>
+<td>1:08:59</td>
+<td>1:06:30</td>
+<td>0:19:18</td>
+<td>0.694</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.028</td>
+<td>1.028</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>1.067</td>
+<td>1.067</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>7.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r4icra_spinnaker_echo">May 21st - ICRA Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>0.913</td>
+<td>0.939</td>
+<td>1900</td>
+<td>20:10:24</td>
+<td>1:10:24</td>
+<td>1:04:17</td>
+<td>0:00:00</td>
+<td>0.913</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.947</td>
+<td>0.960</td>
+<td>1900</td>
+<td>20:11:34</td>
+<td>1:11:34</td>
+<td>1:07:46</td>
+<td>0:03:42</td>
+<td>0.898</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>1.004</td>
+<td>1.000</td>
+<td>1900</td>
+<td>20:12:18</td>
+<td>1:12:18</td>
+<td>1:12:35</td>
+<td>0:08:17</td>
+<td>0.889</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.951</td>
+<td>0.947</td>
+<td>1900</td>
+<td>20:16:23</td>
+<td>1:16:23</td>
+<td>1:12:38</td>
+<td>0:08:48</td>
+<td>0.841</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Grin & Bear It</td>
+<td>Elan 31</td>
+<td>IRL3103</td>
+<td>RCYC</td>
+<td>Denis Byrne</td>
+<td>0.949</td>
+<td>0.943</td>
+<td>1900</td>
+<td>20:17:27</td>
+<td>1:17:27</td>
+<td>1:13:30</td>
+<td>0:09:43</td>
+<td>0.83</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.934</td>
+<td>0.927</td>
+<td>1900</td>
+<td>20:18:54</td>
+<td>1:18:54</td>
+<td>1:13:42</td>
+<td>0:10:05</td>
+<td>0.815</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.951</td>
+<td>0.944</td>
+<td>1900</td>
+<td>20:17:31</td>
+<td>1:17:31</td>
+<td>1:13:43</td>
+<td>0:09:56</td>
+<td>0.829</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.984</td>
+<td>0.973</td>
+<td>1900</td>
+<td>20:16:15</td>
+<td>1:16:15</td>
+<td>1:15:02</td>
+<td>0:10:56</td>
+<td>0.843</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.028</td>
+<td>1.028</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>10.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r5icra_spinnaker_echo">May 28th - ICRA Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.028</td>
+<td>1.036</td>
+<td>1900</td>
+<td>20:22:45</td>
+<td>1:22:45</td>
+<td>1:25:04</td>
+<td>0:00:00</td>
+<td>1.028</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>1.000</td>
+<td>1.006</td>
+<td>1900</td>
+<td>20:25:52</td>
+<td>1:25:52</td>
+<td>1:25:52</td>
+<td>0:00:48</td>
+<td>0.991</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.927</td>
+<td>0.929</td>
+<td>1900</td>
+<td>20:33:59</td>
+<td>1:33:59</td>
+<td>1:27:07</td>
+<td>0:02:13</td>
+<td>0.905</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.944</td>
+<td>0.946</td>
+<td>1900</td>
+<td>20:32:24</td>
+<td>1:32:24</td>
+<td>1:27:14</td>
+<td>0:02:17</td>
+<td>0.921</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.947</td>
+<td>0.944</td>
+<td>1900</td>
+<td>20:34:04</td>
+<td>1:34:04</td>
+<td>1:29:05</td>
+<td>0:04:14</td>
+<td>0.904</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>1.067</td>
+<td>1.062</td>
+<td>1900</td>
+<td>20:23:47</td>
+<td>1:23:47</td>
+<td>1:29:24</td>
+<td>0:04:03</td>
+<td>1.015</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.960</td>
+<td>0.950</td>
+<td>1900</td>
+<td>20:35:22</td>
+<td>1:35:22</td>
+<td>1:31:33</td>
+<td>0:06:45</td>
+<td>0.892</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Summer Light</td>
+<td>Laser 28</td>
+<td>GBR1244T</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>0.831</td>
+<td>0.831</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1icra_spinnaker_irc">April 30th - ICRA Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1900
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:09:29</td>
+<td>1:09:29</td>
+<td>1:05:36</td>
+<td>0:00:00</td>
+<td>0.944</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:07:07</td>
+<td>1:07:07</td>
+<td>1:07:15</td>
+<td>0:01:39</td>
+<td>0.977</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:09:06</td>
+<td>1:09:06</td>
+<td>1:08:25</td>
+<td>0:02:51</td>
+<td>0.949</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:11:13</td>
+<td>1:11:13</td>
+<td>1:09:05</td>
+<td>0:03:36</td>
+<td>0.921</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>OCS</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2icra_spinnaker_irc">May 7th - ICRA Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1910
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.863</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:59:54</td>
+<td>0:49:54</td>
+<td>0:43:04</td>
+<td>0:00:00</td>
+<td>0.863</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Illegal</td>
+<td>1/4 Ton</td>
+<td>1751</td>
+<td>RCYC</td>
+<td>Colman Garvey</td>
+<td>0.900</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:58:25</td>
+<td>0:48:25</td>
+<td>0:43:35</td>
+<td>0:00:34</td>
+<td>0.889</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:55:07</td>
+<td>0:45:07</td>
+<td>0:48:30</td>
+<td>0:05:03</td>
+<td>0.954</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:59:22</td>
+<td>0:49:22</td>
+<td>0:48:52</td>
+<td>0:05:52</td>
+<td>0.872</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:01:05</td>
+<td>0:51:05</td>
+<td>0:49:33</td>
+<td>0:06:41</td>
+<td>0.843</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>1.039</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:58:07</td>
+<td>0:48:07</td>
+<td>0:50:00</td>
+<td>0:06:40</td>
+<td>0.895</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:03:07</td>
+<td>0:53:07</td>
+<td>0:50:09</td>
+<td>0:07:30</td>
+<td>0.811</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.969</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:03:43</td>
+<td>0:53:43</td>
+<td>0:52:03</td>
+<td>0:09:17</td>
+<td>0.802</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:04:50</td>
+<td>0:54:50</td>
+<td>0:54:57</td>
+<td>0:11:51</td>
+<td>0.785</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r3icra_spinnaker_irc">May 14th - ICRA Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:48:49</td>
+<td>0:48:49</td>
+<td>0:46:05</td>
+<td>0:00:00</td>
+<td>0.944</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:51:50</td>
+<td>0:51:50</td>
+<td>0:50:17</td>
+<td>0:04:20</td>
+<td>0.889</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:51:40</td>
+<td>0:51:40</td>
+<td>0:51:09</td>
+<td>0:05:07</td>
+<td>0.892</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:08:59</td>
+<td>1:08:59</td>
+<td>1:09:07</td>
+<td>0:23:00</td>
+<td>0.668</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>1.039</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>7.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r4icra_spinnaker_irc">May 21st - ICRA Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.863</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:17:31</td>
+<td>1:17:31</td>
+<td>1:06:54</td>
+<td>0:00:00</td>
+<td>0.863</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.864</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:18:54</td>
+<td>1:18:54</td>
+<td>1:08:10</td>
+<td>0:01:28</td>
+<td>0.848</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:12:18</td>
+<td>1:12:18</td>
+<td>1:08:15</td>
+<td>0:01:26</td>
+<td>0.925</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.969</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:11:34</td>
+<td>1:11:34</td>
+<td>1:09:21</td>
+<td>0:02:32</td>
+<td>0.935</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:10:24</td>
+<td>1:10:24</td>
+<td>1:10:32</td>
+<td>0:03:38</td>
+<td>0.95</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Grin & Bear It</td>
+<td>Elan 31</td>
+<td>IRL3103</td>
+<td>RCYC</td>
+<td>Denis Byrne</td>
+<td>0.930</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:17:27</td>
+<td>1:17:27</td>
+<td>1:12:02</td>
+<td>0:05:31</td>
+<td>0.864</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:16:15</td>
+<td>1:16:15</td>
+<td>1:13:58</td>
+<td>0:07:17</td>
+<td>0.877</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:16:23</td>
+<td>1:16:23</td>
+<td>1:15:37</td>
+<td>0:08:49</td>
+<td>0.876</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>10.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r5icra_spinnaker_irc">May 28th - ICRA Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.863</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:32:24</td>
+<td>1:32:24</td>
+<td>1:19:44</td>
+<td>0:00:00</td>
+<td>0.863</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>IRL5435</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:25:52</td>
+<td>1:25:52</td>
+<td>1:21:03</td>
+<td>0:01:24</td>
+<td>0.929</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.864</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:33:59</td>
+<td>1:33:59</td>
+<td>1:21:12</td>
+<td>0:01:41</td>
+<td>0.848</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>1.039</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:23:47</td>
+<td>1:23:47</td>
+<td>1:27:03</td>
+<td>0:07:02</td>
+<td>0.952</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:22:45</td>
+<td>1:22:45</td>
+<td>1:28:57</td>
+<td>0:08:34</td>
+<td>0.964</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Humdinger</td>
+<td>H Boat 1.3</td>
+<td>1844</td>
+<td>RCYC</td>
+<td>Conor McNeice</td>
+<td>0.829</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:49:36</td>
+<td>1:49:36</td>
+<td>1:30:52</td>
+<td>0:13:25</td>
+<td>0.728</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.969</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:35:22</td>
+<td>1:35:22</td>
+<td>1:32:25</td>
+<td>0:13:04</td>
+<td>0.836</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:34:04</td>
+<td>1:34:04</td>
+<td>1:33:08</td>
+<td>0:13:31</td>
+<td>0.848</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>Summer Light</td>
+<td>Laser 28</td>
+<td>GBR1244T</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>0.893</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>10.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1spin_echo___all_boats">April 30th - Spin Echo - All Boats Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1900
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>Rating</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>GBR5435R</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:09:29</td>
+<td>1:09:29</td>
+<td>1:05:36</td>
+<td>0:00:00</td>
+<td>0.944</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:07:07</td>
+<td>1:07:07</td>
+<td>1:07:15</td>
+<td>0:01:39</td>
+<td>0.977</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:09:06</td>
+<td>1:09:06</td>
+<td>1:08:25</td>
+<td>0:02:51</td>
+<td>0.949</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:11:13</td>
+<td>1:11:13</td>
+<td>1:09:05</td>
+<td>0:03:36</td>
+<td>0.921</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>OCS</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2spin_echo___all_boats">May 7th - Spin Echo - All Boats Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1910
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>Rating</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.863</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:59:54</td>
+<td>0:49:54</td>
+<td>0:43:04</td>
+<td>0:49:54</td>
+<td>0</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Illegal</td>
+<td>1/4 Ton</td>
+<td>1751</td>
+<td>RCYC</td>
+<td>Colman Garvey</td>
+<td>0.905</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:58:25</td>
+<td>0:48:25</td>
+<td>0:43:49</td>
+<td>0:48:25</td>
+<td>0</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:55:07</td>
+<td>0:45:07</td>
+<td>0:48:30</td>
+<td>0:45:07</td>
+<td>0</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>1.009</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:58:07</td>
+<td>0:48:07</td>
+<td>0:48:33</td>
+<td>0:48:07</td>
+<td>0</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.986</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:59:22</td>
+<td>0:49:22</td>
+<td>0:48:41</td>
+<td>0:49:22</td>
+<td>0</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:01:05</td>
+<td>0:51:05</td>
+<td>0:49:33</td>
+<td>0:51:05</td>
+<td>0</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>GBR5435R</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:03:07</td>
+<td>0:53:07</td>
+<td>0:50:09</td>
+<td>0:53:07</td>
+<td>0</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>1.004</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:01:30</td>
+<td>0:51:30</td>
+<td>0:51:42</td>
+<td>0:51:30</td>
+<td>0</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.969</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:03:43</td>
+<td>0:53:43</td>
+<td>0:52:03</td>
+<td>0:53:43</td>
+<td>0</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>10</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:04:50</td>
+<td>0:54:50</td>
+<td>0:54:57</td>
+<td>0:54:50</td>
+<td>0</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>11</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:58:07</td>
+<td>0:48:07</td>
+<td>0:00:00</td>
+<td>0:48:07</td>
+<td>0</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r3spin_echo___all_boats">May 14th - Spin Echo - All Boats Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>Rating</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>GBR5435R</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:48:49</td>
+<td>0:48:49</td>
+<td>0:46:05</td>
+<td>0:00:00</td>
+<td>0.944</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:51:50</td>
+<td>0:51:50</td>
+<td>0:50:17</td>
+<td>0:04:20</td>
+<td>0.889</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.988</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:51:40</td>
+<td>0:51:40</td>
+<td>0:51:03</td>
+<td>0:05:01</td>
+<td>0.892</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>1.009</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:52:30</td>
+<td>0:52:30</td>
+<td>0:52:58</td>
+<td>0:06:50</td>
+<td>0.878</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>1.004</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:07:35</td>
+<td>1:07:35</td>
+<td>1:07:51</td>
+<td>0:21:41</td>
+<td>0.682</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:08:59</td>
+<td>1:08:59</td>
+<td>1:09:07</td>
+<td>0:23:00</td>
+<td>0.668</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r4spin_echo___all_boats">May 21st - Spin Echo - All Boats Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>Rating</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.863</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:17:31</td>
+<td>1:17:31</td>
+<td>1:06:54</td>
+<td>0:00:00</td>
+<td>0.863</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.864</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:18:54</td>
+<td>1:18:54</td>
+<td>1:08:10</td>
+<td>0:01:28</td>
+<td>0.848</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>GBR5435R</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:12:18</td>
+<td>1:12:18</td>
+<td>1:08:15</td>
+<td>0:01:26</td>
+<td>0.925</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.969</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:11:34</td>
+<td>1:11:34</td>
+<td>1:09:21</td>
+<td>0:02:32</td>
+<td>0.935</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Mach 2</td>
+<td>Sun Fast 3200</td>
+<td>IRL13200</td>
+<td>RCYC</td>
+<td>Darragh McCarthy</td>
+<td>1.002</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:10:24</td>
+<td>1:10:24</td>
+<td>1:10:32</td>
+<td>0:03:38</td>
+<td>0.95</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Grin & Bear It</td>
+<td>Elan 31</td>
+<td>IRL3103</td>
+<td>RCYC</td>
+<td>Denis Byrne</td>
+<td>0.935</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:17:27</td>
+<td>1:17:27</td>
+<td>1:12:25</td>
+<td>0:05:54</td>
+<td>0.864</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Bateleur '88</td>
+<td>Castro 3/4 Ton</td>
+<td>IRL5693</td>
+<td>RCYC</td>
+<td>Pat Tanner</td>
+<td>0.970</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:16:15</td>
+<td>1:16:15</td>
+<td>1:13:58</td>
+<td>0:07:17</td>
+<td>0.877</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.995</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:16:23</td>
+<td>1:16:23</td>
+<td>1:16:00</td>
+<td>0:09:09</td>
+<td>0.876</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>10.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r5spin_echo___all_boats">May 28th - Spin Echo - All Boats Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>Rating</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>North Star</td>
+<td>Albin Express</td>
+<td>IRL5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.863</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:32:24</td>
+<td>1:32:24</td>
+<td>1:19:44</td>
+<td>1:32:24</td>
+<td>0</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Miss Whiplash</td>
+<td>1/2 Ton</td>
+<td>GBR5435R</td>
+<td>RCYC</td>
+<td>John & Ronan Downing</td>
+<td>0.944</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:25:52</td>
+<td>1:25:52</td>
+<td>1:21:03</td>
+<td>1:25:52</td>
+<td>0</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>Obsession</td>
+<td>Albin Express</td>
+<td>5499</td>
+<td>RCYC</td>
+<td>Barry & Marina Rose</td>
+<td>0.864</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:33:59</td>
+<td>1:33:59</td>
+<td>1:21:12</td>
+<td>1:33:59</td>
+<td>0</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>Joyride</td>
+<td>J/111</td>
+<td>FRA78</td>
+<td>RCYC</td>
+<td>Wan Waterman</td>
+<td>1.075</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:22:45</td>
+<td>1:22:45</td>
+<td>1:28:57</td>
+<td>1:22:45</td>
+<td>0</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>Ellida</td>
+<td>X332</td>
+<td>IRL6021</td>
+<td>RCYC</td>
+<td>Ria Lyden</td>
+<td>0.969</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:35:22</td>
+<td>1:35:22</td>
+<td>1:32:25</td>
+<td>1:35:22</td>
+<td>0</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>Ejine</td>
+<td>J/92 S</td>
+<td>IRL1842</td>
+<td>RCYC</td>
+<td>Mark Ivers / Donal Keane</td>
+<td>0.990</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:34:04</td>
+<td>1:34:04</td>
+<td>1:33:08</td>
+<td>1:34:04</td>
+<td>0</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>Resolute</td>
+<td>Fareast 28R</td>
+<td>251</td>
+<td>RCYC</td>
+<td>Jon McClean</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:23:47</td>
+<td>1:23:47</td>
+<td>0:00:00</td>
+<td>1:23:47</td>
+<td>0</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>Summer Light</td>
+<td>Laser 28</td>
+<td>GBR1244T</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>0.893</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>RET</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2open_kb_classification___spinnaker_irc">May 7th - Open KB Classification - Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1910
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>0.926</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>19:58:07</td>
+<td>0:48:07</td>
+<td>0:44:33</td>
+<td>0:00:00</td>
+<td>0.926</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>0.926</td>
+<td>&nbsp;</td>
+<td>1910</td>
+<td>20:01:30</td>
+<td>0:51:30</td>
+<td>0:47:41</td>
+<td>0:03:23</td>
+<td>0.865</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r3open_kb_classification___spinnaker_irc">May 14th - Open KB Classification - Spinnaker IRC Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>IRC</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>0.926</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>19:52:30</td>
+<td>0:52:30</td>
+<td>0:48:37</td>
+<td>0:00:00</td>
+<td>0.926</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>0.926</td>
+<td>&nbsp;</td>
+<td>1900</td>
+<td>20:07:35</td>
+<td>1:07:35</td>
+<td>1:02:35</td>
+<td>0:15:05</td>
+<td>0.719</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2open_kb_classification_spinnaker_echo">May 7th - Open KB Classification Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1910
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>1.009</td>
+<td>1.009</td>
+<td>1910</td>
+<td>19:58:07</td>
+<td>0:48:07</td>
+<td>0:48:33</td>
+<td>0:00:00</td>
+<td>1.009</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>1.004</td>
+<td>1.004</td>
+<td>1910</td>
+<td>20:01:30</td>
+<td>0:51:30</td>
+<td>0:51:42</td>
+<td>0:03:09</td>
+<td>0.943</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r3open_kb_classification_spinnaker_echo">May 14th - Open KB Classification Spinnaker Echo Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="bcr" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Boat</th>
+<th>Type</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>Entered by</th>
+<th>ECHO</th>
+<th>Next Race H/Cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>BCR</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>Knot on Call</td>
+<td>Etchells</td>
+<td>IRL1251</td>
+<td>RCYC</td>
+<td>Andrew Crosbie</td>
+<td>1.009</td>
+<td>1.009</td>
+<td>1900</td>
+<td>19:52:30</td>
+<td>0:52:30</td>
+<td>0:52:58</td>
+<td>0:00:00</td>
+<td>1.009</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>Don't Dilly Dally</td>
+<td>Etchells</td>
+<td>IRL952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>1.004</td>
+<td>1.004</td>
+<td>1900</td>
+<td>20:07:35</td>
+<td>1:07:35</td>
+<td>1:07:51</td>
+<td>0:14:49</td>
+<td>0.784</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="codestitle">Scoring codes used</h3>
+<table class="codestable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="3"><col class="code" /><col class="description" />
+<col class="points" />
+</colgroup>
+<tr class="titlerow"><th>Code</th><th>Description</th>
+<th>Points</th>
+</tr>
+<tr class="odd coderow"><td>DNC</td><td>Did not come to the starting area</td>
+<td>Varies</td>
+</tr>
+<tr class="even coderow"><td>OCS</td><td>On course side at start or broke rule 30.1</td>
+<td>6</td>
+</tr>
+<tr class="odd coderow"><td>RET</td><td>Retired</td>
+<td>Varies</td>
+</tr>
+</table>
+
+<p class="hardleft"><a href="https://"></a><br /><a href="mailto:"></a></p>
+<p class="hardright"><a href="https://"></a><br /><a href="mailto:"></a></p>
+<p>Sailwave Scoring Software 2.38.02<br /><a href="https://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+

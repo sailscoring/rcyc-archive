@@ -59,17 +59,45 @@ function isoDate(year: number, month: number, day: number): string | null {
 /**
  * A race's date, read from the label the club typed for it — only where the
  * label states a day, a month and a year: "07/04/2019", "2/5/2024",
- * "25th May 2019", "26th Aug 2026", and a Sail100 race's "Start: Sat 27 May
- * 23". A label with no year ("R1") dates
+ * "25th May 2019", "26th Aug 2026". A label with no year ("R1") dates
  * nothing, and neither does a mistyped one ("06/0625").
  */
 function dateIn(label: string): string | null {
-  let m = /\b(\d{1,2})(?:st|nd|rd|th)?\s+([a-z]{3})[a-z]*\.?\s+(\d{4}|\d{2})\b/i.exec(label);
+  let m = /\b(\d{1,2})(?:st|nd|rd|th)?\s+([a-z]{3})[a-z]*\.?\s+(\d{4})\b/i.exec(label);
   if (m && MONTHS.includes(m[2].toLowerCase())) {
     return isoDate(Number(m[3]), MONTHS.indexOf(m[2].toLowerCase()) + 1, Number(m[1]));
   }
   m = /\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/.exec(label);
   if (m) return isoDate(Number(m[3]), Number(m[2]), Number(m[1]));
+  return null;
+}
+
+const MONTH_WORD = new RegExp(
+  '^(jan(uary)?|feb(ruary)?|mar(ch)?|apr(il)?|may|june?|july?|aug(ust)?|sept?(ember)?|oct(ober)?|nov(ember)?|dec(ember)?)\\.?$',
+  'i',
+);
+
+/**
+ * A race's day and month, where its label states them by name but gives no
+ * year: "30th Sep R1", "Sun 3rd Nov", "13th June", "Aug 13th", "10th Of
+ * November". The year is the season's — see `datesFor`. Numeric forms
+ * ("R1 04/08") are not read: "1/2" is as often a class as a date.
+ */
+function dayMonthIn(label: string, year: string): string | null {
+  const words = label.replace(/[,@-]/g, ' ').split(/\s+/).filter(Boolean);
+  for (let i = 0; i < words.length; i++) {
+    const day = /^(\d{1,2})(st|nd|rd|th)?$/i.exec(words[i]);
+    if (day) {
+      const next = words[i + 1]?.toLowerCase() === 'of' ? words[i + 2] : words[i + 1];
+      if (next && MONTH_WORD.test(next)) return isoDate(Number(year), MONTHS.indexOf(next.slice(0, 3).toLowerCase()) + 1, Number(day[1]));
+    }
+    if (MONTH_WORD.test(words[i])) {
+      const after = /^(\d{1,2})(st|nd|rd|th)?$/i.exec(words[i + 1] ?? '');
+      if (after && !/^\d{2}:/.test(words[i + 2] ?? '')) {
+        return isoDate(Number(year), MONTHS.indexOf(words[i].slice(0, 3).toLowerCase()) + 1, Number(after[1]));
+      }
+    }
+  }
   return null;
 }
 
@@ -98,8 +126,8 @@ function parse(page: ArchivePage): { file: string; page: SailwavePage; text: str
 }
 
 /** A Sail100 page — up to 2017, the club's format: one standings table, or
- *  one race published on its own. Sail100 pages carry no race dates; each
- *  race's own page does, but those are not captured. */
+ *  one race published on its own. A Sail100 standings page carries no race
+ *  dates; each race's own page does, but those are not captured. */
 function sail100Fleet(page: ArchivePage, subPath: string, file: string, text: string) {
   if (page.sections || page.raceSections) throw new Error(`${file}: sections are for Sailwave pages`);
   const encoding = page.encoding ? { encoding: page.encoding } : {};
@@ -208,8 +236,14 @@ function buildFleet(page: ArchivePage, subPath: string) {
 /**
  * A series' dates. In order of trust: dates pinned in `series.json` (each
  * with the evidence it was read from); the first and last race the pages'
- * labels date, when every dated label falls in the season; the season
- * alone. The club's indexes list no dates.
+ * labels date, when every dated label falls in the season; the first and
+ * last race whose label names a day and a month, in the season's year; the
+ * season alone. The club's indexes list no dates.
+ *
+ * The third is inferred (CLARIFICATIONS §4): the club's labels rarely carry
+ * a year, but each season's results are listed on that season's page. It is
+ * not used for a series whose races run from one winter into the next —
+ * labels in both January–March and October–December.
  *
  * A label outside the season discredits the rest — a page re-used from the
  * previous year keeps that year's dates, and its in-season labels, if any,
@@ -229,7 +263,20 @@ function datesFor(series: ArchiveSeries, labels: string[]): { startDate: string;
     const dates = dated.map((d) => d.date).sort();
     return { startDate: dates[0], ...(dates.at(-1) !== dates[0] ? { endDate: dates.at(-1) } : {}) };
   }
-  if (stray.length > 0) console.warn(`  ~ ${series.key}: race label "${stray[0].label}" is outside the season; dated by the season alone`);
+  if (stray.length > 0) {
+    console.warn(`  ~ ${series.key}: race label "${stray[0].label}" is outside the season; dated by the season alone`);
+    return { startDate: series.season };
+  }
+  const days = labels.flatMap((label) => {
+    const date = dayMonthIn(label, series.season);
+    return date ? [date] : [];
+  });
+  const months = new Set(days.map((d) => Number(d.slice(5, 7))));
+  const winter = [1, 2, 3].some((m) => months.has(m)) && [10, 11, 12].some((m) => months.has(m));
+  if (days.length > 0 && !winter) {
+    days.sort();
+    return { startDate: days[0], ...(days.at(-1) !== days[0] ? { endDate: days.at(-1) } : {}) };
+  }
   return { startDate: series.season };
 }
 

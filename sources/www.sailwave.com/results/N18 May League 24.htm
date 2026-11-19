@@ -1,0 +1,632 @@
+
+
+
+<!doctype html>
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+
+<title>Sailwave results for National 18 Lowflow May League 2024 at Royal Cork Yacht Club 2024</title>
+
+<style type="text/css">
+body {font: 72% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
+td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+p {text-align: center;}
+th {background-color: #aaf;}
+.contents {text-align: left; margin-left: 20%;}
+.even {background-color: #bbf;}
+.odd {background-color: #ddf;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+table.headertable {border: 0px;}
+table.headertable td{border: 0px;}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=HighlightDiscards
+//  dependencies=jQuery
+//  description=Highlight discard scores in summary tables where discards are in ().
+//  author=Jon Eskdale
+//  date=2018-11-11
+//  version=1.1
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var discardSelector = '.summaryrace';
+var discardText     = /\b\)/;
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var discardColour   = '#f2f2f2';
+
+// create array of race column numbers for first table (summarytable)
+var ths = document.getElementsByTagName('col');
+var column =[];
+for (var i=0; i<ths.length; i++) {
+        if (ths[i].classList[0] === "race") {
+                column.push(i);
+        } else {
+                if (column.length !=0) {
+                        break;
+                }
+        }
+}
+//console.log(column);
+
+//  Set a class of summaryrace for all race cells in summary table body
+//
+for (var i=0; i<column.length; i++) {
+        $(".summarytable tbody tr td:nth-child(" + (column[i]+1) +")").addClass("summaryrace");
+}
+
+// Change the background color for cells with class of summaryrace and that match regular expression text
+$(function () {
+
+  $(discardSelector).filter(function() {
+    return discardText.test($(this).text());
+  }).css("background", discardColour);
+
+});
+});
+//
+//  name=HighlightWins3v3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2016-07-04
+//  version=3.0  For use with Sailwave from V2.22.x
+//  Requires the following lines in the Results.htm file (Results.htm is in the Templates directory)
+//  string.set("summary.col.race.rank1.td",   "rank1")
+//  string.set("summary.col.race.rank2.td",   "rank2")
+//  string.set("summary.col.race.rank3.td",   "rank3")
+
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var selectorRank1 = '.rank1';
+var selectorRank2 = '.rank2';
+var selectorRank3 = '.rank3';
+
+// Results with these codes will not get highlighted add or remove codes to your choice
+var ignoreText   = /^(?!.*\b(DNC|DNF|DNS|OCS|BFD|UFD|RET|DSQ|DGM|DNE)\b).*/i
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+
+
+// Change the background color for cells with class of rank1-3 and don't have a code specified
+$(function () {
+
+  $(selectorRank1).filter(function() {
+    return ignoreText.test($(this).text());
+  }).css("background", winsColour);
+  $(selectorRank2).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", twoColour);
+  $(selectorRank3).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
+//
+//  name=Image for Background
+//  dependencies=jQuery
+//  description=Apply a background image to results.
+//  author=Jon Eskdale
+//  date=2020-11-30
+//  version=1.0
+//  url=https://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  For documentation see https://www.sailwave.com/image-background-effect
+//
+
+$(document).ready(function() {
+    // This is the default image if nothing specified
+    var src = "https://www.sailwave.com/download/images/defaultBG.jpg";
+    $('p.seriesnotes').contents().filter(function(){
+        return this.nodeType == 8;
+    }).each(function(i, e){
+        if (e.nodeValue.substring(0,2) == 'BG') {
+            src = (e.nodeValue.substring(2));
+        };
+    });
+    $('body').css({'backgroundImage': 'url('+src+')',
+                   'background-repeat': 'no-repeat',
+                   'background-size': 'cover',
+                   'background-attachment': 'fixed'
+    });
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+</header>
+<table class="headertable" cellspacing="0" width="100%" cellpadding="0" border="0">
+<tbody>
+<div id="wrap">
+
+<tr>
+<td width="30%">
+<img style="display:block; height:100px;"  src="https://i.imgur.com/P7qsOn4.jpeg" alt="venue burgee" />
+</td>
+
+<td width="40%" align="center">
+<h1>National 18 Lowflow May League 2024</h1>
+<h2>Royal Cork Yacht Club</h2>
+</td>
+
+<td width="30%">
+<img style="display:block; height:100px;" src="https://i.imgur.com/P7qsOn4.jpeg" alt="event burgee" align="right" />
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are final as of  8:57 on June  6, 2024</h3>
+<h3 class="summarytitle">Overall</h3>
+<div class="caption summarycaption">Sailed: 15, Discards: 3, To count: 12, Entries: 15, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="21">
+<col class="rank" />
+<col class="boat" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Boat</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>01st May Race 1</th>
+<th>01st May Race 2</th>
+<th>01st May Race 3</th>
+<th>08th May Race 4</th>
+<th>08th May Race 5</th>
+<th>08th May Race 6</th>
+<th>15th May Race 7</th>
+<th>15th May Race 8</th>
+<th>15th May Race 9</th>
+<th>22nd May Race 10</th>
+<th>22nd May Race 11</th>
+<th>22nd May Race 12</th>
+<th>29th May Race 13</th>
+<th>29th May Race 14</th>
+<th>29th May Race 15</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>Howlin' Mad</td>
+<td>407</td>
+<td>Alex Barry</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">(3.0)</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">(3.0)</td>
+<td>(9.0 RET)</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td>29.0</td>
+<td>14.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>Peaky Blinders</td>
+<td>429</td>
+<td>Nick Walsh</td>
+<td>(5.0)</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>(8.0)</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>(8.0)</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>47.0</td>
+<td>26.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>Nacho Boat</td>
+<td>41</td>
+<td>Charles Dwyer</td>
+<td>9.0</td>
+<td class="rank3">3.0</td>
+<td>6.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td class="rank2">2.0</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>5.0</td>
+<td class="rank2">2.0</td>
+<td class="rank3">3.0</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>102.0</td>
+<td>54.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>Shuck'em</td>
+<td>409</td>
+<td>Jamie Dwyer</td>
+<td>8.0</td>
+<td>7.0</td>
+<td>9.0</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>9.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>7.0</td>
+<td>5.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>110.0</td>
+<td>62.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>The Bunty</td>
+<td>404</td>
+<td>Mark O'Donovan</td>
+<td class="rank3">3.0</td>
+<td>9.0</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>5.0</td>
+<td>6.0</td>
+<td class="rank3">3.0</td>
+<td>7.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>114.0</td>
+<td>66.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>Ball 'n Chain</td>
+<td>426</td>
+<td>Davey O'Connell</td>
+<td>10.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>4.0</td>
+<td>8.0</td>
+<td>8.5</td>
+<td>6.0</td>
+<td>8.0</td>
+<td>7.0</td>
+<td>4.0</td>
+<td>6.0</td>
+<td>6.0 RET</td>
+<td>128.5</td>
+<td>80.5</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>Blacklist</td>
+<td>423</td>
+<td>Rory Fitzpatrick/Colin Chapman</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>7.0 RET</td>
+<td>6.0</td>
+<td>5.0</td>
+<td>7.0</td>
+<td>10.0</td>
+<td>4.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>141.0</td>
+<td>93.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>8th</td>
+<td>No Name</td>
+<td>422</td>
+<td>Andrew Woodward</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>10.0</td>
+<td>9.0 RET</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td class="rank1">1.0</td>
+<td>5.0</td>
+<td class="rank3">3.0</td>
+<td>150.0</td>
+<td>102.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>Puss 'n Boots</td>
+<td>402</td>
+<td>Peter O'Donovan</td>
+<td>6.0</td>
+<td>10.0</td>
+<td>12.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td class="rank3">3.0</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>11.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>157.0</td>
+<td>109.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
+<td>&nbsp;</td>
+<td>410</td>
+<td>Harry Prichard</td>
+<td>7.0</td>
+<td>5.0</td>
+<td>8.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>8.5</td>
+<td class="rank3">3.0</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>171.5</td>
+<td>123.5</td>
+</tr>
+<tr class="odd summaryrow">
+<td>11th</td>
+<td>Honey Badger</td>
+<td>414</td>
+<td>Adam McCarthy</td>
+<td>4.0</td>
+<td>8.0</td>
+<td class="rank2">2.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>6.0</td>
+<td>4.0</td>
+<td>7.0</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>175.0</td>
+<td>127.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>12th</td>
+<td>Satoshi</td>
+<td>418</td>
+<td>Stewart Hosford</td>
+<td>12.0</td>
+<td>11.0</td>
+<td>11.0</td>
+<td>5.0</td>
+<td>7.0</td>
+<td>7.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>197.0</td>
+<td>149.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>13th</td>
+<td>Herby</td>
+<td>415</td>
+<td>Colin Barry</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>6.0</td>
+<td class="rank3">3.0</td>
+<td>4.0</td>
+<td>205.0</td>
+<td>157.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>14th</td>
+<td>Samhain</td>
+<td>411</td>
+<td>Mathieu Peretti</td>
+<td>11.0</td>
+<td>12.0</td>
+<td>10.0</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>225.0</td>
+<td>177.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>15th</td>
+<td>D'Good D'Bad n D'Ugly</td>
+<td>363</td>
+<td>Chris Bateman</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>(16.0 DNC)</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>9.0</td>
+<td>12.0</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>16.0 DNC</td>
+<td>229.0</td>
+<td>181.0</td>
+</tr>
+</tbody>
+</table>
+
+<p class="hardleft"><a href="http://www.royalcork.com">www.royalcork.com</a><br /><a href="mailto:info@royalcork.com">info@royalcork.com</a></p>
+<p class="hardright"><a href="http://www.national18.com">www.national18.com</a><br /><a href="mailto:classcaptain@national18.ie">classcaptain@national18.ie</a></p>
+<p>Sailwave Scoring Software 2.30.02<br /><a href="https://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+

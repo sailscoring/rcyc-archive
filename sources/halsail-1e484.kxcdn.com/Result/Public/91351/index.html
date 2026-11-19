@@ -1,0 +1,181 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HalSail sailing scoring</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Hal sailing regatta results and scoring app for all devices including tablets and phones. Online sailing results calculator. Sailing scoring app." />
+    <meta name="theme-color" content="#2196f3" />
+
+    
+    
+
+    
+    <link href="/Bundles/Hal_StyleBundle?v=cHuzNNwV4_ru9tQ5fkzAHomJpv3psVX1vTzt3Uv9Z9E1" rel="stylesheet"/>
+
+
+    
+    
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2N7K91KX4L"></script>
+    <script src="/Scripts/BS5/bootstrap.bundle.min.js"></script>
+    <script src="/Bundles/HalEarly_ScriptBundle?v=j7EVPdURn8Ds-piyG0P8MNNmHqi3bY_afkglyKdwWLc1"></script>
+
+
+</head>
+
+<body>
+    
+    <div id="containertop" class="container-xxl">
+
+        <div class="halPanel" id="body">
+            
+
+        <div class="row">
+            <div class="col text-center">
+                <h2>Message about scoring for this series</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Cannot find the series for this request</p>
+            </div>
+        </div>
+
+            <span style="clear: both; display: block;"></span>
+        </div>
+
+        <div id="containerbottom" class="halFooterPanel d-print-none">
+            <a id="halfoot"></a>
+            <div class="float-start d-sm-inline-block">
+<a class="d-print-none btn-sm btn-outline-primary fs-5" data-bs-toggle="tooltip" href="/" title="Go to home page"><i class="bi-house" tabindex="-1"></i></a>                    &nbsp;
+                <div class="d-none d-lg-inline-block">
+                    &nbsp;<i class="bi-c-circle-fill" style="cursor: pointer;"></i>&nbsp;2026 - HalSail Ltd. Site code updated on 03 November 2026 at 07:34:12
+                </div>
+            </div>
+            <div class="float-end">
+                <button id="btnPrint" type="button" class="btn btn-sm btn-light d-none d-md-inline-block" title="Print this page" data-bs-toggle="tooltip">
+                    <i class="bi-printer-fill" style="cursor: pointer;"></i>
+                </button>
+            </div>
+            <span style="clear: both; display: block;"></span>
+        </div>
+
+        <div class="halFooterPanel d-none d-print-block">
+            <div id="logorow" class="row ">
+                <div class="col-2 text-start">
+                    <img src="/Images/Logos/HalLogo32x52.png" alt="logo" style="max-height: 16px;" />
+                </div>
+                <div class="col text-center">
+                    HalSail<span id="spanLayoutPrintDateTime"></span>
+                </div>
+                <div class="col-2 text-end">
+                    <img src="/Images/Logos/HalLogo32x52.png" alt="logo" style="max-height: 16px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="HalModal" class="modal" role="dialog">
+        
+    </div>
+
+    <div id="HalModalHelp" class="modal" role="dialog" data-bs-backdrop="static" style="z-index: 2000;">
+        
+    </div>
+
+    <div id="HalModalError" class="modal" role="dialog" style="z-index: 2500;">
+        
+    </div>
+
+    <div id="HalModalWait" class="modal" role="dialog" data-bs-backdrop="static">
+        
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <span><img alt="Loading" src="/Images/Loading/SpinnerSecondary-1s-200px.svg"></img></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="halsailLogoffModal" class="modal" role="dialog" data-bs-backdrop="static">
+        
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header"><div class="container-fluid"><div class="row"><div class="col"><h3 class="modal-title">Warning: you have not used this page for almost half an hour</h3></div><div class="col-1"><i data-bs-dismiss="modal" style="color: var(--bs-danger);"><i class="fs-3 bi-x-circle-fill" style="cursor: pointer;"></i></i></div></div></div></div>
+                <div class="modal-body text-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col" style="border: 1px solid #999; padding: 0;">
+                                <div id="logoffProgressBar" class="progress-bar progress-bar-warning" role="progressbar" style="width: 0;">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="largespacer"></div>
+                        <div class="row">
+                            <div class="col">
+                                You will be logged off unless you refresh the page.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<form action="/Account/LogOff" class="d-none" id="frmLogoff" method="post"><input name="__RequestVerificationToken" type="hidden" value="hkc1cqdgVE3Y9vuKB5GBAqp79lCixixGwnZ21O1kmYcvAPz68B-tA_W3ZkfKdJq4z5Its-cnSRnWaYTvYr5HKgXoBCbUOJpkqP5jBjs1lW81" /></form>
+</body>
+
+
+
+<script src="/Bundles/HalLate_ScriptBundle?v=LwlZDXGE2TYOzw5mi3l6P5QlGtc_wOxLGb5kgBsj7Lg1"></script>
+
+
+
+
+
+
+<script>
+    // Logout if the authentication cookie is about to expire
+    var msecsToLogoff = 25000;  // Give 25 seconds warning of logging off.
+    var logoffMsecs = msecsToLogoff;
+
+    function checkTimeout() {
+        // Check whether the user is inactive and should be timed out.
+        $.ajax("/Account/_CheckTimeout").done(function (data) {
+            var secondsToGo = parseInt(data);
+            if (secondsToGo >= 0) {
+                // NB. if secondsToGo is < 0 the user is not logged in.
+                if (secondsToGo <= 120) {
+                    // Less than 2 minutes to go before user is logged out by the system.
+                    setInterval(updateLogoffProgressBar, 1000);
+                    $("#halsailLogoffModal").modal("show");
+                } else {
+                    // Check again in 30 seconds.
+                    setTimeout(checkTimeout, 30000);
+                }
+            }
+        });
+    }
+
+    function updateLogoffProgressBar() {
+        var percentToGo = (100 - 100 * logoffMsecs / msecsToLogoff).toFixed(0);
+        $("#logoffProgressBar").attr("style", "width: " + percentToGo + "%;");
+        logoffMsecs = logoffMsecs - 1000;
+        if (logoffMsecs <= 0) { $("#frmLogoff").submit(); }
+    }
+
+    checkTimeout();
+</script>
+</html>

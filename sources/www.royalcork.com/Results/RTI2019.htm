@@ -1,0 +1,1070 @@
+
+
+
+<!doctype html>
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+
+<title>Sailwave results for SPONSER June League at Royal Cork Yacht Club 2019</title>
+
+<style type="text/css">
+body {font: 72% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
+td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+p {text-align: center;}
+th {background-color: #aaf;}
+.contents {text-align: left; margin-left: 20%;}
+.even {background-color: #bbf;}
+.odd {background-color: #ddf;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=ScoredSeperatelyMatrix.js
+//  dependencies=
+//  description=Shows the result tables as a matrix if they have been scored separately.
+//  Original author=Colin Jenkins
+//  url=http://op12no2.me
+//  email=op12no2@gmail.com
+//  V2 by Jon Eskdale
+//  email=jon@sailwave.com
+//  version=2.0
+//  date=2018-06-15
+
+//
+//  Please note that this effect only works when more then one or more
+//  group (e.g. fleet) has been scored separately.  There may be some
+//  other limitations.  Footers and notes are removed.  Burgees are
+//  consolidated.
+//
+
+$.fn.exists = function () {
+    return this.length !== 0;
+}
+
+function showcodes () {
+  $('h3.codestitle').fadeIn('slow');
+  $('table.codestable').fadeIn('slow');
+}
+
+function showprizes () {
+  $('h3.prizestitle').show();
+  $('table.prizestable').show();
+}
+
+function showsummary (f) {
+  hideall();
+  $(d.sum[f].title).show();
+  $(d.sum[f].caption).show();
+  $(d.sum[f].table).fadeIn('slow');
+  showcodes()
+}
+
+function showrace (f,r) {
+  hideall();
+  showcodes()
+  $(d.sum[f].races[r].title).show();
+  $(d.sum[f].races[r].caption).show();
+  $(d.sum[f].races[r].table).fadeIn('slow');
+}
+
+function hideall () {
+  $('h3.prizestitle').hide();
+  $('table.prizestable').hide();
+  hideinit();
+}
+function hideinit () {
+  $('h3.codestitle').hide();
+  $('table.codestable').hide();
+  $('h3.summarytitle').hide();
+  $('div.summarycaption').hide();
+  $('table.summarytable').hide();
+  $('h3.racetitle').hide();
+  $('div.racecaption').hide();
+  $('table.racetable').hide();
+}
+
+$(function() {
+  $('img').removeClass('hardleft');
+  $('img').removeClass('hardright');
+  $('img.hardright').remove();
+  $('p.hardright').remove();
+  $('p.hardleft').remove();
+  $('div.contents').remove();
+  $('p.seriesnotes').remove();
+  $('p.racenotes').remove();
+
+  d = {};
+
+        minrt = 10000;
+        maxrt = 0;
+        d.sum = [];
+  $('h3.summarytitle').each(function(index) {
+    if (!d.sum[index])
+      d.sum[index] = {};
+    d.sum[index].title = this;
+    console.log($(d.sum[index].title).text());
+    if ($(this).attr('id'))
+      d.sum[index].id = $(this).attr('id').replace(/summary/gi,'');
+    else
+      d.sum[index].id = 'overall';
+    //console.log($(this).attr('id'));
+    //console.log(d.sum[index].id);
+    d.sum[index].caption = $(this).next();
+    d.sum[index].table   = $(this).next().next();
+    maxraces = 100; //hack $('h3.racetitle').size();
+    minr = 10000;
+    maxr = 0;
+    //console.log(maxraces);
+    d.sum[index].races = [];
+    for (var i=0; i<maxraces; i++) {
+      var r = i + 1;
+      var id = '#r' + r + d.sum[index].id;
+      //console.log(id);
+      if ($(id).exists()) {
+        if (r > maxr)
+          maxr = r;
+                  if (r > maxrt)
+                maxrt = r;
+        if (r < minr)
+          minr = r;
+              if (r < minrt)
+                        minrt = r;
+        d.sum[index].races[r] = {};
+        d.sum[index].races[r].raceno = r;
+        d.sum[index].races[r].title = $(id);
+        d.sum[index].races[r].caption = $(id).next();
+        d.sum[index].races[r].table = $(id).next().next();
+      }
+    }
+  });
+  $('a.racelink').each(function(index) {
+    $(this).parent().html($(this).text());
+  });
+
+  hideinit();
+
+  h = '<div style="margin: 40px auto 20px; auto;" id="dynamic"><table>';
+
+  for (var f=0; f<d.sum.length; f++) {
+    var fleet = d.sum[f];
+    var races = d.sum[f].races;
+    h += '<tr><td>' + $(fleet.title).text() + '</td>';
+    var linktitle = 'Overall';
+    h += '<td><a href="#" onclick="showsummary(' + f + ');">' + linktitle + '</a></td>';
+    for (var r=minrt; r<=maxrt; r++) {
+          if (races[r]) {
+      var linktitle = $.trim(($(races[r].title).text().split('-'))[0]);
+      h += '<td>';
+      if (races[r])
+        h += '<a href="#" onclick="showrace(' + f + ',' + r + ');">' + linktitle + '</a>';
+      else
+        h += '&nbsp;';
+      h += '</td>';
+          }
+    }
+    h += '</tr>';
+  }
+
+  //h += '<tr><td><a href="#" onclick="showcodes();">Scoring codes</a></td></tr>';
+  //h += '<tr><td><a href="#" onclick="showprizes();">Prizes</a></td></tr>';
+  h += '</table></div>';
+
+  $('h3.seriestitle').append(h);
+
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="wrap">
+
+<img class="hardleft"  src="https://www.royalcork.com/Results/2018/Results/RCYC.jpg" alt="venue burgee" />
+
+<h1>SPONSER June League</h1>
+<h2>Royal Cork Yacht Club</h2>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are provisional as of 10:08 on June 28, 2019</h3>
+<div class="contents">Contents
+<ul>
+<li><a href="#summaryclub_echo_spin">CLUB ECHO SPIN Division</a></li>
+<li><a href="#summaryirc_spin">IRC SPIN Division</a></li>
+<li><a href="#summaryclub_echo_ws">CLUB ECHO WS Division</a></li>
+<li><a href="#summaryirc_ws">IRC WS Division</a></li>
+</ul>
+</div>
+<h3 class="summarytitle" id="summaryclub_echo_spin">CLUB ECHO SPIN Division</h3>
+<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: IRC, Entries: 4, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="12">
+<col class="rank" />
+<col class="fleet" />
+<col class="division" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>Division</th>
+<th>Boat Name</th>
+<th>Boat Class</th>
+<th>Sail Number</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Handicap</th>
+<th><a class="racelink" href="#r1club_echo_spin">Round the Island</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>SPIN 2</td>
+<td>CLUB ECHO SPIN</td>
+<td>Bad Company</td>
+<td>Sunfast 32</td>
+<td>IRL16859</td>
+<td>RCYC</td>
+<td>Desmond/Ivers/Deasy</td>
+<td>0.904</td>
+<td class="rank1">1.0</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>SPIN 1</td>
+<td>CLUB ECHO SPIN</td>
+<td>Saxon Senator</td>
+<td>X37</td>
+<td>IRL1447</td>
+<td>RCYC</td>
+<td>No Online Entry</td>
+<td>0.970</td>
+<td class="rank2">2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>SPIN 1</td>
+<td>CLUB ECHO SPIN</td>
+<td>Coracle IV</td>
+<td>Olson 30</td>
+<td>IRL77883</td>
+<td>RCYC</td>
+<td>Kieran Collins</td>
+<td>0.990</td>
+<td class="rank3">3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>SPIN 1</td>
+<td>CLUB ECHO SPIN</td>
+<td>JellyBaby</td>
+<td>J109</td>
+<td>IRL9609</td>
+<td>RCYC</td>
+<td>Jones Family</td>
+<td>1.023</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="summarytitle" id="summaryirc_spin">IRC SPIN Division</h3>
+<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: IRC, Entries: 4, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="12">
+<col class="rank" />
+<col class="fleet" />
+<col class="division" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>Division</th>
+<th>Boat Name</th>
+<th>Boat Class</th>
+<th>Sail Number</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Handicap</th>
+<th><a class="racelink" href="#r1irc_spin">Round the Island</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>SPIN 2</td>
+<td>IRC SPIN</td>
+<td>Bad Company</td>
+<td>Sunfast 32</td>
+<td>IRL16859</td>
+<td>RCYC</td>
+<td>Desmond/Ivers/Deasy</td>
+<td>0.932</td>
+<td class="rank1">1.0</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>SPIN 1</td>
+<td>IRC SPIN</td>
+<td>Coracle IV</td>
+<td>Olson 30</td>
+<td>IRL77883</td>
+<td>RCYC</td>
+<td>Kieran Collins</td>
+<td>0.966</td>
+<td class="rank2">2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>SPIN 1</td>
+<td>IRC SPIN</td>
+<td>JellyBaby</td>
+<td>J109</td>
+<td>IRL9609</td>
+<td>RCYC</td>
+<td>Jones Family</td>
+<td>1.010</td>
+<td class="rank3">3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>SPIN 1</td>
+<td>IRC SPIN</td>
+<td>Saxon Senator</td>
+<td>X37</td>
+<td>IRL1447</td>
+<td>RCYC</td>
+<td>No Online Entry</td>
+<td>1.035</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="summarytitle" id="summaryclub_echo_ws">CLUB ECHO WS Division</h3>
+<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: IRC, Entries: 4, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="12">
+<col class="rank" />
+<col class="fleet" />
+<col class="division" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>Division</th>
+<th>Boat Name</th>
+<th>Boat Class</th>
+<th>Sail Number</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Handicap</th>
+<th><a class="racelink" href="#r1club_echo_ws">Round the Island</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>WS</td>
+<td>CLUB ECHO WS</td>
+<td>Luas</td>
+<td>HB 31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.780</td>
+<td class="rank1">1.0</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>WS</td>
+<td>CLUB ECHO WS</td>
+<td>Exhale</td>
+<td>&nbsp;</td>
+<td>8991</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>.910</td>
+<td class="rank2">2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>WS</td>
+<td>CLUB ECHO WS</td>
+<td>No Gnomes</td>
+<td>Nicholson 33</td>
+<td>IRL78</td>
+<td>RCYC</td>
+<td>Leonard Donnery</td>
+<td>0.796</td>
+<td class="rank3">3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>WS</td>
+<td>CLUB ECHO WS</td>
+<td>Loch Greine</td>
+<td>Hanse 311</td>
+<td>IRL1033</td>
+<td>RCYC</td>
+<td>Tom O'Mahony</td>
+<td>0.818</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="summarytitle" id="summaryirc_ws">IRC WS Division</h3>
+<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: IRC, Entries: 4, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="12">
+<col class="rank" />
+<col class="fleet" />
+<col class="division" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>Division</th>
+<th>Boat Name</th>
+<th>Boat Class</th>
+<th>Sail Number</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Handicap</th>
+<th><a class="racelink" href="#r1irc_ws">Round the Island</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>WS</td>
+<td>IRC WS</td>
+<td>Exhale</td>
+<td>&nbsp;</td>
+<td>8991</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>0.997</td>
+<td class="rank1">1.0</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>WS</td>
+<td>IRC WS</td>
+<td>Luas</td>
+<td>HB 31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.907</td>
+<td class="rank2">2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>WS</td>
+<td>IRC WS</td>
+<td>No Gnomes</td>
+<td>Nicholson 33</td>
+<td>IRL78</td>
+<td>RCYC</td>
+<td>Leonard Donnery</td>
+<td>0.896</td>
+<td class="rank3">3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>WS</td>
+<td>IRC WS</td>
+<td>Loch Greine</td>
+<td>Hanse 311</td>
+<td>IRL1033</td>
+<td>RCYC</td>
+<td>Tom O'Mahony</td>
+<td>0.907</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1club_echo_spin">Round the Island - CLUB ECHO SPIN Division&nbsp;-&nbsp;15th June&nbsp;at&nbsp;1500</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1500
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="fleet" />
+<col class="division" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>Division</th>
+<th>Boat Name</th>
+<th>Boat Class</th>
+<th>Sail Number</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Handicap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>SPIN 2</td>
+<td>CLUB ECHO SPIN</td>
+<td>Bad Company</td>
+<td>Sunfast 32</td>
+<td>IRL16859</td>
+<td>RCYC</td>
+<td>Desmond/Ivers/Deasy</td>
+<td>0.904</td>
+<td>1500</td>
+<td>16:41:50</td>
+<td>1:41:50</td>
+<td>1:32:03</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>SPIN 1</td>
+<td>CLUB ECHO SPIN</td>
+<td>Saxon Senator</td>
+<td>X37</td>
+<td>IRL1447</td>
+<td>RCYC</td>
+<td>No Online Entry</td>
+<td>0.970</td>
+<td>1500</td>
+<td>16:38:10</td>
+<td>1:38:10</td>
+<td>1:35:13</td>
+<td>0:03:16</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>SPIN 1</td>
+<td>CLUB ECHO SPIN</td>
+<td>Coracle IV</td>
+<td>Olson 30</td>
+<td>IRL77883</td>
+<td>RCYC</td>
+<td>Kieran Collins</td>
+<td>0.990</td>
+<td>1500</td>
+<td>16:39:40</td>
+<td>1:39:40</td>
+<td>1:38:40</td>
+<td>0:06:41</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>SPIN 1</td>
+<td>CLUB ECHO SPIN</td>
+<td>JellyBaby</td>
+<td>J109</td>
+<td>IRL9609</td>
+<td>RCYC</td>
+<td>Jones Family</td>
+<td>1.023</td>
+<td>1500</td>
+<td>16:36:32</td>
+<td>1:36:32</td>
+<td>1:38:45</td>
+<td>0:06:33</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1irc_spin">Round the Island - IRC SPIN Division&nbsp;-&nbsp;15th June&nbsp;at&nbsp;1500</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1500
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="fleet" />
+<col class="division" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>Division</th>
+<th>Boat Name</th>
+<th>Boat Class</th>
+<th>Sail Number</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Handicap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>SPIN 2</td>
+<td>IRC SPIN</td>
+<td>Bad Company</td>
+<td>Sunfast 32</td>
+<td>IRL16859</td>
+<td>RCYC</td>
+<td>Desmond/Ivers/Deasy</td>
+<td>0.932</td>
+<td>1500</td>
+<td>16:41:50</td>
+<td>1:41:50</td>
+<td>1:34:55</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>SPIN 1</td>
+<td>IRC SPIN</td>
+<td>Coracle IV</td>
+<td>Olson 30</td>
+<td>IRL77883</td>
+<td>RCYC</td>
+<td>Kieran Collins</td>
+<td>0.966</td>
+<td>1500</td>
+<td>16:39:40</td>
+<td>1:39:40</td>
+<td>1:36:17</td>
+<td>0:01:25</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>SPIN 1</td>
+<td>IRC SPIN</td>
+<td>JellyBaby</td>
+<td>J109</td>
+<td>IRL9609</td>
+<td>RCYC</td>
+<td>Jones Family</td>
+<td>1.010</td>
+<td>1500</td>
+<td>16:36:32</td>
+<td>1:36:32</td>
+<td>1:37:30</td>
+<td>0:02:34</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>SPIN 1</td>
+<td>IRC SPIN</td>
+<td>Saxon Senator</td>
+<td>X37</td>
+<td>IRL1447</td>
+<td>RCYC</td>
+<td>No Online Entry</td>
+<td>1.035</td>
+<td>1500</td>
+<td>16:38:10</td>
+<td>1:38:10</td>
+<td>1:41:36</td>
+<td>0:06:28</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1club_echo_ws">Round the Island - CLUB ECHO WS Division&nbsp;-&nbsp;15th June&nbsp;at&nbsp;1500</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Finish time, Time: 1500
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="fleet" />
+<col class="division" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>Division</th>
+<th>Boat Name</th>
+<th>Boat Class</th>
+<th>Sail Number</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Handicap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>WS</td>
+<td>CLUB ECHO WS</td>
+<td>Luas</td>
+<td>HB 31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.780</td>
+<td>1500</td>
+<td>16:52:48</td>
+<td>1:52:48</td>
+<td>1:27:59</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>WS</td>
+<td>CLUB ECHO WS</td>
+<td>Exhale</td>
+<td>&nbsp;</td>
+<td>8991</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>.910</td>
+<td>1500</td>
+<td>16:40:09</td>
+<td>1:40:09</td>
+<td>1:31:08</td>
+<td>0:03:28</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>WS</td>
+<td>CLUB ECHO WS</td>
+<td>No Gnomes</td>
+<td>Nicholson 33</td>
+<td>IRL78</td>
+<td>RCYC</td>
+<td>Leonard Donnery</td>
+<td>0.796</td>
+<td>1500</td>
+<td>16:58:59</td>
+<td>1:58:59</td>
+<td>1:34:43</td>
+<td>0:08:27</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>WS</td>
+<td>CLUB ECHO WS</td>
+<td>Loch Greine</td>
+<td>Hanse 311</td>
+<td>IRL1033</td>
+<td>RCYC</td>
+<td>Tom O'Mahony</td>
+<td>0.818</td>
+<td>1500</td>
+<td>17:02:55</td>
+<td>2:02:55</td>
+<td>1:40:33</td>
+<td>0:15:21</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1irc_ws">Round the Island - IRC WS Division&nbsp;-&nbsp;15th June&nbsp;at&nbsp;1500</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Finish time, Time: 1500
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="fleet" />
+<col class="division" />
+<col class="boat" />
+<col class="class" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>Division</th>
+<th>Boat Name</th>
+<th>Boat Class</th>
+<th>Sail Number</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Handicap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>WS</td>
+<td>IRC WS</td>
+<td>Exhale</td>
+<td>&nbsp;</td>
+<td>8991</td>
+<td>RCYC</td>
+<td>Derry Good</td>
+<td>0.997</td>
+<td>1500</td>
+<td>16:40:09</td>
+<td>1:40:09</td>
+<td>1:39:51</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>WS</td>
+<td>IRC WS</td>
+<td>Luas</td>
+<td>HB 31</td>
+<td>IRL5383</td>
+<td>RCYC</td>
+<td>Sean Hanley</td>
+<td>0.907</td>
+<td>1500</td>
+<td>16:52:48</td>
+<td>1:52:48</td>
+<td>1:42:19</td>
+<td>0:02:43</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>WS</td>
+<td>IRC WS</td>
+<td>No Gnomes</td>
+<td>Nicholson 33</td>
+<td>IRL78</td>
+<td>RCYC</td>
+<td>Leonard Donnery</td>
+<td>0.896</td>
+<td>1500</td>
+<td>16:58:59</td>
+<td>1:58:59</td>
+<td>1:46:37</td>
+<td>0:07:33</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>WS</td>
+<td>IRC WS</td>
+<td>Loch Greine</td>
+<td>Hanse 311</td>
+<td>IRL1033</td>
+<td>RCYC</td>
+<td>Tom O'Mahony</td>
+<td>0.907</td>
+<td>1500</td>
+<td>17:02:55</td>
+<td>2:02:55</td>
+<td>1:51:29</td>
+<td>0:12:50</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+
+<p class="hardleft"><a href="http://"></a><br /><a href="mailto:"></a></p>
+<p class="hardright"><a href="http://"></a><br /><a href="mailto:"></a></p>
+<p>Sailwave Scoring Software 2.28.1<br /><a href="http://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+

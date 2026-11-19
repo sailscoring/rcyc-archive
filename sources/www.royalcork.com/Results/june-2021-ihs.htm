@@ -1,0 +1,976 @@
+
+
+
+<!doctype html>
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+
+<title>Sailwave results for June 2021 Friday IHS at Royal Cork Yacht Club 2021</title>
+
+<style type="text/css">
+body {font: 72% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
+td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+p {text-align: center;}
+th {background-color: #aaf;}
+.contents {text-align: left; margin-left: 20%;}
+.even {background-color: #bbf;}
+.odd {background-color: #ddf;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=ScoredSeperatelyMatrix.js
+//  dependencies=
+//  description=Shows the result tables as a matrix if they have been scored separately.
+//  author=Colin Jenkins
+//  version=1.0
+//  date=2015-07-27
+//  url=http://op12no2.me
+//  email=op12no2@gmail.com
+//  twitter=@op12no2
+//
+//  Please note that this effect only works when more then one or more
+//  group (e.g. fleet) has been scored separately.  There may be some
+//  other limitations.  Footers and notes are removed.  Burgees are
+//  consolidated.
+//
+
+$.fn.exists = function () {
+    return this.length !== 0;
+}
+
+function showcodes () {
+  $('h3.codestitle').fadeIn('slow');
+  $('table.codestable').fadeIn('slow');
+}
+
+function showprizes () {
+  $('h3.prizestitle').show();
+  $('table.prizestable').show();
+}
+
+function showsummary (f) {
+  hideall();
+  $(d.sum[f].title).show();
+  $(d.sum[f].caption).show();
+  $(d.sum[f].table).fadeIn('slow');
+  showcodes()
+}
+
+function showrace (f,r) {
+  hideall();
+  showcodes()
+  $(d.sum[f].races[r].title).show();
+  $(d.sum[f].races[r].caption).show();
+  $(d.sum[f].races[r].table).fadeIn('slow');
+}
+
+function hideall () {
+  $('h3.prizestitle').hide();
+  $('table.prizestable').hide();
+  hideinit();
+}
+function hideinit () {
+  $('h3.codestitle').hide();
+  $('table.codestable').hide();
+  $('h3.summarytitle').hide();
+  $('div.summarycaption').hide();
+  $('table.summarytable').hide();
+  $('h3.racetitle').hide();
+  $('div.racecaption').hide();
+  $('table.racetable').hide();
+}
+
+$(function() {
+  $('img').removeClass('hardleft');
+  $('img').removeClass('hardright');
+  $('img.hardright').remove();
+  $('p.hardright').remove();
+  $('p.hardleft').remove();
+  $('div.contents').remove();
+  $('p.seriesnotes').remove();
+  $('p.racenotes').remove();
+
+  d = {};
+
+  d.sum = [];
+  $('h3.summarytitle').each(function(index) {
+    if (!d.sum[index])
+      d.sum[index] = {};
+    d.sum[index].title = this;
+    console.log($(d.sum[index].title).text());
+    if ($(this).attr('id'))
+      d.sum[index].id = $(this).attr('id').replace(/summary/gi,'');
+    else
+      d.sum[index].id = 'overall';
+    //console.log($(this).attr('id'));
+    //console.log(d.sum[index].id);
+    d.sum[index].caption = $(this).next();
+    d.sum[index].table   = $(this).next().next();
+    maxraces = 100; //hack $('h3.racetitle').size();
+    minr = 10000;
+    maxr = 0;
+    //console.log(maxraces);
+    d.sum[index].races = [];
+    for (var i=0; i<maxraces; i++) {
+      var r = i + 1;
+      var id = '#r' + r + d.sum[index].id;
+      //console.log(id);
+      if ($(id).exists()) {
+        if (r > maxr)
+          maxr = r;
+        if (r < minr)
+          minr = r;
+        d.sum[index].races[r] = {};
+        d.sum[index].races[r].raceno = r;
+        d.sum[index].races[r].title = $(id);
+        d.sum[index].races[r].caption = $(id).next();
+        d.sum[index].races[r].table = $(id).next().next();
+      }
+    }
+  });
+  $('a.racelink').each(function(index) {
+    $(this).parent().html($(this).text());
+  });
+
+  hideinit();
+
+  h = '<div style="margin: 40px auto 20px; auto;" id="dynamic"><table>';
+
+  for (var f=0; f<d.sum.length; f++) {
+    var fleet = d.sum[f];
+    var races = d.sum[f].races;
+    h += '<tr><td>' + $(fleet.title).text() + '</td>';
+    var linktitle = 'Overall';
+    h += '<td><a href="#" onclick="showsummary(' + f + ');">' + linktitle + '</a></td>';
+    for (var r=minr; r<=maxr; r++) {
+      var linktitle = $.trim(($(races[r].title).text().split('-'))[0]);
+      h += '<td>';
+      if (races[r])
+        h += '<a href="#" onclick="showrace(' + f + ',' + r + ');">' + linktitle + '</a>';
+      else
+        h += '&nbsp;';
+      h += '</td>';
+    }
+    h += '</tr>';
+  }
+
+  //h += '<tr><td><a href="#" onclick="showcodes();">Scoring codes</a></td></tr>';
+  //h += '<tr><td><a href="#" onclick="showprizes();">Prizes</a></td></tr>';
+  h += '</table></div>';
+
+  $('h3.seriestitle').append(h);
+
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="wrap">
+
+<img class="hardright" src="https://www.royalcork.com/Results/2018/Results/RCYC.jpg" alt="event burgee" />
+<img class="hardleft"  src="https://www.royalcork.com/Results/2018/Results/RCYC.jpg" alt="venue burgee" />
+
+<h1>June 2021 Friday IHS</h1>
+<h2>Royal Cork Yacht Club</h2>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are final as of 19:16 on July 10, 2021</h3>
+<h3 class="summarytitle" id="summaryihs">IHS Division</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC4, Entries: 19, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="14">
+<col class="exclude" />
+<col class="rank" />
+<col class="division" />
+<col class="boat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+<col class="notes" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Division</th>
+<th>Boat</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Rating</th>
+<th>New Rating</th>
+<th><a class="racelink" href="#r1ihs">R1</a></th>
+<th><a class="racelink" href="#r2ihs">R2</a></th>
+<th>Total</th>
+<th>Nett</th>
+<th>IRC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IHS</td>
+<td>Thistle</td>
+<td>GBR1786Y</td>
+<td>RCYC</td>
+<td>Peter Webster</td>
+<td>.748</td>
+<td>0.840</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>.803</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>IHS</td>
+<td>Phaeton</td>
+<td>IRL7212</td>
+<td>RCYC</td>
+<td>Clive Dorothy</td>
+<td>.864</td>
+<td>0.903</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>IHS</td>
+<td>Kerensa</td>
+<td>IRL9341</td>
+<td>RCYC</td>
+<td>Eugene O Loughlin</td>
+<td>.821</td>
+<td>0.633</td>
+<td>7.0</td>
+<td>5.0</td>
+<td>12.0</td>
+<td>12.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>IHS</td>
+<td>North Star</td>
+<td>5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>1.03</td>
+<td>0.782</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>12.0</td>
+<td>12.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>IHS</td>
+<td>Magnet</td>
+<td>GBR9896</td>
+<td>RCYC</td>
+<td>&nbsp;</td>
+<td>0.897</td>
+<td>1.224</td>
+<td>20.0 DNC</td>
+<td class="rank1">1.0</td>
+<td>21.0</td>
+<td>21.0</td>
+<td>0.944</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>6th</td>
+<td>IHS</td>
+<td>Objection</td>
+<td>3330</td>
+<td>RCYC</td>
+<td>Kevin Murray</td>
+<td>1</td>
+<td>0.886</td>
+<td class="rank1">1.0</td>
+<td>20.0 DNC</td>
+<td>21.0</td>
+<td>21.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>7th</td>
+<td>IHS</td>
+<td>Roaring Forties</td>
+<td>IRL3276</td>
+<td>RCYC</td>
+<td>Clodagh O'Donovan</td>
+<td>1.008</td>
+<td>0.860</td>
+<td>20.0 DNC</td>
+<td>4.0</td>
+<td>24.0</td>
+<td>24.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>8th</td>
+<td>IHS</td>
+<td>Callisto</td>
+<td>IRL1252</td>
+<td>RCYC</td>
+<td>Simon Brewett</td>
+<td>.815</td>
+<td>0.720</td>
+<td>4.0</td>
+<td>20.0 DNC</td>
+<td>24.0</td>
+<td>24.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>9th</td>
+<td>IHS</td>
+<td>BigMc</td>
+<td>3492</td>
+<td>RCYC</td>
+<td>Celine McGrath</td>
+<td>.995</td>
+<td>0.863</td>
+<td>5.0</td>
+<td>20.0 DNC</td>
+<td>25.0</td>
+<td>25.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>10th</td>
+<td>IHS</td>
+<td>Plumbat</td>
+<td>IRL5689</td>
+<td>RCYC</td>
+<td>Roy Hanan Pat Barrett</td>
+<td>.930</td>
+<td>0.782</td>
+<td>20.0 DNC</td>
+<td>7.0</td>
+<td>27.0</td>
+<td>27.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>11th</td>
+<td>IHS</td>
+<td>Heroes & Villans</td>
+<td>IRL1772</td>
+<td>RCYC</td>
+<td>&nbsp;</td>
+<td>0.99</td>
+<td>0.918</td>
+<td>8.0</td>
+<td>20.0 DNC</td>
+<td>28.0</td>
+<td>28.0</td>
+<td>1.019</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>12th</td>
+<td>IHS</td>
+<td>Giggles</td>
+<td>3739</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>.825</td>
+<td>0.772</td>
+<td>9.0</td>
+<td>20.0 DNC</td>
+<td>29.0</td>
+<td>29.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>IHS</td>
+<td>Don't Dilly Dally</td>
+<td>952</td>
+<td>RCYC</td>
+<td>Michael McCann</td>
+<td>1.025</td>
+<td>0.959</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>40.0</td>
+<td>40.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>IHS</td>
+<td>Can you let the office know who yoy are</td>
+<td>1394</td>
+<td>RCYC</td>
+<td>Unknown</td>
+<td>1</td>
+<td>0.782</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>40.0</td>
+<td>40.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>IHS</td>
+<td>Wild Thing</td>
+<td>6882T</td>
+<td>RCYC</td>
+<td>Emma Neville</td>
+<td>1</td>
+<td>0.806</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>40.0</td>
+<td>40.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>IHS</td>
+<td>Fast Buck</td>
+<td>IRL9615</td>
+<td>RCYC</td>
+<td>John O Conor/John Hanley</td>
+<td>0.851</td>
+<td>0.768</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>40.0</td>
+<td>40.0</td>
+<td>0.889</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>IHS</td>
+<td>Orion</td>
+<td>IRL1265</td>
+<td>RCYC</td>
+<td>Liam O'Keeffe</td>
+<td>.792</td>
+<td>0.713</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>40.0</td>
+<td>40.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>IHS</td>
+<td>Scribbler II</td>
+<td>IRL4379</td>
+<td>RCYC</td>
+<td>Tom & Cormac McSweeney</td>
+<td>.91</td>
+<td>0.848</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>40.0</td>
+<td>40.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>13th</td>
+<td>IHS</td>
+<td>Jelly Baby</td>
+<td>IRL9609</td>
+<td>RCYC</td>
+<td>Brian Jones</td>
+<td>1.178</td>
+<td>1.049</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>40.0</td>
+<td>40.0</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1ihs">R1 - IHS Division</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 19:00:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="division" />
+<col class="boat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+<col class="notes" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Division</th>
+<th>Boat</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Rating</th>
+<th>New Rating</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+<th>IRC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IHS</td>
+<td>Objection</td>
+<td>3330</td>
+<td>RCYC</td>
+<td>Kevin Murray</td>
+<td>0.850</td>
+<td>0.886</td>
+<td>19:00:00</td>
+<td>20:03:38</td>
+<td>1:03:38</td>
+<td>0:54:05</td>
+<td>0:00:00</td>
+<td>1.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IHS</td>
+<td>Thistle</td>
+<td>GBR1786Y</td>
+<td>RCYC</td>
+<td>Peter Webster</td>
+<td>0.705</td>
+<td>0.840</td>
+<td>19:00:00</td>
+<td>20:18:01</td>
+<td>1:18:01</td>
+<td>0:55:00</td>
+<td>0:01:18</td>
+<td>2.0</td>
+<td>.803</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IHS</td>
+<td>Phaeton</td>
+<td>IRL7212</td>
+<td>RCYC</td>
+<td>Clive Dorothy</td>
+<td>0.794</td>
+<td>0.903</td>
+<td>19:00:00</td>
+<td>20:12:24</td>
+<td>1:12:24</td>
+<td>0:57:29</td>
+<td>0:04:17</td>
+<td>3.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IHS</td>
+<td>Callisto</td>
+<td>IRL1252</td>
+<td>RCYC</td>
+<td>Simon Brewett</td>
+<td>0.714</td>
+<td>0.720</td>
+<td>19:00:00</td>
+<td>20:20:51</td>
+<td>1:20:51</td>
+<td>0:57:44</td>
+<td>0:05:06</td>
+<td>4.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IHS</td>
+<td>BigMc</td>
+<td>3492</td>
+<td>RCYC</td>
+<td>Celine McGrath</td>
+<td>0.861</td>
+<td>0.863</td>
+<td>19:00:00</td>
+<td>20:07:49</td>
+<td>1:07:49</td>
+<td>0:58:23</td>
+<td>0:05:00</td>
+<td>5.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>IHS</td>
+<td>North Star</td>
+<td>5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.924</td>
+<td>0.782</td>
+<td>19:00:00</td>
+<td>20:03:25</td>
+<td>1:03:25</td>
+<td>0:58:36</td>
+<td>0:04:53</td>
+<td>6.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>IHS</td>
+<td>Kerensa</td>
+<td>IRL9341</td>
+<td>RCYC</td>
+<td>Eugene O Loughlin</td>
+<td>0.750</td>
+<td>0.633</td>
+<td>19:00:00</td>
+<td>20:21:12</td>
+<td>1:21:12</td>
+<td>1:00:54</td>
+<td>0:09:05</td>
+<td>7.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>IHS</td>
+<td>Heroes & Villans</td>
+<td>IRL1772</td>
+<td>RCYC</td>
+<td>&nbsp;</td>
+<td>0.946</td>
+<td>0.918</td>
+<td>19:00:00</td>
+<td>20:05:57</td>
+<td>1:05:57</td>
+<td>1:02:23</td>
+<td>0:08:46</td>
+<td>8.0</td>
+<td>1.019</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>IHS</td>
+<td>Giggles</td>
+<td>3739</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>0.809</td>
+<td>0.772</td>
+<td>19:00:00</td>
+<td>20:19:48</td>
+<td>1:19:48</td>
+<td>1:04:33</td>
+<td>0:12:57</td>
+<td>9.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2ihs">R2 - IHS Division</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 19:00:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="16">
+<col class="exclude" />
+<col class="rank" />
+<col class="division" />
+<col class="boat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+<col class="notes" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>Division</th>
+<th>Boat</th>
+<th>SailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>Rating</th>
+<th>New Rating</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+<th>IRC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IHS</td>
+<td>Magnet</td>
+<td>GBR9896</td>
+<td>RCYC</td>
+<td>&nbsp;</td>
+<td>0.924</td>
+<td>1.224</td>
+<td>19:00:00</td>
+<td>19:30:05</td>
+<td>0:30:05</td>
+<td>0:27:48</td>
+<td>0:00:00</td>
+<td>1.0</td>
+<td>0.944</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IHS</td>
+<td>Thistle</td>
+<td>GBR1786Y</td>
+<td>RCYC</td>
+<td>Peter Webster</td>
+<td>0.729</td>
+<td>0.840</td>
+<td>19:00:00</td>
+<td>19:48:10</td>
+<td>0:48:10</td>
+<td>0:35:07</td>
+<td>0:10:02</td>
+<td>2.0</td>
+<td>.803</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IHS</td>
+<td>Phaeton</td>
+<td>IRL7212</td>
+<td>RCYC</td>
+<td>Clive Dorothy</td>
+<td>0.802</td>
+<td>0.903</td>
+<td>19:00:00</td>
+<td>19:45:36</td>
+<td>0:45:36</td>
+<td>0:36:34</td>
+<td>0:10:56</td>
+<td>3.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IHS</td>
+<td>Roaring Forties</td>
+<td>IRL3276</td>
+<td>RCYC</td>
+<td>Clodagh O'Donovan</td>
+<td>0.977</td>
+<td>0.860</td>
+<td>19:00:00</td>
+<td>20:01:37</td>
+<td>1:01:37</td>
+<td>1:00:12</td>
+<td>0:33:10</td>
+<td>4.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IHS</td>
+<td>Kerensa</td>
+<td>IRL9341</td>
+<td>RCYC</td>
+<td>Eugene O Loughlin</td>
+<td>0.737</td>
+<td>0.633</td>
+<td>19:00:00</td>
+<td>20:26:45</td>
+<td>1:26:45</td>
+<td>1:03:56</td>
+<td>0:49:02</td>
+<td>5.0</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>IHS</td>
+<td>North Star</td>
+<td>5333</td>
+<td>RCYC</td>
+<td>Fiona Young</td>
+<td>0.925</td>
+<td>0.782</td>
+<td>19:00:00</td>
+<td>20:11:45</td>
+<td>1:11:45</td>
+<td>1:06:22</td>
+<td>0:41:42</td>
+<td>6.0</td>
+<td>Created from sailno wizard</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>IHS</td>
+<td>Plumbat</td>
+<td>IRL5689</td>
+<td>RCYC</td>
+<td>Roy Hanan Pat Barrett</td>
+<td>0.930</td>
+<td>0.782</td>
+<td>19:00:00</td>
+<td>20:12:12</td>
+<td>1:12:12</td>
+<td>1:07:09</td>
+<td>0:42:19</td>
+<td>7.0</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="codestitle">Scoring codes used</h3>
+<table class="codestable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="3"><col class="code" /><col class="description" />
+<col class="points" />
+</colgroup>
+<tr class="titlerow"><th>Code</th><th>Description</th>
+<th>Points</th>
+</tr>
+<tr class="odd coderow"><td>DNC</td><td>Did not come to the starting area</td>
+<td>20</td>
+</tr>
+</table>
+
+<p class="hardleft"><a href="http://"></a><br /><a href="mailto:"></a></p>
+<p class="hardright"><a href="http://"></a><br /><a href="mailto:"></a></p>
+<p>Sailwave Scoring Software 2.28.2<br /><a href="http://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+

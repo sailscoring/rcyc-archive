@@ -1,0 +1,3706 @@
+
+
+
+<!doctype html>
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+
+<title>Sailwave results for Cork Week 2018 - Club Regatta at Royal Cork Yacht Club 2018</title>
+
+<style type="text/css">
+body {font: 72% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
+td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+p {text-align: center;}
+th {background-color: #aaf;}
+.contents {text-align: left; margin-left: 20%;}
+.even {background-color: #bbf;}
+.odd {background-color: #ddf;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=ScoredSeperatelyMatrix.js
+//  dependencies=
+//  description=Shows the result tables as a matrix if they have been scored separately.
+//  Original author=Colin Jenkins
+//  url=http://op12no2.me
+//  email=op12no2@gmail.com
+//  V2 by Jon Eskdale
+//  email=jon@sailwave.com
+//  version=2.0
+//  date=2018-06-15
+
+//
+//  Please note that this effect only works when more then one or more
+//  group (e.g. fleet) has been scored separately.  There may be some
+//  other limitations.  Footers and notes are removed.  Burgees are
+//  consolidated.
+//
+
+$.fn.exists = function () {
+    return this.length !== 0;
+}
+
+function showcodes () {
+  $('h3.codestitle').fadeIn('slow');
+  $('table.codestable').fadeIn('slow');
+}
+
+function showprizes () {
+  $('h3.prizestitle').show();
+  $('table.prizestable').show();
+}
+
+function showsummary (f) {
+  hideall();
+  $(d.sum[f].title).show();
+  $(d.sum[f].caption).show();
+  $(d.sum[f].table).fadeIn('slow');
+  showcodes()
+}
+
+function showrace (f,r) {
+  hideall();
+  showcodes()
+  $(d.sum[f].races[r].title).show();
+  $(d.sum[f].races[r].caption).show();
+  $(d.sum[f].races[r].table).fadeIn('slow');
+}
+
+function hideall () {
+  $('h3.prizestitle').hide();
+  $('table.prizestable').hide();
+  hideinit();
+}
+function hideinit () {
+  $('h3.codestitle').hide();
+  $('table.codestable').hide();
+  $('h3.summarytitle').hide();
+  $('div.summarycaption').hide();
+  $('table.summarytable').hide();
+  $('h3.racetitle').hide();
+  $('div.racecaption').hide();
+  $('table.racetable').hide();
+}
+
+$(function() {
+  $('img').removeClass('hardleft');
+  $('img').removeClass('hardright');
+  $('img.hardright').remove();
+  $('p.hardright').remove();
+  $('p.hardleft').remove();
+  $('div.contents').remove();
+  $('p.seriesnotes').remove();
+  $('p.racenotes').remove();
+
+  d = {};
+
+        minrt = 10000;
+        maxrt = 0;
+        d.sum = [];
+  $('h3.summarytitle').each(function(index) {
+    if (!d.sum[index])
+      d.sum[index] = {};
+    d.sum[index].title = this;
+    console.log($(d.sum[index].title).text());
+    if ($(this).attr('id'))
+      d.sum[index].id = $(this).attr('id').replace(/summary/gi,'');
+    else
+      d.sum[index].id = 'overall';
+    //console.log($(this).attr('id'));
+    //console.log(d.sum[index].id);
+    d.sum[index].caption = $(this).next();
+    d.sum[index].table   = $(this).next().next();
+    maxraces = 100; //hack $('h3.racetitle').size();
+    minr = 10000;
+    maxr = 0;
+    //console.log(maxraces);
+    d.sum[index].races = [];
+    for (var i=0; i<maxraces; i++) {
+      var r = i + 1;
+      var id = '#r' + r + d.sum[index].id;
+      //console.log(id);
+      if ($(id).exists()) {
+        if (r > maxr)
+          maxr = r;
+                  if (r > maxrt)
+                maxrt = r;
+        if (r < minr)
+          minr = r;
+              if (r < minrt)
+                        minrt = r;
+        d.sum[index].races[r] = {};
+        d.sum[index].races[r].raceno = r;
+        d.sum[index].races[r].title = $(id);
+        d.sum[index].races[r].caption = $(id).next();
+        d.sum[index].races[r].table = $(id).next().next();
+      }
+    }
+  });
+  $('a.racelink').each(function(index) {
+    $(this).parent().html($(this).text());
+  });
+
+  hideinit();
+
+  h = '<div style="margin: 40px auto 20px; auto;" id="dynamic"><table>';
+
+  for (var f=0; f<d.sum.length; f++) {
+    var fleet = d.sum[f];
+    var races = d.sum[f].races;
+    h += '<tr><td>' + $(fleet.title).text() + '</td>';
+    var linktitle = 'Overall';
+    h += '<td><a href="#" onclick="showsummary(' + f + ');">' + linktitle + '</a></td>';
+    for (var r=minrt; r<=maxrt; r++) {
+          if (races[r]) {
+      var linktitle = $.trim(($(races[r].title).text().split('-'))[0]);
+      h += '<td>';
+      if (races[r])
+        h += '<a href="#" onclick="showrace(' + f + ',' + r + ');">' + linktitle + '</a>';
+      else
+        h += '&nbsp;';
+      h += '</td>';
+          }
+    }
+    h += '</tr>';
+  }
+
+  //h += '<tr><td><a href="#" onclick="showcodes();">Scoring codes</a></td></tr>';
+  //h += '<tr><td><a href="#" onclick="showprizes();">Prizes</a></td></tr>';
+  h += '</table></div>';
+
+  $('h3.seriestitle').append(h);
+
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="wrap">
+
+<img class="hardright" src="corkweek-logo.jpg" alt="event burgee" />
+<img class="hardleft"  src="RoyalCorkLogo.jpg" alt="venue burgee" />
+
+<h1>Cork Week 2018 - Club Regatta</h1>
+<h2>Royal Cork Yacht Club</h2>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are provisional as of 19:32 on July 21, 2018</h3>
+<div class="contents">Contents
+<ul>
+<li><a href="#summaryall_in_echo">All-in Echo Class</a></li>
+<li><a href="#summaryall_in_irc">All-in IRC Class</a></li>
+<li><a href="#summaryclass_2_irc">Class 2 IRC Class</a></li>
+<li><a href="#summaryclass_2_echo">Class 2 Echo Class</a></li>
+<li><a href="#summarycoastal_irc">Coastal IRC Class</a></li>
+<li><a href="#summarycoastal_echo">Coastal Echo Class</a></li>
+<li><a href="#summarynon_spinnaker_1_irc">Non Spinnaker 1 IRC Class</a></li>
+<li><a href="#summarynon_spinnaker_1_echo">Non Spinnaker 1 Echo Class</a></li>
+<li><a href="#summarynon_spinnaker_2_irc">Non Spinnaker 2 IRC Class</a></li>
+<li><a href="#summarynon_spinnaker_2_echo">Non Spinnaker 2 Echo Class</a></li>
+</ul>
+</div>
+<h3 class="summarytitle" id="summaryall_in_echo">All-in Echo Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC1, Entries: 12, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1all_in_echo">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2all_in_echo">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.950</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>1.013</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.880</td>
+<td>0.897</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td>6.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.945</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.992</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>6th</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.938</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>12.0</td>
+<td>12.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>7th</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.95</td>
+<td>0.944</td>
+<td>8.0</td>
+<td>8.0</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>8th</td>
+<td>GBR6514T</td>
+<td>Freya</td>
+<td>Mike  Rider</td>
+<td>RCYC</td>
+<td>Dehlar 37 CR</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>Echo</td>
+<td>0.95</td>
+<td>0.955</td>
+<td>7.0</td>
+<td>10.0</td>
+<td>17.0</td>
+<td>17.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>9th</td>
+<td>GBR7712L</td>
+<td>Bene Bebe</td>
+<td>Colin Morehead</td>
+<td>Royal Cork Yacht Club</td>
+<td>Beneteau</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.84</td>
+<td>0.838</td>
+<td>11.0</td>
+<td>7.0</td>
+<td>18.0</td>
+<td>18.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>10th</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.95</td>
+<td>0.940</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>18.0</td>
+<td>18.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>11th</td>
+<td>IRL3276</td>
+<td>Roarding Forties</td>
+<td>Clodagh O Donovan</td>
+<td>Royal Cork YC</td>
+<td>Beneteau 35s5</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.925</td>
+<td>10.0</td>
+<td>13.0 DNC</td>
+<td>23.0</td>
+<td>23.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>12th</td>
+<td>IRL2912</td>
+<td>Calero</td>
+<td>Ray Bowe</td>
+<td>Kinsale YC</td>
+<td>Jeanneau 32</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>Echo</td>
+<td>0.92</td>
+<td>0.834</td>
+<td>13.0 DNF</td>
+<td>11.0</td>
+<td>24.0</td>
+<td>24.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryall_in_irc">All-in IRC Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: IRC, Entries: 9, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1all_in_irc">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2all_in_irc">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.933</td>
+<td>&nbsp;</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>&nbsp;</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.92</td>
+<td>&nbsp;</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td>6.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.930</td>
+<td>&nbsp;</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.915</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>6th</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.984</td>
+<td>&nbsp;</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>12.0</td>
+<td>12.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>7th</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.936</td>
+<td>&nbsp;</td>
+<td>7.0</td>
+<td>7.0</td>
+<td>14.0</td>
+<td>14.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>8th</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.973</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+<td>8.0</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>9th</td>
+<td>IRL3276</td>
+<td>Roarding Forties</td>
+<td>Clodagh O Donovan</td>
+<td>Royal Cork YC</td>
+<td>Beneteau 35s5</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.973</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+<td>10.0 DNC</td>
+<td>19.0</td>
+<td>19.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryclass_2_irc">Class 2 IRC Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: IRC, Entries: 1, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1class_2_irc">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2class_2_irc">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>&nbsp;</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summaryclass_2_echo">Class 2 Echo Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC3, Entries: 1, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1class_2_echo">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2class_2_echo">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 Echo</td>
+<td>E</td>
+<td>1.013</td>
+<td>1.072</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summarycoastal_irc">Coastal IRC Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: IRC, Entries: 1, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1coastal_irc">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2coastal_irc">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.933</td>
+<td>&nbsp;</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summarycoastal_echo">Coastal Echo Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC3, Entries: 1, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1coastal_echo">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2coastal_echo">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal Echo</td>
+<td>E</td>
+<td>0.933</td>
+<td>0.956</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summarynon_spinnaker_1_irc">Non Spinnaker 1 IRC Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: IRC, Entries: 4, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1non_spinnaker_1_irc">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2non_spinnaker_1_irc">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.984</td>
+<td>&nbsp;</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.936</td>
+<td>&nbsp;</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.973</td>
+<td>&nbsp;</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td>6.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>IRL3276</td>
+<td>Roarding Forties</td>
+<td>Clodagh O Donovan</td>
+<td>Royal Cork YC</td>
+<td>Beneteau 35s5</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.94</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+<td>5.0 DNC</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summarynon_spinnaker_1_echo">Non Spinnaker 1 Echo Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC3, Entries: 5, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1non_spinnaker_1_echo">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2non_spinnaker_1_echo">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>&nbsp;</td>
+<td>0.936</td>
+<td>0.947</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>GBR6514T</td>
+<td>Freya</td>
+<td>Mike  Rider</td>
+<td>RCYC</td>
+<td>Dehlar 37 CR</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>Echo</td>
+<td>0.95</td>
+<td>0.947</td>
+<td class="rank2">2.0</td>
+<td class="rank3">3.0</td>
+<td>5.0</td>
+<td>5.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>E</td>
+<td>0.984</td>
+<td>1.049</td>
+<td>4.0</td>
+<td class="rank2">2.0</td>
+<td>6.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>&nbsp;</td>
+<td>0.973</td>
+<td>0.968</td>
+<td class="rank3">3.0</td>
+<td>4.0</td>
+<td>7.0</td>
+<td>7.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>IRL3276</td>
+<td>Roarding Forties</td>
+<td>Clodagh O Donovan</td>
+<td>Royal Cork YC</td>
+<td>Beneteau 35s5</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>E</td>
+<td>0.94</td>
+<td>0.956</td>
+<td>5.0</td>
+<td>6.0 DNC</td>
+<td>11.0</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summarynon_spinnaker_2_irc">Non Spinnaker 2 IRC Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: IRC, Entries: 3, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1non_spinnaker_2_irc">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2non_spinnaker_2_irc">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.92</td>
+<td>&nbsp;</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.930</td>
+<td>&nbsp;</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>5.0</td>
+<td>5.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.915</td>
+<td>&nbsp;</td>
+<td class="rank2">2.0</td>
+<td class="rank3">3.0</td>
+<td>5.0</td>
+<td>5.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="summarytitle" id="summarynon_spinnaker_2_echo">Non Spinnaker 2 Echo Class</h3>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC3, Entries: 5, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th><a class="racelink" href="#r1non_spinnaker_2_echo">Sat R1</a><br />21st July 11:00</th>
+<th><a class="racelink" href="#r2non_spinnaker_2_echo">Sat R2</a><br />21st July 11:00</th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>1st</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>&nbsp;</td>
+<td>0.880</td>
+<td>0.970</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>2nd</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.915</td>
+<td>0.993</td>
+<td class="rank2">2.0</td>
+<td class="rank3">3.0</td>
+<td>5.0</td>
+<td>5.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>3rd</td>
+<td>GBR7712L</td>
+<td>Bene Bebe</td>
+<td>Colin Morehead</td>
+<td>Royal Cork Yacht Club</td>
+<td>Beneteau</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.840</td>
+<td>0.827</td>
+<td>4.0</td>
+<td class="rank2">2.0</td>
+<td>6.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>&nbsp;</td>
+<td>4th</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.92</td>
+<td>1.041</td>
+<td class="rank3">3.0</td>
+<td>4.0</td>
+<td>7.0</td>
+<td>7.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>&nbsp;</td>
+<td>5th</td>
+<td>IRL2912</td>
+<td>Calero</td>
+<td>Ray Bowe</td>
+<td>Kinsale YC</td>
+<td>Jeanneau 32</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>Echo</td>
+<td>0.92</td>
+<td>0.770</td>
+<td>6.0 DNF</td>
+<td>5.0</td>
+<td>11.0</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<p class="seriesnotes">
+Publishing Summary table for all classes and all races without any effects
+</p>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1all_in_echo">Sat R1 - All-in Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 10, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>1.013</td>
+<td>0:56:02</td>
+<td>0:56:46</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.950</td>
+<td>1:02:19</td>
+<td>0:59:12</td>
+<td>0:02:34</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.880</td>
+<td>0.897</td>
+<td>1:19:23</td>
+<td>1:09:51</td>
+<td>0:14:53</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.992</td>
+<td>1:16:16</td>
+<td>1:12:27</td>
+<td>0:16:31</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.945</td>
+<td>1:18:11</td>
+<td>1:14:16</td>
+<td>0:18:26</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.938</td>
+<td>1:19:38</td>
+<td>1:15:39</td>
+<td>0:19:53</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>GBR6514T</td>
+<td>Freya</td>
+<td>Mike  Rider</td>
+<td>RCYC</td>
+<td>Dehlar 37 CR</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>Echo</td>
+<td>0.95</td>
+<td>0.955</td>
+<td>1:20:06</td>
+<td>1:16:06</td>
+<td>0:20:21</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.95</td>
+<td>0.944</td>
+<td>1:20:28</td>
+<td>1:16:27</td>
+<td>0:20:43</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.95</td>
+<td>0.940</td>
+<td>1:21:18</td>
+<td>1:17:14</td>
+<td>0:21:33</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>10</td>
+<td>IRL3276</td>
+<td>Roarding Forties</td>
+<td>Clodagh O Donovan</td>
+<td>Royal Cork YC</td>
+<td>Beneteau 35s5</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.95</td>
+<td>0.925</td>
+<td>1:26:45</td>
+<td>1:22:25</td>
+<td>0:27:00</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>11</td>
+<td>GBR7712L</td>
+<td>Bene Bebe</td>
+<td>Colin Morehead</td>
+<td>Royal Cork Yacht Club</td>
+<td>Beneteau</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.84</td>
+<td>0.838</td>
+<td>1:41:03</td>
+<td>1:24:53</td>
+<td>0:33:29</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>12</td>
+<td>IRL2912</td>
+<td>Calero</td>
+<td>Ray Bowe</td>
+<td>Kinsale YC</td>
+<td>Jeanneau 32</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>Echo</td>
+<td>0.92</td>
+<td>0.834</td>
+<td>DNF</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>13.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2all_in_echo">Sat R2 - All-in Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 19, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.950</td>
+<td>0.950</td>
+<td>0:56:34</td>
+<td>0:53:44</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>1.013</td>
+<td>0:53:15</td>
+<td>0:53:57</td>
+<td>0:00:12</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.897</td>
+<td>0.897</td>
+<td>1:02:08</td>
+<td>0:55:44</td>
+<td>0:02:13</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.945</td>
+<td>0.945</td>
+<td>1:00:50</td>
+<td>0:57:29</td>
+<td>0:03:58</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.974</td>
+<td>0.992</td>
+<td>0:59:16</td>
+<td>0:57:44</td>
+<td>0:04:06</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.938</td>
+<td>0.938</td>
+<td>1:03:26</td>
+<td>0:59:30</td>
+<td>0:06:09</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>GBR7712L</td>
+<td>Bene Bebe</td>
+<td>Colin Morehead</td>
+<td>Royal Cork Yacht Club</td>
+<td>Beneteau</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.815</td>
+<td>0.838</td>
+<td>1:13:59</td>
+<td>1:00:18</td>
+<td>0:08:03</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.953</td>
+<td>0.944</td>
+<td>1:04:45</td>
+<td>1:01:42</td>
+<td>0:08:22</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.949</td>
+<td>0.940</td>
+<td>1:05:07</td>
+<td>1:01:48</td>
+<td>0:08:29</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>10</td>
+<td>GBR6514T</td>
+<td>Freya</td>
+<td>Mike  Rider</td>
+<td>RCYC</td>
+<td>Dehlar 37 CR</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>Echo</td>
+<td>0.961</td>
+<td>0.955</td>
+<td>1:06:03</td>
+<td>1:03:28</td>
+<td>0:10:08</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>11</td>
+<td>IRL2912</td>
+<td>Calero</td>
+<td>Ray Bowe</td>
+<td>Kinsale YC</td>
+<td>Jeanneau 32</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>Echo</td>
+<td>0.920</td>
+<td>0.834</td>
+<td>1:31:38</td>
+<td>1:24:18</td>
+<td>0:33:13</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1all_in_irc">Sat R1 - All-in IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 9, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>&nbsp;</td>
+<td>0:56:02</td>
+<td>0:56:46</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.933</td>
+<td>&nbsp;</td>
+<td>1:02:19</td>
+<td>0:58:08</td>
+<td>0:01:29</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.92</td>
+<td>&nbsp;</td>
+<td>1:18:11</td>
+<td>1:11:56</td>
+<td>0:16:29</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.915</td>
+<td>&nbsp;</td>
+<td>1:19:38</td>
+<td>1:12:52</td>
+<td>0:17:36</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.930</td>
+<td>&nbsp;</td>
+<td>1:19:23</td>
+<td>1:13:50</td>
+<td>0:18:21</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.984</td>
+<td>&nbsp;</td>
+<td>1:16:16</td>
+<td>1:15:03</td>
+<td>0:18:35</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.936</td>
+<td>&nbsp;</td>
+<td>1:20:28</td>
+<td>1:15:19</td>
+<td>0:19:49</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.973</td>
+<td>&nbsp;</td>
+<td>1:21:18</td>
+<td>1:19:06</td>
+<td>0:22:58</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>9</td>
+<td>IRL3276</td>
+<td>Roarding Forties</td>
+<td>Clodagh O Donovan</td>
+<td>Royal Cork YC</td>
+<td>Beneteau 35s5</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.973</td>
+<td>&nbsp;</td>
+<td>1:26:45</td>
+<td>1:24:24</td>
+<td>0:28:25</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2all_in_irc">Sat R2 - All-in IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 18, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.933</td>
+<td>&nbsp;</td>
+<td>0:56:34</td>
+<td>0:52:47</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>&nbsp;</td>
+<td>0:53:15</td>
+<td>0:53:57</td>
+<td>0:01:09</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.92</td>
+<td>&nbsp;</td>
+<td>1:00:50</td>
+<td>0:55:58</td>
+<td>0:03:28</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.930</td>
+<td>&nbsp;</td>
+<td>1:02:08</td>
+<td>0:57:47</td>
+<td>0:05:23</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.915</td>
+<td>&nbsp;</td>
+<td>1:03:26</td>
+<td>0:58:02</td>
+<td>0:05:45</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>6</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.984</td>
+<td>&nbsp;</td>
+<td>0:59:16</td>
+<td>0:58:19</td>
+<td>0:05:38</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>7</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.936</td>
+<td>&nbsp;</td>
+<td>1:04:45</td>
+<td>1:00:36</td>
+<td>0:08:22</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>8</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.973</td>
+<td>&nbsp;</td>
+<td>1:05:07</td>
+<td>1:03:22</td>
+<td>0:10:53</td>
+<td>8.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1class_2_irc">Sat R1 - Class 2 IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>&nbsp;</td>
+<td>0:56:02</td>
+<td>0:56:46</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2class_2_irc">Sat R2 - Class 2 IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 IRC</td>
+<td>E</td>
+<td>1.013</td>
+<td>&nbsp;</td>
+<td>0:53:15</td>
+<td>0:53:57</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1class_2_echo">Sat R1 - Class 2 Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 Echo</td>
+<td>E</td>
+<td>1.072</td>
+<td>1.072</td>
+<td>0:56:02</td>
+<td>1:00:04</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2class_2_echo">Sat R2 - Class 2 Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL9609</td>
+<td>Jelly Baby</td>
+<td>Brian & Mary Jones</td>
+<td>Royal Cork YC</td>
+<td>J/109</td>
+<td>Class 2 Echo</td>
+<td>E</td>
+<td>1.072</td>
+<td>1.072</td>
+<td>0:53:15</td>
+<td>0:57:05</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1coastal_irc">Sat R1 - Coastal IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 3, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.933</td>
+<td>&nbsp;</td>
+<td>1:02:19</td>
+<td>0:58:08</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2coastal_irc">Sat R2 - Coastal IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 3, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal IRC</td>
+<td>E</td>
+<td>0.933</td>
+<td>&nbsp;</td>
+<td>0:56:34</td>
+<td>0:52:47</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1coastal_echo">Sat R1 - Coastal Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 3, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal Echo</td>
+<td>E</td>
+<td>0.956</td>
+<td>0.956</td>
+<td>1:02:19</td>
+<td>0:59:34</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2coastal_echo">Sat R2 - Coastal Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 3, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL16859</td>
+<td>Bad Company</td>
+<td>Frank  Desmond/Ivers/Deasy</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau Sunfast 32</td>
+<td>Coastal Echo</td>
+<td>E</td>
+<td>0.956</td>
+<td>0.956</td>
+<td>0:56:34</td>
+<td>0:54:05</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1non_spinnaker_1_irc">Sat R1 - Non Spinnaker 1 IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 4, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.984</td>
+<td>&nbsp;</td>
+<td>1:16:16</td>
+<td>1:15:03</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.936</td>
+<td>&nbsp;</td>
+<td>1:20:28</td>
+<td>1:15:19</td>
+<td>0:00:17</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.973</td>
+<td>&nbsp;</td>
+<td>1:21:18</td>
+<td>1:19:06</td>
+<td>0:04:10</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IRL3276</td>
+<td>Roarding Forties</td>
+<td>Clodagh O Donovan</td>
+<td>Royal Cork YC</td>
+<td>Beneteau 35s5</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.94</td>
+<td>&nbsp;</td>
+<td>1:26:45</td>
+<td>1:21:33</td>
+<td>0:06:55</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2non_spinnaker_1_irc">Sat R2 - Non Spinnaker 1 IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 4, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>E</td>
+<td>0.984</td>
+<td>&nbsp;</td>
+<td>0:59:16</td>
+<td>0:58:19</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.936</td>
+<td>&nbsp;</td>
+<td>1:04:45</td>
+<td>1:00:36</td>
+<td>0:02:27</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 IRC</td>
+<td>&nbsp;</td>
+<td>0.973</td>
+<td>&nbsp;</td>
+<td>1:05:07</td>
+<td>1:03:22</td>
+<td>0:05:11</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1non_spinnaker_1_echo">Sat R1 - Non Spinnaker 1 Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 4, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>&nbsp;</td>
+<td>0.910</td>
+<td>0.947</td>
+<td>1:20:28</td>
+<td>1:13:13</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>GBR6514T</td>
+<td>Freya</td>
+<td>Mike  Rider</td>
+<td>RCYC</td>
+<td>Dehlar 37 CR</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>Echo</td>
+<td>0.930</td>
+<td>0.947</td>
+<td>1:20:06</td>
+<td>1:14:30</td>
+<td>0:01:22</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>&nbsp;</td>
+<td>0.981</td>
+<td>0.968</td>
+<td>1:21:18</td>
+<td>1:19:45</td>
+<td>0:06:39</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>E</td>
+<td>1.059</td>
+<td>1.049</td>
+<td>1:16:16</td>
+<td>1:20:46</td>
+<td>0:07:07</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IRL3276</td>
+<td>Roarding Forties</td>
+<td>Clodagh O Donovan</td>
+<td>Royal Cork YC</td>
+<td>Beneteau 35s5</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>E</td>
+<td>0.992</td>
+<td>0.956</td>
+<td>1:26:45</td>
+<td>1:26:03</td>
+<td>0:12:56</td>
+<td>5.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2non_spinnaker_1_echo">Sat R2 - Non Spinnaker 1 Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 4, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL3651</td>
+<td>Aisling</td>
+<td>Bryan  Heffernan</td>
+<td>RCYC</td>
+<td>Dofour GL 365</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>&nbsp;</td>
+<td>0.935</td>
+<td>0.947</td>
+<td>1:04:45</td>
+<td>1:00:32</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL2805</td>
+<td>Indulgence</td>
+<td>Aidan Heffernan</td>
+<td>SHSC</td>
+<td>Dehler 36</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>E</td>
+<td>1.046</td>
+<td>1.049</td>
+<td>0:59:16</td>
+<td>1:02:00</td>
+<td>0:01:23</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>GBR6514T</td>
+<td>Freya</td>
+<td>Mike  Rider</td>
+<td>RCYC</td>
+<td>Dehlar 37 CR</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>Echo</td>
+<td>0.949</td>
+<td>0.947</td>
+<td>1:06:03</td>
+<td>1:02:41</td>
+<td>0:02:15</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IRL3612</td>
+<td>Sweet Dreams</td>
+<td>Batt & Helen O Leary</td>
+<td>Royal Cork YC</td>
+<td>Jeanneau SO36i Per</td>
+<td>Non Spinnaker 1 Echo</td>
+<td>&nbsp;</td>
+<td>0.974</td>
+<td>0.968</td>
+<td>1:05:07</td>
+<td>1:03:25</td>
+<td>0:02:58</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1non_spinnaker_2_irc">Sat R1 - Non Spinnaker 2 IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 4, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.92</td>
+<td>&nbsp;</td>
+<td>1:18:11</td>
+<td>1:11:56</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.915</td>
+<td>&nbsp;</td>
+<td>1:19:38</td>
+<td>1:12:52</td>
+<td>0:01:01</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.930</td>
+<td>&nbsp;</td>
+<td>1:19:23</td>
+<td>1:13:50</td>
+<td>0:02:02</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2non_spinnaker_2_irc">Sat R2 - Non Spinnaker 2 IRC Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 4, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.92</td>
+<td>&nbsp;</td>
+<td>1:00:50</td>
+<td>0:55:58</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>&nbsp;</td>
+<td>0.930</td>
+<td>&nbsp;</td>
+<td>1:02:08</td>
+<td>0:57:47</td>
+<td>0:01:57</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 IRC</td>
+<td>E</td>
+<td>0.915</td>
+<td>&nbsp;</td>
+<td>1:03:26</td>
+<td>0:58:02</td>
+<td>0:02:16</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r1non_spinnaker_2_echo">Sat R1 - Non Spinnaker 2 Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 4, Finishes: Finish time, Time: 11:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>&nbsp;</td>
+<td>0.880</td>
+<td>0.970</td>
+<td>1:19:23</td>
+<td>1:09:51</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.969</td>
+<td>0.993</td>
+<td>1:19:38</td>
+<td>1:17:10</td>
+<td>0:07:32</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>1.042</td>
+<td>1.041</td>
+<td>1:18:11</td>
+<td>1:21:28</td>
+<td>0:11:09</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>GBR7712L</td>
+<td>Bene Bebe</td>
+<td>Colin Morehead</td>
+<td>Royal Cork Yacht Club</td>
+<td>Beneteau</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.810</td>
+<td>0.827</td>
+<td>1:41:03</td>
+<td>1:21:51</td>
+<td>0:14:48</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IRL2912</td>
+<td>Calero</td>
+<td>Ray Bowe</td>
+<td>Kinsale YC</td>
+<td>Jeanneau 32</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>Echo</td>
+<td>0.813</td>
+<td>0.770</td>
+<td>DNF</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="racetitle" id="r2non_spinnaker_2_echo">Sat R2 - Non Spinnaker 2 Echo Class&nbsp;-&nbsp;21st July&nbsp;at&nbsp;11:00</h3>
+<div class="caption racecaption">
+Start: Start 4, Finishes: Finish time, Time: 1307
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="exclude" />
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="medical" />
+<col class="fleet" />
+<col class="crewname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="bce" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>&nbsp;</th>
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat</th>
+<th>Entered by</th>
+<th>Representing</th>
+<th>Boat Type</th>
+<th>Fleet</th>
+<th>Endorsed</th>
+<th>Rating</th>
+<th>NewRating</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>BCE</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>1</td>
+<td>IRL29501</td>
+<td>Esme</td>
+<td>John & Fiona Murphy</td>
+<td>RCYC</td>
+<td>Elan 295</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>&nbsp;</td>
+<td>0.924</td>
+<td>0.970</td>
+<td>1:02:08</td>
+<td>0:57:25</td>
+<td>0:00:00</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>2</td>
+<td>GBR7712L</td>
+<td>Bene Bebe</td>
+<td>Colin Morehead</td>
+<td>Royal Cork Yacht Club</td>
+<td>Beneteau</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.797</td>
+<td>0.827</td>
+<td>1:13:59</td>
+<td>0:58:58</td>
+<td>0:01:57</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>3</td>
+<td>IRL1033</td>
+<td>Loch Greine</td>
+<td>Tom Donal Declan O Mahony</td>
+<td>Royal Cork YC</td>
+<td>Hanse 31</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>0.976</td>
+<td>0.993</td>
+<td>1:03:26</td>
+<td>1:01:55</td>
+<td>0:04:37</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>&nbsp;</td>
+<td>4</td>
+<td>IRL1022</td>
+<td>ARAMIS</td>
+<td>Pat Vaughan</td>
+<td>RCYC</td>
+<td>Contessa 33</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>E</td>
+<td>1.028</td>
+<td>1.041</td>
+<td>1:00:50</td>
+<td>1:02:32</td>
+<td>0:04:59</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>&nbsp;</td>
+<td>5</td>
+<td>IRL2912</td>
+<td>Calero</td>
+<td>Ray Bowe</td>
+<td>Kinsale YC</td>
+<td>Jeanneau 32</td>
+<td>Non Spinnaker 2 Echo</td>
+<td>Echo</td>
+<td>0.813</td>
+<td>0.770</td>
+<td>1:31:38</td>
+<td>1:14:30</td>
+<td>0:21:01</td>
+<td>5.0</td>
+</tr>
+</tbody>
+</table>
+<div class="applicant-break"></div>
+<h3 class="codestitle">Scoring codes used</h3>
+<table class="codestable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="2"><col class="code" /><col class="description" />
+</colgroup>
+<tr class="titlerow"><th>Code</th><th>Description</th>
+</tr>
+<tr class="odd coderow"><td>DNC</td><td>Did not come to the starting area</td>
+</tr>
+<tr class="even coderow"><td>DNF</td><td>Started but did not finish</td>
+</tr>
+</table>
+
+<p class="hardleft"><a href="http://www.royalcork.com">www.royalcork.com</a><br /><a href="mailto:"></a></p>
+<p class="hardright"><a href="http://www.corkweek.ie">www.corkweek.ie</a><br /><a href="mailto:info@corkweek.com">info@corkweek.com</a></p>
+<p>Sailwave Scoring Software 2.25.9<br /><a href="http://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+

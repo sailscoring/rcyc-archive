@@ -1,0 +1,2757 @@
+
+
+
+<!doctype html>
+<html lang="en-US">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<title>Sailwave results for DinghyFest 2025 at Royal Cork Yacht Club 2025</title>
+
+<style type="text/css">
+body {font: 72% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
+td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+p {text-align: center;}
+th {background-color: #aaf;}
+.contents {text-align: left; margin-left: 20%;}
+.even {background-color: #bbf;}
+.odd {background-color: #ddf;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=HighlightWins3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2015-08-18
+//  version=1.6 2018-11-15
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var winsSelector = '.summaryrace';
+var winsText     = /\b1\.0/;
+var twoText              = /\b2\.0/;
+var threeText    = /\b3\.0/;
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+//var twoColour  = '#ffe768';
+//var threeColour  = '#fff0a1';
+
+// create array of race column numbers for first table (summarytable)
+var ths = document.getElementsByTagName('col');
+var column =[];
+for (var i=0; i<ths.length; i++) {
+        if (ths[i].classList[0] === "race") {
+                column.push(i);
+        } else {
+                if (column.length !=0) {
+                        break;
+                }
+        }
+}
+//console.log(column);
+
+//  Set a class of summaryrace for all race cells in summary table body
+//
+for (var i=0; i<column.length; i++) {
+        $(".summarytable tbody tr td:nth-child(" + (column[i]+1) +")").addClass("summaryrace");
+}
+
+// Change the background color for cells with class of summaryrace and that match regular expression text
+$(function () {
+
+  $(winsSelector).filter(function() {
+    return winsText.test($(this).text());
+  }).css("background", winsColour);
+  $(winsSelector).filter(function() {
+        return twoText.test($(this).text());
+  }).css("background", twoColour);
+  $(winsSelector).filter(function() {
+        return threeText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
+//
+//  name=HighlightWins.js
+//  dependencies=
+//  description=Highlight winning scores in summary tables.
+//  author=Colin Jenkins
+//  version=1.0
+//  date=2015-07-27
+//  url=http://op12no2.me
+//  email=op12no2@gmail.com
+//  twitter=@op12no2
+//
+
+var winsText     = '1.0';
+var winsColour   = '#ffd700';
+var winsSelector = '.summarytable td';
+
+$(function () {
+  $(winsSelector).filter(function() {
+    return $(this).text() === winsText;
+  }).css("background", winsColour);
+});
+
+</script>
+<link rel="shortcut icon" type="image/ico" href="https://www.sailwave.com/favicon.ico"/>
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="wrap">
+
+<img id="eventburgee" class="hardright" src="https://www.royalcork.com/Results/2018/Results/RCYC.jpg" alt="event burgee" />
+<img id="venueburgee" class="hardleft"  src="https://www.royalcork.com/Results/2018/Results/RCYC.jpg" alt="venue burgee" />
+
+<h1>DinghyFest 2025</h1>
+<h2>Royal Cork Yacht Club</h2>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are provisional as of 13:59 on July 20, 2025</h3>
+<h3 class="summarytitle" id="summary_420">420 Fleet</h3>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Entries: 11, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th><a class="racelink" href="#r1_420">R1</a></th>
+<th><a class="racelink" href="#r2_420">R2</a></th>
+<th><a class="racelink" href="#r3_420">R3</a></th>
+<th><a class="racelink" href="#r4_420">R4</a></th>
+<th><a class="racelink" href="#r5_420">R5</a></th>
+<th><a class="racelink" href="#r6_420">R6</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>420</td>
+<td>TUR4</td>
+<td>TUR5</td>
+<td>MYC</td>
+<td>Oleksandr Bezpalyi</td>
+<td>Roisin Mitchell Ward</td>
+<td  class="rank2">2.0</td>
+<td  class="rank3">(3.0)</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank2">2.0</td>
+<td>10.0</td>
+<td>7.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>420</td>
+<td>57214</td>
+<td>&nbsp;</td>
+<td>Gbsc</td>
+<td>Sean Lemonnier</td>
+<td>Killian Mathieu</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank3">3.0</td>
+<td>(5.0)</td>
+<td  class="rank3">3.0</td>
+<td  class="rank1">1.0</td>
+<td>14.0</td>
+<td>9.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>420</td>
+<td>54847</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Sam Rigley</td>
+<td>Jack Ganley</td>
+<td  class="rank3">3.0</td>
+<td>4.0</td>
+<td>6.0</td>
+<td>(7.0)</td>
+<td  class="rank2">2.0</td>
+<td  class="rank3">3.0</td>
+<td>25.0</td>
+<td>18.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>420</td>
+<td>55807</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Micheal Minogue</td>
+<td>Rian Baynes</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>4.0</td>
+<td  class="rank2">2.0</td>
+<td>(6.0)</td>
+<td>5.0</td>
+<td>26.0</td>
+<td>20.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>420</td>
+<td>55437</td>
+<td>&nbsp;</td>
+<td>CSS</td>
+<td>Charlie Donald</td>
+<td>James Harvey</td>
+<td>6.0</td>
+<td  class="rank2">2.0</td>
+<td>(8.0)</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>6.0</td>
+<td>30.0</td>
+<td>22.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>420</td>
+<td>55878</td>
+<td>53967</td>
+<td>KYC/RCYC</td>
+<td>Caoimhe Corkery</td>
+<td>Henrietta Leech</td>
+<td>(8.0)</td>
+<td>6.0</td>
+<td  class="rank2">2.0</td>
+<td  class="rank3">3.0</td>
+<td>5.0</td>
+<td>7.0</td>
+<td>31.0</td>
+<td>23.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>420</td>
+<td>47421</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Kate Barry</td>
+<td>Eili McMahon</td>
+<td>5.0</td>
+<td>(7.0)</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>4.0</td>
+<td>34.0</td>
+<td>27.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>8th</td>
+<td>420</td>
+<td>51742</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Niamh Baynes</td>
+<td>Sarah Donald</td>
+<td>7.0</td>
+<td>(8.0)</td>
+<td>7.0</td>
+<td>8.0</td>
+<td>8.0</td>
+<td>8.0</td>
+<td>46.0</td>
+<td>38.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>420</td>
+<td>54059</td>
+<td>&nbsp;</td>
+<td>LDYC</td>
+<td>Ryan O Doherty</td>
+<td>Ryan O Connel</td>
+<td>11.0</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>10.0</td>
+<td>9.0</td>
+<td>(12.0 DNF)</td>
+<td>60.0</td>
+<td>48.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
+<td>420</td>
+<td>55402</td>
+<td>54747</td>
+<td>RCYC</td>
+<td>Kate Deane</td>
+<td>Robyn Blake</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>9.0</td>
+<td>(12.0 DNS)</td>
+<td>12.0 DNC</td>
+<td>63.0</td>
+<td>51.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>11th</td>
+<td>420</td>
+<td>55371</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Paschal Hanniffy</td>
+<td>Rossa Mitchell Ward</td>
+<td>9.0</td>
+<td>11.0</td>
+<td>11.0</td>
+<td>11.0</td>
+<td>10.0</td>
+<td>(12.0 DNF)</td>
+<td>64.0</td>
+<td>52.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="summarytitle" id="summaryrs_feva">RS Feva Fleet</h3>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Entries: 16, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th><a class="racelink" href="#r1rs_feva">R1</a></th>
+<th><a class="racelink" href="#r2rs_feva">R2</a></th>
+<th><a class="racelink" href="#r3rs_feva">R3</a></th>
+<th><a class="racelink" href="#r4rs_feva">R4</a></th>
+<th><a class="racelink" href="#r5rs_feva">R5</a></th>
+<th><a class="racelink" href="#r6rs_feva">R6</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>RS Feva</td>
+<td>8572</td>
+<td>2724</td>
+<td>RCYC/MBSC</td>
+<td>Harry Coole</td>
+<td>Louis O'Neill</td>
+<td  class="rank2">2.0</td>
+<td  class="rank2">2.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank2">2.0</td>
+<td  class="rank3">(3.0)</td>
+<td>11.0</td>
+<td>8.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>RS Feva</td>
+<td>6234</td>
+<td>&nbsp;</td>
+<td>RSGYC</td>
+<td>Julian O Leary</td>
+<td>Dillon Kennedy</td>
+<td  class="rank1">1.0</td>
+<td>4.0</td>
+<td>(11.0)</td>
+<td>5.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank2">2.0</td>
+<td>24.0</td>
+<td>13.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>RS Feva</td>
+<td>3672</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Alex Mills</td>
+<td>Eoin Jones</td>
+<td  class="rank3">3.0</td>
+<td  class="rank3">3.0</td>
+<td>4.0</td>
+<td  class="rank2">2.0</td>
+<td>(7.0)</td>
+<td  class="rank1">1.0</td>
+<td>20.0</td>
+<td>13.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>RS Feva</td>
+<td>8174</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Ruadhan Jackson</td>
+<td>Colm O'Driscoll</td>
+<td>4.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank3">3.0</td>
+<td>(8.0)</td>
+<td>4.0</td>
+<td>6.0</td>
+<td>26.0</td>
+<td>18.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>RS Feva</td>
+<td>5142</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Rachel Kavanagh</td>
+<td>Kohana Tanaka</td>
+<td>5.0</td>
+<td>(9.0)</td>
+<td  class="rank2">2.0</td>
+<td>6.0</td>
+<td>8.0</td>
+<td>7.0</td>
+<td>37.0</td>
+<td>28.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>RS Feva</td>
+<td>7890</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Jenny O'Connor</td>
+<td>Aisling O'Connor</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>7.0</td>
+<td>5.0</td>
+<td>(8.0)</td>
+<td>39.0</td>
+<td>31.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>RS Feva</td>
+<td>6236</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Michael Maher</td>
+<td>Jamie Keegan</td>
+<td>(11.0)</td>
+<td>7.0</td>
+<td>5.0</td>
+<td>9.0</td>
+<td>6.0</td>
+<td>5.0</td>
+<td>43.0</td>
+<td>32.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>8th</td>
+<td>RS Feva</td>
+<td>8456</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Jamie White</td>
+<td>Eoin White</td>
+<td>(17.0 RET)</td>
+<td>17.0 DNC</td>
+<td>9.0</td>
+<td  class="rank3">3.0</td>
+<td  class="rank3">3.0</td>
+<td>4.0</td>
+<td>53.0</td>
+<td>36.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>RS Feva</td>
+<td>1605</td>
+<td>&nbsp;</td>
+<td>RIYC</td>
+<td>Ruby Mulligan</td>
+<td>Sophie Kelly</td>
+<td>7.0</td>
+<td>13.0</td>
+<td>12.0</td>
+<td>(14.0)</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>64.0</td>
+<td>50.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
+<td>RS Feva</td>
+<td>2256</td>
+<td>&nbsp;</td>
+<td>MBSC</td>
+<td>Eli Jeffers</td>
+<td>Joan Jeffers</td>
+<td>9.0</td>
+<td>8.0</td>
+<td>6.0</td>
+<td>11.0</td>
+<td>(17.0 RET)</td>
+<td>17.0 DNC</td>
+<td>68.0</td>
+<td>51.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>11th</td>
+<td>RS Feva</td>
+<td>None</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Ava Collins</td>
+<td>Molly Collins</td>
+<td>(17.0 RET)</td>
+<td>5.0</td>
+<td>10.0</td>
+<td>4.0</td>
+<td>17.0 DNS</td>
+<td>17.0 DNC</td>
+<td>70.0</td>
+<td>53.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>12th</td>
+<td>RS Feva</td>
+<td>6150</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Hugh Egan</td>
+<td>Milo Twomey</td>
+<td>8.0</td>
+<td>11.0</td>
+<td>8.0</td>
+<td>10.0</td>
+<td>(17.0 DNS)</td>
+<td>17.0 DNC</td>
+<td>71.0</td>
+<td>54.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>13th</td>
+<td>RS Feva</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Fionn Fabrizi</td>
+<td>Ciara Fabrizi</td>
+<td>14.0</td>
+<td>14.0</td>
+<td>14.0</td>
+<td>(15.0)</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>77.0</td>
+<td>62.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>14th</td>
+<td>RS Feva</td>
+<td>2178</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Donagh Jackson</td>
+<td>Paddy Morrissey</td>
+<td>12.0</td>
+<td>12.0</td>
+<td>13.0</td>
+<td>12.0</td>
+<td>(17.0 DNS)</td>
+<td>17.0 DNC</td>
+<td>83.0</td>
+<td>66.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>15th</td>
+<td>RS Feva</td>
+<td>88</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Sean Collins</td>
+<td>Aodh Andrews</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>(17.0 DNC)</td>
+<td>17.0 DNC</td>
+<td>17.0 DNC</td>
+<td>17.0 DNC</td>
+<td>88.0</td>
+<td>71.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>16th</td>
+<td>RS Feva</td>
+<td>1589</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Polly Anna Downing</td>
+<td>Flynn Downing</td>
+<td>13.0</td>
+<td>(17.0 DNC)</td>
+<td>15.0</td>
+<td>13.0</td>
+<td>17.0 DNS</td>
+<td>17.0 DNC</td>
+<td>92.0</td>
+<td>75.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1_420">R1 - 420 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place, Time: 13:05
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>420</td>
+<td>57214</td>
+<td>&nbsp;</td>
+<td>Gbsc</td>
+<td>Sean Lemonnier</td>
+<td>Killian Mathieu</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>420</td>
+<td>TUR4</td>
+<td>TUR5</td>
+<td>MYC</td>
+<td>Oleksandr Bezpalyi</td>
+<td>Roisin Mitchell Ward</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>420</td>
+<td>54847</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Sam Rigley</td>
+<td>Jack Ganley</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>420</td>
+<td>55807</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Micheal Minogue</td>
+<td>Rian Baynes</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>420</td>
+<td>47421</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Kate Barry</td>
+<td>Eili McMahon</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>420</td>
+<td>55437</td>
+<td>&nbsp;</td>
+<td>CSS</td>
+<td>Charlie Donald</td>
+<td>James Harvey</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>420</td>
+<td>51742</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Niamh Baynes</td>
+<td>Sarah Donald</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>420</td>
+<td>55878</td>
+<td>53967</td>
+<td>KYC/RCYC</td>
+<td>Caoimhe Corkery</td>
+<td>Henrietta Leech</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>420</td>
+<td>55371</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Paschal Hanniffy</td>
+<td>Rossa Mitchell Ward</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>420</td>
+<td>55402</td>
+<td>54747</td>
+<td>RCYC</td>
+<td>Kate Deane</td>
+<td>Robyn Blake</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>420</td>
+<td>54059</td>
+<td>&nbsp;</td>
+<td>LDYC</td>
+<td>Ryan O Doherty</td>
+<td>Ryan O Connel</td>
+<td>11</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2_420">R2 - 420 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place, Time: 14:09
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>420</td>
+<td>57214</td>
+<td>&nbsp;</td>
+<td>Gbsc</td>
+<td>Sean Lemonnier</td>
+<td>Killian Mathieu</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>420</td>
+<td>55437</td>
+<td>&nbsp;</td>
+<td>CSS</td>
+<td>Charlie Donald</td>
+<td>James Harvey</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>420</td>
+<td>TUR4</td>
+<td>TUR5</td>
+<td>MYC</td>
+<td>Oleksandr Bezpalyi</td>
+<td>Roisin Mitchell Ward</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>420</td>
+<td>54847</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Sam Rigley</td>
+<td>Jack Ganley</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>420</td>
+<td>55807</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Micheal Minogue</td>
+<td>Rian Baynes</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>420</td>
+<td>55878</td>
+<td>53967</td>
+<td>KYC/RCYC</td>
+<td>Caoimhe Corkery</td>
+<td>Henrietta Leech</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>420</td>
+<td>47421</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Kate Barry</td>
+<td>Eili McMahon</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>420</td>
+<td>51742</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Niamh Baynes</td>
+<td>Sarah Donald</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>420</td>
+<td>54059</td>
+<td>&nbsp;</td>
+<td>LDYC</td>
+<td>Ryan O Doherty</td>
+<td>Ryan O Connel</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>420</td>
+<td>55402</td>
+<td>54747</td>
+<td>RCYC</td>
+<td>Kate Deane</td>
+<td>Robyn Blake</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>420</td>
+<td>55371</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Paschal Hanniffy</td>
+<td>Rossa Mitchell Ward</td>
+<td>11</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r3_420">R3 - 420 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place, Time: 1105
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>420</td>
+<td>TUR4</td>
+<td>TUR5</td>
+<td>MYC</td>
+<td>Oleksandr Bezpalyi</td>
+<td>Roisin Mitchell Ward</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>420</td>
+<td>55878</td>
+<td>53967</td>
+<td>KYC/RCYC</td>
+<td>Caoimhe Corkery</td>
+<td>Henrietta Leech</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>420</td>
+<td>57214</td>
+<td>&nbsp;</td>
+<td>Gbsc</td>
+<td>Sean Lemonnier</td>
+<td>Killian Mathieu</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>420</td>
+<td>55807</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Micheal Minogue</td>
+<td>Rian Baynes</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>420</td>
+<td>47421</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Kate Barry</td>
+<td>Eili McMahon</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>420</td>
+<td>54847</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Sam Rigley</td>
+<td>Jack Ganley</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>420</td>
+<td>51742</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Niamh Baynes</td>
+<td>Sarah Donald</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>420</td>
+<td>55437</td>
+<td>&nbsp;</td>
+<td>CSS</td>
+<td>Charlie Donald</td>
+<td>James Harvey</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>420</td>
+<td>54059</td>
+<td>&nbsp;</td>
+<td>LDYC</td>
+<td>Ryan O Doherty</td>
+<td>Ryan O Connel</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>420</td>
+<td>55402</td>
+<td>54747</td>
+<td>RCYC</td>
+<td>Kate Deane</td>
+<td>Robyn Blake</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>420</td>
+<td>55371</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Paschal Hanniffy</td>
+<td>Rossa Mitchell Ward</td>
+<td>11</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r4_420">R4 - 420 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place, Time: 1153
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>420</td>
+<td>TUR4</td>
+<td>TUR5</td>
+<td>MYC</td>
+<td>Oleksandr Bezpalyi</td>
+<td>Roisin Mitchell Ward</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>420</td>
+<td>55807</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Micheal Minogue</td>
+<td>Rian Baynes</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>420</td>
+<td>55878</td>
+<td>53967</td>
+<td>KYC/RCYC</td>
+<td>Caoimhe Corkery</td>
+<td>Henrietta Leech</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>420</td>
+<td>55437</td>
+<td>&nbsp;</td>
+<td>CSS</td>
+<td>Charlie Donald</td>
+<td>James Harvey</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>420</td>
+<td>57214</td>
+<td>&nbsp;</td>
+<td>Gbsc</td>
+<td>Sean Lemonnier</td>
+<td>Killian Mathieu</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>420</td>
+<td>47421</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Kate Barry</td>
+<td>Eili McMahon</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>420</td>
+<td>54847</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Sam Rigley</td>
+<td>Jack Ganley</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>420</td>
+<td>51742</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Niamh Baynes</td>
+<td>Sarah Donald</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>420</td>
+<td>55402</td>
+<td>54747</td>
+<td>RCYC</td>
+<td>Kate Deane</td>
+<td>Robyn Blake</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>420</td>
+<td>54059</td>
+<td>&nbsp;</td>
+<td>LDYC</td>
+<td>Ryan O Doherty</td>
+<td>Ryan O Connel</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>420</td>
+<td>55371</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Paschal Hanniffy</td>
+<td>Rossa Mitchell Ward</td>
+<td>11</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5_420">R5 - 420 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place, Time: 1244
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>420</td>
+<td>TUR4</td>
+<td>TUR5</td>
+<td>MYC</td>
+<td>Oleksandr Bezpalyi</td>
+<td>Roisin Mitchell Ward</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>420</td>
+<td>54847</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Sam Rigley</td>
+<td>Jack Ganley</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>420</td>
+<td>57214</td>
+<td>&nbsp;</td>
+<td>Gbsc</td>
+<td>Sean Lemonnier</td>
+<td>Killian Mathieu</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>420</td>
+<td>55437</td>
+<td>&nbsp;</td>
+<td>CSS</td>
+<td>Charlie Donald</td>
+<td>James Harvey</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>420</td>
+<td>55878</td>
+<td>53967</td>
+<td>KYC/RCYC</td>
+<td>Caoimhe Corkery</td>
+<td>Henrietta Leech</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>420</td>
+<td>55807</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Micheal Minogue</td>
+<td>Rian Baynes</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>420</td>
+<td>47421</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Kate Barry</td>
+<td>Eili McMahon</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>420</td>
+<td>51742</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Niamh Baynes</td>
+<td>Sarah Donald</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>420</td>
+<td>54059</td>
+<td>&nbsp;</td>
+<td>LDYC</td>
+<td>Ryan O Doherty</td>
+<td>Ryan O Connel</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>420</td>
+<td>55371</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Paschal Hanniffy</td>
+<td>Rossa Mitchell Ward</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>420</td>
+<td>55402</td>
+<td>54747</td>
+<td>RCYC</td>
+<td>Kate Deane</td>
+<td>Robyn Blake</td>
+<td>DNS</td>
+<td>12.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6_420">R6 - 420 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place, Time: 1328
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>420</td>
+<td>57214</td>
+<td>&nbsp;</td>
+<td>Gbsc</td>
+<td>Sean Lemonnier</td>
+<td>Killian Mathieu</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>420</td>
+<td>TUR4</td>
+<td>TUR5</td>
+<td>MYC</td>
+<td>Oleksandr Bezpalyi</td>
+<td>Roisin Mitchell Ward</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>420</td>
+<td>54847</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Sam Rigley</td>
+<td>Jack Ganley</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>420</td>
+<td>47421</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Kate Barry</td>
+<td>Eili McMahon</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>420</td>
+<td>55807</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Micheal Minogue</td>
+<td>Rian Baynes</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>420</td>
+<td>55437</td>
+<td>&nbsp;</td>
+<td>CSS</td>
+<td>Charlie Donald</td>
+<td>James Harvey</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>420</td>
+<td>55878</td>
+<td>53967</td>
+<td>KYC/RCYC</td>
+<td>Caoimhe Corkery</td>
+<td>Henrietta Leech</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>420</td>
+<td>51742</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Niamh Baynes</td>
+<td>Sarah Donald</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>420</td>
+<td>54059</td>
+<td>&nbsp;</td>
+<td>LDYC</td>
+<td>Ryan O Doherty</td>
+<td>Ryan O Connel</td>
+<td>DNF</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>9</td>
+<td>420</td>
+<td>55371</td>
+<td>&nbsp;</td>
+<td>GBSC</td>
+<td>Paschal Hanniffy</td>
+<td>Rossa Mitchell Ward</td>
+<td>DNF</td>
+<td>12.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1rs_feva">R1 - RS Feva Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 13:00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS Feva</td>
+<td>6234</td>
+<td>&nbsp;</td>
+<td>RSGYC</td>
+<td>Julian O Leary</td>
+<td>Dillon Kennedy</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS Feva</td>
+<td>8572</td>
+<td>2724</td>
+<td>RCYC/MBSC</td>
+<td>Harry Coole</td>
+<td>Louis O'Neill</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS Feva</td>
+<td>3672</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Alex Mills</td>
+<td>Eoin Jones</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS Feva</td>
+<td>8174</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Ruadhan Jackson</td>
+<td>Colm O'Driscoll</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS Feva</td>
+<td>5142</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Rachel Kavanagh</td>
+<td>Kohana Tanaka</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS Feva</td>
+<td>7890</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Jenny O'Connor</td>
+<td>Aisling O'Connor</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS Feva</td>
+<td>1605</td>
+<td>&nbsp;</td>
+<td>RIYC</td>
+<td>Ruby Mulligan</td>
+<td>Sophie Kelly</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>6150</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Hugh Egan</td>
+<td>Milo Twomey</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS Feva</td>
+<td>2256</td>
+<td>&nbsp;</td>
+<td>MBSC</td>
+<td>Eli Jeffers</td>
+<td>Joan Jeffers</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS Feva</td>
+<td>88</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Sean Collins</td>
+<td>Aodh Andrews</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>6236</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Michael Maher</td>
+<td>Jamie Keegan</td>
+<td>11</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>RS Feva</td>
+<td>2178</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Donagh Jackson</td>
+<td>Paddy Morrissey</td>
+<td>12</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS Feva</td>
+<td>1589</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Polly Anna Downing</td>
+<td>Flynn Downing</td>
+<td>13</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>RS Feva</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Fionn Fabrizi</td>
+<td>Ciara Fabrizi</td>
+<td>14</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS Feva</td>
+<td>8456</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Jamie White</td>
+<td>Eoin White</td>
+<td>RET</td>
+<td>17.0</td>
+</tr>
+<tr class="even racerow">
+<td>15</td>
+<td>RS Feva</td>
+<td>None</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Ava Collins</td>
+<td>Molly Collins</td>
+<td>RET</td>
+<td>17.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2rs_feva">R2 - RS Feva Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 13:55
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS Feva</td>
+<td>8174</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Ruadhan Jackson</td>
+<td>Colm O'Driscoll</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS Feva</td>
+<td>8572</td>
+<td>2724</td>
+<td>RCYC/MBSC</td>
+<td>Harry Coole</td>
+<td>Louis O'Neill</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS Feva</td>
+<td>3672</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Alex Mills</td>
+<td>Eoin Jones</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS Feva</td>
+<td>6234</td>
+<td>&nbsp;</td>
+<td>RSGYC</td>
+<td>Julian O Leary</td>
+<td>Dillon Kennedy</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS Feva</td>
+<td>None</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Ava Collins</td>
+<td>Molly Collins</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS Feva</td>
+<td>7890</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Jenny O'Connor</td>
+<td>Aisling O'Connor</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS Feva</td>
+<td>6236</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Michael Maher</td>
+<td>Jamie Keegan</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>2256</td>
+<td>&nbsp;</td>
+<td>MBSC</td>
+<td>Eli Jeffers</td>
+<td>Joan Jeffers</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS Feva</td>
+<td>5142</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Rachel Kavanagh</td>
+<td>Kohana Tanaka</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS Feva</td>
+<td>88</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Sean Collins</td>
+<td>Aodh Andrews</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>6150</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Hugh Egan</td>
+<td>Milo Twomey</td>
+<td>11</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>RS Feva</td>
+<td>2178</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Donagh Jackson</td>
+<td>Paddy Morrissey</td>
+<td>12</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS Feva</td>
+<td>1605</td>
+<td>&nbsp;</td>
+<td>RIYC</td>
+<td>Ruby Mulligan</td>
+<td>Sophie Kelly</td>
+<td>13</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>RS Feva</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Fionn Fabrizi</td>
+<td>Ciara Fabrizi</td>
+<td>14</td>
+<td>14.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r3rs_feva">R3 - RS Feva Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 1100
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS Feva</td>
+<td>8572</td>
+<td>2724</td>
+<td>RCYC/MBSC</td>
+<td>Harry Coole</td>
+<td>Louis O'Neill</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS Feva</td>
+<td>5142</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Rachel Kavanagh</td>
+<td>Kohana Tanaka</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS Feva</td>
+<td>8174</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Ruadhan Jackson</td>
+<td>Colm O'Driscoll</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS Feva</td>
+<td>3672</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Alex Mills</td>
+<td>Eoin Jones</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS Feva</td>
+<td>6236</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Michael Maher</td>
+<td>Jamie Keegan</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS Feva</td>
+<td>2256</td>
+<td>&nbsp;</td>
+<td>MBSC</td>
+<td>Eli Jeffers</td>
+<td>Joan Jeffers</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS Feva</td>
+<td>7890</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Jenny O'Connor</td>
+<td>Aisling O'Connor</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>6150</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Hugh Egan</td>
+<td>Milo Twomey</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS Feva</td>
+<td>8456</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Jamie White</td>
+<td>Eoin White</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS Feva</td>
+<td>None</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Ava Collins</td>
+<td>Molly Collins</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>6234</td>
+<td>&nbsp;</td>
+<td>RSGYC</td>
+<td>Julian O Leary</td>
+<td>Dillon Kennedy</td>
+<td>11</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>RS Feva</td>
+<td>1605</td>
+<td>&nbsp;</td>
+<td>RIYC</td>
+<td>Ruby Mulligan</td>
+<td>Sophie Kelly</td>
+<td>12</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS Feva</td>
+<td>2178</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Donagh Jackson</td>
+<td>Paddy Morrissey</td>
+<td>13</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>RS Feva</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Fionn Fabrizi</td>
+<td>Ciara Fabrizi</td>
+<td>14</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS Feva</td>
+<td>1589</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Polly Anna Downing</td>
+<td>Flynn Downing</td>
+<td>15</td>
+<td>15.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r4rs_feva">R4 - RS Feva Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 1148
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS Feva</td>
+<td>8572</td>
+<td>2724</td>
+<td>RCYC/MBSC</td>
+<td>Harry Coole</td>
+<td>Louis O'Neill</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS Feva</td>
+<td>3672</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Alex Mills</td>
+<td>Eoin Jones</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS Feva</td>
+<td>8456</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Jamie White</td>
+<td>Eoin White</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS Feva</td>
+<td>None</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Ava Collins</td>
+<td>Molly Collins</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS Feva</td>
+<td>6234</td>
+<td>&nbsp;</td>
+<td>RSGYC</td>
+<td>Julian O Leary</td>
+<td>Dillon Kennedy</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS Feva</td>
+<td>5142</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Rachel Kavanagh</td>
+<td>Kohana Tanaka</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS Feva</td>
+<td>7890</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Jenny O'Connor</td>
+<td>Aisling O'Connor</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>8174</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Ruadhan Jackson</td>
+<td>Colm O'Driscoll</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS Feva</td>
+<td>6236</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Michael Maher</td>
+<td>Jamie Keegan</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS Feva</td>
+<td>6150</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Hugh Egan</td>
+<td>Milo Twomey</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>2256</td>
+<td>&nbsp;</td>
+<td>MBSC</td>
+<td>Eli Jeffers</td>
+<td>Joan Jeffers</td>
+<td>11</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>RS Feva</td>
+<td>2178</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Donagh Jackson</td>
+<td>Paddy Morrissey</td>
+<td>12</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>RS Feva</td>
+<td>1589</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Polly Anna Downing</td>
+<td>Flynn Downing</td>
+<td>13</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>RS Feva</td>
+<td>1605</td>
+<td>&nbsp;</td>
+<td>RIYC</td>
+<td>Ruby Mulligan</td>
+<td>Sophie Kelly</td>
+<td>14</td>
+<td>14.0</td>
+</tr>
+<tr class="odd racerow">
+<td>15</td>
+<td>RS Feva</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Fionn Fabrizi</td>
+<td>Ciara Fabrizi</td>
+<td>15</td>
+<td>15.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5rs_feva">R5 - RS Feva Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 1231
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS Feva</td>
+<td>6234</td>
+<td>&nbsp;</td>
+<td>RSGYC</td>
+<td>Julian O Leary</td>
+<td>Dillon Kennedy</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS Feva</td>
+<td>8572</td>
+<td>2724</td>
+<td>RCYC/MBSC</td>
+<td>Harry Coole</td>
+<td>Louis O'Neill</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS Feva</td>
+<td>8456</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Jamie White</td>
+<td>Eoin White</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS Feva</td>
+<td>8174</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Ruadhan Jackson</td>
+<td>Colm O'Driscoll</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS Feva</td>
+<td>7890</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Jenny O'Connor</td>
+<td>Aisling O'Connor</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS Feva</td>
+<td>6236</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Michael Maher</td>
+<td>Jamie Keegan</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS Feva</td>
+<td>3672</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Alex Mills</td>
+<td>Eoin Jones</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>5142</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Rachel Kavanagh</td>
+<td>Kohana Tanaka</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS Feva</td>
+<td>1605</td>
+<td>&nbsp;</td>
+<td>RIYC</td>
+<td>Ruby Mulligan</td>
+<td>Sophie Kelly</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS Feva</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Fionn Fabrizi</td>
+<td>Ciara Fabrizi</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>2256</td>
+<td>&nbsp;</td>
+<td>MBSC</td>
+<td>Eli Jeffers</td>
+<td>Joan Jeffers</td>
+<td>RET</td>
+<td>17.0</td>
+</tr>
+<tr class="even racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>None</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Ava Collins</td>
+<td>Molly Collins</td>
+<td>DNS</td>
+<td>17.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>6150</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Hugh Egan</td>
+<td>Milo Twomey</td>
+<td>DNS</td>
+<td>17.0</td>
+</tr>
+<tr class="even racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>2178</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Donagh Jackson</td>
+<td>Paddy Morrissey</td>
+<td>DNS</td>
+<td>17.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>RS Feva</td>
+<td>1589</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Polly Anna Downing</td>
+<td>Flynn Downing</td>
+<td>DNS</td>
+<td>17.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6rs_feva">R6 - RS Feva Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 1318
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="9">
+<col class="rank" />
+<col class="fleet" />
+<col class="sailno" />
+<col class="altsailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="crewname" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Fleet</th>
+<th>SailNo</th>
+<th>AltSailNo</th>
+<th>Club</th>
+<th>HelmName</th>
+<th>CrewName</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>RS Feva</td>
+<td>3672</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Alex Mills</td>
+<td>Eoin Jones</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS Feva</td>
+<td>6234</td>
+<td>&nbsp;</td>
+<td>RSGYC</td>
+<td>Julian O Leary</td>
+<td>Dillon Kennedy</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS Feva</td>
+<td>8572</td>
+<td>2724</td>
+<td>RCYC/MBSC</td>
+<td>Harry Coole</td>
+<td>Louis O'Neill</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS Feva</td>
+<td>8456</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Jamie White</td>
+<td>Eoin White</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS Feva</td>
+<td>6236</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Michael Maher</td>
+<td>Jamie Keegan</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>RS Feva</td>
+<td>8174</td>
+<td>&nbsp;</td>
+<td>CSC</td>
+<td>Ruadhan Jackson</td>
+<td>Colm O'Driscoll</td>
+<td>6</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>RS Feva</td>
+<td>5142</td>
+<td>&nbsp;</td>
+<td>RStGYC</td>
+<td>Rachel Kavanagh</td>
+<td>Kohana Tanaka</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>7890</td>
+<td>&nbsp;</td>
+<td>RCYC</td>
+<td>Jenny O'Connor</td>
+<td>Aisling O'Connor</td>
+<td>8</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>RS Feva</td>
+<td>1605</td>
+<td>&nbsp;</td>
+<td>RIYC</td>
+<td>Ruby Mulligan</td>
+<td>Sophie Kelly</td>
+<td>9</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>RS Feva</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>BBSC</td>
+<td>Fionn Fabrizi</td>
+<td>Ciara Fabrizi</td>
+<td>10</td>
+<td>10.0</td>
+</tr>
+</tbody>
+</table>
+
+<p class="hardleft"><a href="https://www.RoyalCork.com">www.RoyalCork.com</a><br /><a href="mailto:office@RoyalCork.com">office@RoyalCork.com</a></p>
+<p class="hardright"><a href="https://www.RoyalCork.com">www.RoyalCork.com</a><br /><a href="mailto:office@RoyalCork.com">office@RoyalCork.com</a></p>
+<p>Sailwave Scoring Software 2.38.02<br /><a href="https://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+
