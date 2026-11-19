@@ -60,7 +60,9 @@ Two programs made the pages:
   race linking that race's own page. The race pages are not captured. A
   one-off race is sometimes published as a race page alone, and a class set
   up but never sailed as an entry list ("Entries: 6", no places). Cork Week
-  2004 is an older Sail100, whose discards are marked by cell colour.
+  2004 and 2006 are an older Sail100: no `<h1>` — the class is a bold line
+  above the table ("Cork Week IRC1") — and a discarded race shaded grey
+  rather than given a class. 2004's pages never name the program.
 - **Sailwave**, for the keelboats from 2018, for some dinghy events from
   2012 and most from 2019, and for Cork Week from 2018: usually one page
   per event, carrying every class's standings (`summarytitle`), often a

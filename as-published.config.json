@@ -3,6 +3,158 @@
   "out": "as-published",
   "series": [
     {
+      "key": "rcyc-2004-cork-week",
+      "id": "f35a82e6-8fa4-56d6-8136-e383d20439ef",
+      "publishedSlug": "2004",
+      "name": "Cork Week 2004",
+      "venue": "Crosshaven",
+      "venueUrl": "https://www.royalcork.com",
+      "venueLogoUrl": "https://logos.sailscoring.ie/royal-cork-yc.svg",
+      "eventUrl": "https://www.corkweek.ie",
+      "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
+      "startDate": "2004",
+      "source": "sailwave",
+      "ownerNames": true,
+      "fleets": [
+        {
+          "name": "IRC 0",
+          "subPath": "cork-week/irc-0",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc0os.html"
+        },
+        {
+          "name": "IRM",
+          "subPath": "cork-week/irm",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirmos.html"
+        },
+        {
+          "name": "IRM Large",
+          "subPath": "cork-week/irm-large",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirmlaos.html"
+        },
+        {
+          "name": "IRM Small",
+          "subPath": "cork-week/irm-small",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirmsmos.html"
+        },
+        {
+          "name": "IRC 1",
+          "subPath": "cork-week/irc-1",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc1os.html"
+        },
+        {
+          "name": "IRC 2",
+          "subPath": "cork-week/irc-2",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc2os.html"
+        },
+        {
+          "name": "IRC 3",
+          "subPath": "cork-week/irc-3",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc3os.html"
+        },
+        {
+          "name": "IRC 4",
+          "subPath": "cork-week/irc-4",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc4os.html"
+        },
+        {
+          "name": "IRC 5",
+          "subPath": "cork-week/irc-5",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc5os.html"
+        },
+        {
+          "name": "IRC 6",
+          "subPath": "cork-week/irc-6",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc6os.html"
+        },
+        {
+          "name": "IRC 7",
+          "subPath": "cork-week/irc-7",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc7os.html"
+        },
+        {
+          "name": "Sigma 38",
+          "subPath": "cork-week/sigma-38",
+          "file": "sources/www.corkweek.ie/results/results2004/cws38os.html"
+        },
+        {
+          "name": "Sigma 33",
+          "subPath": "cork-week/sigma-33",
+          "file": "sources/www.corkweek.ie/results/results2004/cws33os.html"
+        },
+        {
+          "name": "Sigma 33 Silver",
+          "subPath": "cork-week/sigma-33-silver",
+          "file": "sources/www.corkweek.ie/results/results2004/cws33sos.html"
+        },
+        {
+          "name": "Gentlemen No Spinnaker",
+          "subPath": "cork-week/gentlemen-no-spinnaker",
+          "file": "sources/www.corkweek.ie/results/results2004/cwgnsos.html"
+        },
+        {
+          "name": "Gentlemen No Spinnaker Cat 1 2 Sailors",
+          "subPath": "cork-week/gentlemen-no-spinnaker-cat-1-2-sailors",
+          "file": "sources/www.corkweek.ie/results/results2004/cwgnsrwos.html"
+        },
+        {
+          "name": "Gentlemen No Spinnaker Restricted",
+          "subPath": "cork-week/gentlemen-no-spinnaker-restricted",
+          "file": "sources/www.corkweek.ie/results/results2004/cwgnsros.html"
+        },
+        {
+          "name": "ECHO",
+          "subPath": "cork-week/echo",
+          "file": "sources/www.corkweek.ie/results/results2004/cwechoos.html"
+        },
+        {
+          "name": "Mixed Sports Boats",
+          "subPath": "cork-week/mixed-sports-boats",
+          "file": "sources/www.corkweek.ie/results/results2004/cwmsbos.html"
+        },
+        {
+          "name": "X332",
+          "subPath": "cork-week/x332",
+          "file": "sources/www.corkweek.ie/results/results2004/cwx332os.html"
+        },
+        {
+          "name": "IRC 0C",
+          "subPath": "cork-week/irc-0c",
+          "file": "sources/www.corkweek.ie/results/results2004/cwirc0cos.html"
+        },
+        {
+          "name": "1720",
+          "subPath": "cork-week/1720",
+          "file": "sources/www.corkweek.ie/results/results2004/cw1720os.html"
+        },
+        {
+          "name": "Prima 38",
+          "subPath": "cork-week/prima-38",
+          "file": "sources/www.corkweek.ie/results/results2004/cwprimaos.html"
+        },
+        {
+          "name": "Hunter 707",
+          "subPath": "cork-week/hunter-707",
+          "file": "sources/www.corkweek.ie/results/results2004/ct1os.html"
+        },
+        {
+          "name": "Impala",
+          "subPath": "cork-week/impala",
+          "file": "sources/www.corkweek.ie/results/results2004/cwimpos.html"
+        },
+        {
+          "name": "Laser SB3",
+          "subPath": "cork-week/laser-sb3",
+          "file": "sources/www.corkweek.ie/results/results2004/cwsb3os.html"
+        }
+      ],
+      "folders": [
+        {
+          "path": "cork-week",
+          "label": "Cork Week 2004"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2006-cork-week",
       "id": "4e20970d-942b-5023-b29b-22806aa0a071",
       "publishedSlug": "2006",
@@ -107,8 +259,8 @@
           "file": "sources/www.corkweek.ie/results/results2006/cwh707os.html"
         },
         {
-          "name": "Overall",
-          "subPath": "cork-week/overall",
+          "name": "1720",
+          "subPath": "cork-week/1720",
           "file": "sources/www.corkweek.ie/results/results2006/cw1720os.html"
         },
         {

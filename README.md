@@ -1,7 +1,7 @@
 # rcyc-archive
 
 Royal Cork Yacht Club's published results, 2011–2026, and Cork Week's,
-2006–2026, ingested **as published** into the `rcyc` workspace of
+2004–2026, ingested **as published** into the `rcyc` workspace of
 [Sail Scoring](https://app.sailscoring.ie) (app ADR-010): shown exactly as
 the club published them and never re-scored.
 
@@ -83,12 +83,13 @@ Dinghy Frostbites, the Autumn League — are not archived here.
 
 ## Status
 
-Every result the club's index pages link, 2011–2026, and Cork Week 2006–2026:
-**533 series, 1,645 pages**, about 24,000 competitor rows. 234 linked pages
+Every result the club's index pages link, 2011–2026, and Cork Week 2004–2026:
+**534 series, 1,671 pages**, about 25,000 competitor rows. 208 linked pages
 are not carried, each for a stated reason (CLARIFICATIONS §5).
 
 | Season | Series | Pages |
 |--------|-------:|------:|
+| 2004 | 1 | 26 |
 | 2006 | 1 | 21 |
 | 2008 | 1 | 26 |
 | 2010 | 1 | 13 |
@@ -109,7 +110,7 @@ are not carried, each for a stated reason (CLARIFICATIONS §5).
 | 2025 | 31 | 75 |
 | 2026 | 25 | 62 |
 
-The 2006–2010 seasons are Cork Week alone; the club's own pages start in
+The 2004–2010 seasons are Cork Week alone; the club's own pages start in
 2011 (dinghies) and 2012 (keelboats).
 
 - ⬜ **Set the repo's CI secrets** (`APP_REPO_TOKEN`,
@@ -117,7 +118,6 @@ The 2006–2010 seasons are Cork Week alone; the club's own pages start in
   workflow succeeds having done nothing.
 - ⬜ **Sail100 race pages** — would date the 2011–2018 series and publish
   their race detail (CLARIFICATIONS §10).
-- ⬜ **Cork Week 2004** — waits for the app's Sail100 reader (§7).
 - ⬜ **The competitor-identity manifest** — not started.
 - ⬜ **The questions for the club** in CLARIFICATIONS §11.
 

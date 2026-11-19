@@ -1,6 +1,172 @@
 {
   "series": [
     {
+      "key": "rcyc-2004-cork-week",
+      "season": "2004",
+      "slug": "cork-week",
+      "name": "Cork Week 2004",
+      "eventUrl": "https://www.corkweek.ie",
+      "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
+      "pages": [
+        {
+          "name": "IRC 0",
+          "slug": "irc-0",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc0os.html",
+          "title": "Cork Week IRC0"
+        },
+        {
+          "name": "IRM",
+          "slug": "irm",
+          "url": "https://www.corkweek.ie/results/results2004/cwirmos.html",
+          "title": "Cork Week IRM"
+        },
+        {
+          "name": "IRM Large",
+          "slug": "irm-large",
+          "url": "https://www.corkweek.ie/results/results2004/cwirmlaos.html",
+          "title": "Cork Week IRM Large"
+        },
+        {
+          "name": "IRM Small",
+          "slug": "irm-small",
+          "url": "https://www.corkweek.ie/results/results2004/cwirmsmos.html",
+          "title": "Cork Week IRM Small"
+        },
+        {
+          "name": "IRC 1",
+          "slug": "irc-1",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc1os.html",
+          "title": "Cork Week IRC1"
+        },
+        {
+          "name": "IRC 2",
+          "slug": "irc-2",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc2os.html",
+          "title": "Cork Week IRC2"
+        },
+        {
+          "name": "IRC 3",
+          "slug": "irc-3",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc3os.html",
+          "title": "Cork Week IRC3"
+        },
+        {
+          "name": "IRC 4",
+          "slug": "irc-4",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc4os.html",
+          "title": "Cork Week IRC4"
+        },
+        {
+          "name": "IRC 5",
+          "slug": "irc-5",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc5os.html",
+          "title": "Cork Week IRC5"
+        },
+        {
+          "name": "IRC 6",
+          "slug": "irc-6",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc6os.html",
+          "title": "Cork Week IRC6"
+        },
+        {
+          "name": "IRC 7",
+          "slug": "irc-7",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc7os.html",
+          "title": "Cork Week IRC7"
+        },
+        {
+          "name": "Sigma 38",
+          "slug": "sigma-38",
+          "url": "https://www.corkweek.ie/results/results2004/cws38os.html",
+          "title": "Cork Week Sigma 38"
+        },
+        {
+          "name": "Sigma 33",
+          "slug": "sigma-33",
+          "url": "https://www.corkweek.ie/results/results2004/cws33os.html",
+          "title": "Cork Week Sigma 33"
+        },
+        {
+          "name": "Sigma 33 Silver",
+          "slug": "sigma-33-silver",
+          "url": "https://www.corkweek.ie/results/results2004/cws33sos.html",
+          "title": "Cork Week Sigma 33 Silver"
+        },
+        {
+          "name": "Gentlemen No Spinnaker",
+          "slug": "gentlemen-no-spinnaker",
+          "url": "https://www.corkweek.ie/results/results2004/cwgnsos.html",
+          "title": "Cork Week Gentlemen No Spinaker"
+        },
+        {
+          "name": "Gentlemen No Spinnaker Cat 1 2 Sailors",
+          "slug": "gentlemen-no-spinnaker-cat-1-2-sailors",
+          "url": "https://www.corkweek.ie/results/results2004/cwgnsrwos.html",
+          "title": "Cork Week Gentlemen No Spinaker cat 1 2 Sailors"
+        },
+        {
+          "name": "Gentlemen No Spinnaker Restricted",
+          "slug": "gentlemen-no-spinnaker-restricted",
+          "url": "https://www.corkweek.ie/results/results2004/cwgnsros.html",
+          "title": "Cork Week Gentlemen No Spinaker Restricted"
+        },
+        {
+          "name": "ECHO",
+          "slug": "echo",
+          "url": "https://www.corkweek.ie/results/results2004/cwechoos.html",
+          "title": "Cork Week ECHO"
+        },
+        {
+          "name": "Mixed Sports Boats",
+          "slug": "mixed-sports-boats",
+          "url": "https://www.corkweek.ie/results/results2004/cwmsbos.html",
+          "title": "Cork Week Mixed Sports Boats"
+        },
+        {
+          "name": "X332",
+          "slug": "x332",
+          "url": "https://www.corkweek.ie/results/results2004/cwx332os.html",
+          "title": "Cork Week X332"
+        },
+        {
+          "name": "IRC 0C",
+          "slug": "irc-0c",
+          "url": "https://www.corkweek.ie/results/results2004/cwirc0cos.html",
+          "title": "Cork Week IRC0C"
+        },
+        {
+          "name": "1720",
+          "slug": "1720",
+          "url": "https://www.corkweek.ie/results/results2004/cw1720os.html",
+          "title": "Cork Week 1720"
+        },
+        {
+          "name": "Prima 38",
+          "slug": "prima-38",
+          "url": "https://www.corkweek.ie/results/results2004/cwprimaos.html",
+          "title": "Cork Week Prima 38"
+        },
+        {
+          "name": "Hunter 707",
+          "slug": "hunter-707",
+          "url": "https://www.corkweek.ie/results/results2004/ct1os.html",
+          "title": "Cork Week Hunter 707"
+        },
+        {
+          "name": "Impala",
+          "slug": "impala",
+          "url": "https://www.corkweek.ie/results/results2004/cwimpos.html",
+          "title": "Cork Week Impala"
+        },
+        {
+          "name": "Laser SB3",
+          "slug": "laser-sb3",
+          "url": "https://www.corkweek.ie/results/results2004/cwsb3os.html",
+          "title": "Cork Week Laser SB3"
+        }
+      ]
+    },
+    {
       "key": "rcyc-2006-cork-week",
       "season": "2006",
       "slug": "cork-week",
@@ -12,127 +178,127 @@
           "name": "IRC Super 0",
           "slug": "irc-super-0",
           "url": "https://www.corkweek.ie/results/results2006/cwircs0os.html",
-          "title": ""
+          "title": "Cork Week IRC Super 0"
         },
         {
           "name": "IRC 0",
           "slug": "irc-0",
           "url": "https://www.corkweek.ie/results/results2006/cwirc0os.html",
-          "title": ""
+          "title": "Cork Week IRC0"
         },
         {
           "name": "IRM",
           "slug": "irm",
           "url": "https://www.corkweek.ie/results/results2006/cwirmos.html",
-          "title": ""
+          "title": "Cork Week IRM"
         },
         {
           "name": "IRC 1",
           "slug": "irc-1",
           "url": "https://www.corkweek.ie/results/results2006/cwirc1os.html",
-          "title": ""
+          "title": "Cork Week IRC1"
         },
         {
           "name": "IRC 2",
           "slug": "irc-2",
           "url": "https://www.corkweek.ie/results/results2006/cwirc2os.html",
-          "title": ""
+          "title": "Cork Week IRC2"
         },
         {
           "name": "IRC 3",
           "slug": "irc-3",
           "url": "https://www.corkweek.ie/results/results2006/cwirc3os.html",
-          "title": ""
+          "title": "Cork Week IRC3"
         },
         {
           "name": "IRC 4",
           "slug": "irc-4",
           "url": "https://www.corkweek.ie/results/results2006/cwirc4os.html",
-          "title": ""
+          "title": "Cork Week IRC4"
         },
         {
           "name": "IRC 5",
           "slug": "irc-5",
           "url": "https://www.corkweek.ie/results/results2006/cwirc5os.html",
-          "title": ""
+          "title": "Cork Week IRC5"
         },
         {
           "name": "IRC 6",
           "slug": "irc-6",
           "url": "https://www.corkweek.ie/results/results2006/cwirc6os.html",
-          "title": ""
+          "title": "Cork Week IRC6"
         },
         {
           "name": "Corporate Class",
           "slug": "corporate-class",
           "url": "https://www.corkweek.ie/results/results2006/cwccos.html",
-          "title": ""
+          "title": "Cork Week Corporate Class"
         },
         {
           "name": "Gentlemans Class",
           "slug": "gentlemans-class",
           "url": "https://www.corkweek.ie/results/results2006/cwgcos.html",
-          "title": ""
+          "title": "Cork Week Gentlemans Class"
         },
         {
           "name": "J109",
           "slug": "j109",
           "url": "https://www.corkweek.ie/results/results2006/cwj109os.html",
-          "title": ""
+          "title": "Cork Week J109"
         },
         {
           "name": "X332",
           "slug": "x332",
           "url": "https://www.corkweek.ie/results/results2006/cwx332os.html",
-          "title": ""
+          "title": "Cork Week X332"
         },
         {
           "name": "Sigma 38",
           "slug": "sigma-38",
           "url": "https://www.corkweek.ie/results/results2006/cws38os.html",
-          "title": ""
+          "title": "Cork Week Sigma 38"
         },
         {
           "name": "Sunsail Sunfast 37",
           "slug": "sunsail-sunfast-37",
           "url": "https://www.corkweek.ie/results/results2006/cwss37os.html",
-          "title": ""
+          "title": "Cork Week Sunsail Sunfast 37"
         },
         {
           "name": "Mixed Sports Boats",
           "slug": "mixed-sports-boats",
           "url": "https://www.corkweek.ie/results/results2006/cwmsbos.html",
-          "title": ""
+          "title": "Cork Week Mixed Sports Boats"
         },
         {
           "name": "SB3",
           "slug": "sb3",
           "url": "https://www.corkweek.ie/results/results2006/cwsb3os.html",
-          "title": ""
+          "title": "Cork Week SB3"
         },
         {
           "name": "Hunter 707",
           "slug": "hunter-707",
           "url": "https://www.corkweek.ie/results/results2006/cwh707os.html",
-          "title": ""
+          "title": "Cork Week Hunter 707"
         },
         {
-          "name": "Overall",
-          "slug": "overall",
+          "name": "1720",
+          "slug": "1720",
           "url": "https://www.corkweek.ie/results/results2006/cw1720os.html",
-          "title": ""
+          "title": "Cork Week 1720"
         },
         {
           "name": "Beneteau 31.7",
           "slug": "beneteau-31-7",
           "url": "https://www.corkweek.ie/results/results2006/cwbenos.html",
-          "title": ""
+          "title": "Cork Week Beneteau 31.7"
         },
         {
           "name": "Prima 38",
           "slug": "prima-38",
           "url": "https://www.corkweek.ie/results/results2006/cwpros.html",
-          "title": ""
+          "title": "Cork Week Prima 38"
         }
       ]
     },
@@ -16246,110 +16412,6 @@
     {
       "url": "https://www.corkweek.ie/results/results2004/cd.html",
       "reason": "A per-boat or press summary of the class results, not results of its own."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/ct1os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cw1720os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwechoos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwgnsos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwgnsros.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwgnsrwos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwimpos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc0cos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc0os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc1os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc2os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc3os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc4os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc5os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc6os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirc7os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirmlaos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirmos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwirmsmos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwmsbos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwprimaos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cws33os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cws33sos.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cws38os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwsb3os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
-    },
-    {
-      "url": "https://www.corkweek.ie/results/results2004/cwx332os.html",
-      "reason": "Cork Week 2004 was published by an older Sail100 that marks discards by cell colour, which the app's Sail100 reader does not read yet."
     },
     {
       "url": "https://www.corkweek.ie/results/results2004/ef.html",

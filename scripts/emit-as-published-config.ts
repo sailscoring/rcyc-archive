@@ -163,7 +163,9 @@ function claim(file: string, titles: string[]): void {
 /** A page: its fleet, and the labels that may date it. */
 function buildFleet(page: ArchivePage, subPath: string) {
   const { file, page: sw, text } = parse(page);
-  if (sw.summaries.length === 0 && sw.races.length === 0 && /sail100/i.test(text)) {
+  // As the app's generator does: a page Sailwave's reader finds nothing in is
+  // read as Sail100 — Cork Week 2004's pages never name the program.
+  if (sw.summaries.length === 0 && sw.races.length === 0) {
     return sail100Fleet(page, subPath, file, text);
   }
   checkTitle(file, sw.title, page);

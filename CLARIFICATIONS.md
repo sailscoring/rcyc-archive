@@ -49,7 +49,7 @@ per event**, with a page per class.
   and with its year: "UK HALSEY SAILMAKERS MAY LEAGUE" on the 2012 page is
   "May League 2012", sponsored by UK Halsey Sailmakers. Capitals are
   lowered; the club's typos are corrected in the display name ("Costal",
-  "Regetta", "Frostbities", "Champiionships", "Leaague") and kept in the
+  "Regetta", "Frostbities", "Champiionships", "Leaague", "Spinaker") and kept in the
   page headings `series.json` records.
 - **A recurring event keeps one slug across years**, however the year's
   heading words it: the May League is `may-league` whether headed "May
@@ -110,7 +110,6 @@ Every link is in `series.json`, published or skipped with its reason:
 | 63 | Cork Week 2004–2010's per-boat pages ("Boats A–B") and press summaries — other views of the class results. |
 | 45 | Broken links: the page is no longer on the server (among them ICRA's 2017 Nationals, hosted on `cruiserracing.ie`, and the 2012 Optimist leagues). |
 | 36 | Entry lists published before a race was sailed and never updated. |
-| 26 | Cork Week 2004 (§7). |
 | 17 | The 2020 Virtual Regatta leagues — online racing during the lockdown. |
 | 13 | PDFs and images. |
 | 11 | Ranking lists, fleet allocations, coaching schedules and a pursuit race's start times. |
@@ -149,13 +148,18 @@ finalised in the January after) are the year's own and are kept.
 ## 7. Cork Week
 
 Cork Week's results are on `corkweek.ie` to 2018 and on the club's site from
-2022; there was none in 2020. **2004** was published by an older Sail100
-whose standings mark discarded races by cell colour rather than class; the
-app's Sail100 reader parses the tables but would lose the discards, so 2004
-waits for the reader. 2006–2016 are a page per class, 2018 five Sailwave
+2022; there was none in 2020. 2004–2016 are a page per class, 2018 five Sailwave
 files (§2), 2022–2026 one Sailwave file each. 2016's pages include the IRC
 European Championship, sailed within the week. 2012's edition page is no
 longer linked from the editions page but is still on the site.
+
+2004 and 2006 were published by an older Sail100, which shades a discarded
+race grey rather than marking it with a class; the app's Sail100 reader takes
+the shading as the discard (570 in 2004, 387 in 2006, and in every row the
+races left unshaded sum to the published series points). Their pages carry
+no `<h1>`, so the heading `series.json` records for each is its bold first
+line, "Cork Week IRC1". A score after a code is published as it stands
+("APS5.6").
 
 ## 8. Names in the standings
 
@@ -175,8 +179,6 @@ declares.
   them (an estimated 7,000 pages, at the capture's pace some three hours)
 would date the 2011–2018 series and publish their
   race detail, as `bray-archive` does.
-- **Cork Week 2004**, once the app's Sail100 reader reads colour-marked
-  discards.
 - **The competitor-identity manifest.**
 
 ## 11. Questions for the club
