@@ -72,8 +72,9 @@ export interface Sponsor {
   kind?: 'sponsor' | 'donor';
 }
 
-/** An event open to visiting boats, or the club's own racing. */
-export const CATEGORIES = ['Open Events', 'Club Racing'] as const;
+/** Cork Week; another event open to visiting boats; or the club's own
+ *  racing. */
+export const CATEGORIES = ['Cork Week', 'Open Events', 'Club Racing'] as const;
 export type Category = (typeof CATEGORIES)[number];
 
 export interface ArchiveSeries {
@@ -87,9 +88,9 @@ export interface ArchiveSeries {
   slug: string;
   /** Display name for the series. */
   name: string;
-  /** The workspace category the series is filed under — the same two the
-   *  club's own Sail Scoring series use (CLARIFICATIONS §13). Re-filed on
-   *  every ingest. */
+  /** The workspace category the series is filed under: Cork Week, or one of
+   *  the two the club's own Sail Scoring series use (CLARIFICATIONS §13).
+   *  Re-filed on every ingest. */
   category: Category;
   /** The event's own website and logo, where it has one apart from the
    *  club's — Cork Week. */

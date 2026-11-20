@@ -242,19 +242,25 @@ declares.
 
 ## 13. Categories
 
-Every series is filed under one of the two categories the club's own Sail
-Scoring series use — **Open Events** or **Club Racing** — as `category` in
-`series.json`. Without one, a season that also holds the club's live series
-(2026: the Autumn League and Winter League in Club Racing, the Dinghy
-Frostbites in Open Events) lists its archived series under a third heading,
-"Uncategorized".
+Every series is filed under a category, as `category` in `series.json`:
+**Cork Week**, or one of the two the club's own Sail Scoring series use,
+**Open Events** and **Club Racing**. Without one, a season that also holds
+the club's live series (2026: the Autumn League and Winter League in Club
+Racing, the Dinghy Frostbites in Open Events) lists its archived series under
+another heading, "Uncategorized".
 
-The club's index pages do not say which events are open, so the filing is
-*inferred* from the event's name:
+**Cork Week** (15 series) is every series Cork Week publishes, the ones whose
+event site is `corkweek.ie`: each edition from 2004, and 2018's four other
+events. Cork Week is arguably an organisation of its own, though the club
+runs it. Its own category keeps it apart within the club's workspace rather
+than in a workspace of its own.
 
-- **Open Events** (121 series): championships, nationals and regional
-  championships; regattas and At Homes; Cork Week and its 2018 variants;
-  Dinghy Fest; the IODAI Halloween Regatta ("NTW"); the Royal Sprints; the
+The club's index pages do not say which other events are open, so their
+filing is *inferred* from the event's name:
+
+- **Open Events** (106 series): championships, nationals and regional
+  championships; regattas and At Homes; Dinghy Fest; the IODAI Halloween
+  Regatta ("NTW"); the Royal Sprints; the
   Topper Traveller; SCORA's League and Class 3 Championships; and the
   Frostbites and ILCA Defrosters, filed where the club filed its 2026
   Frostbites.
