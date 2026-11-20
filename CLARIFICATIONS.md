@@ -236,3 +236,31 @@ declares.
    Sailbags" a sponsorship of that league, or of the club's racing?
 4. Which of the 2026 Autumn League's publications is the club's of record —
    the Sailwave page or Sail Scoring's?
+5. Which events are open to visiting boats (§13) — in particular, are the
+   Frostbites, SCORA's League, and the harbour races (Round the Island,
+   Naval, Coolmore) open events or club racing?
+
+## 13. Categories
+
+Every series is filed under one of the two categories the club's own Sail
+Scoring series use — **Open Events** or **Club Racing** — as `category` in
+`series.json`. Without one, a season that also holds the club's live series
+(2026: the Autumn League and Winter League in Club Racing, the Dinghy
+Frostbites in Open Events) lists its archived series under a third heading,
+"Uncategorized".
+
+The club's index pages do not say which events are open, so the filing is
+*inferred* from the event's name:
+
+- **Open Events** (121 series): championships, nationals and regional
+  championships; regattas and At Homes; Cork Week and its 2018 variants;
+  Dinghy Fest; the IODAI Halloween Regatta ("NTW"); the Royal Sprints; the
+  Topper Traveller; SCORA's League and Class 3 Championships; and the
+  Frostbites and ILCA Defrosters, filed where the club filed its 2026
+  Frostbites.
+- **Club Racing** (419): the club's own leagues — evening, weekend,
+  monthly, class and combined harbour leagues, the Super League, the
+  Winter League — and its harbour and coastal races.
+
+A category is re-filed on every ingest, so a correction here is a change to
+`series.json`, not a migration.

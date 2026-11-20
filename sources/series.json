@@ -5,6 +5,7 @@
       "season": "2004",
       "slug": "cork-week",
       "name": "Cork Week 2004",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -197,6 +198,7 @@
       "season": "2006",
       "slug": "cork-week",
       "name": "Cork Week 2006",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -354,6 +356,7 @@
       "season": "2008",
       "slug": "cork-week",
       "name": "Cork Week 2008",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -546,6 +549,7 @@
       "season": "2010",
       "slug": "cork-week",
       "name": "Cork Week 2010",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -647,6 +651,7 @@
       "season": "2011",
       "slug": "1720-irish-national-championship",
       "name": "1720 Irish National Championship 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -661,6 +666,7 @@
       "season": "2011",
       "slug": "420-munsters",
       "name": "420 Munsters 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -675,6 +681,7 @@
       "season": "2011",
       "slug": "laser-at-home",
       "name": "Laser At Home 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -689,6 +696,7 @@
       "season": "2011",
       "slug": "laser-march-one-day-series",
       "name": "Laser Mar - One Day Series 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7",
@@ -711,6 +719,7 @@
       "season": "2011",
       "slug": "laser-mid-term-coaching",
       "name": "Laser Mid Term Coaching 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7 Fleet",
@@ -733,6 +742,7 @@
       "season": "2011",
       "slug": "laser-november-frostbite-league",
       "name": "Laser November Frostbite League 2011",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "Curradinghy"
@@ -760,6 +770,7 @@
       "season": "2011",
       "slug": "laser-october-frostbite-league",
       "name": "Laser Oct. Frostbite League 2011",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "Curradinghy"
@@ -794,6 +805,7 @@
       "season": "2011",
       "slug": "laser-september-league-saturday-mixed-rig",
       "name": "Laser Sept - Saturday League - Mixed Rig 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -808,6 +820,7 @@
       "season": "2011",
       "slug": "laser-summer-saturday-league-mixed-rig",
       "name": "Laser Summer Saturday League Mixed Rig 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -822,6 +835,7 @@
       "season": "2011",
       "slug": "laser-tuesday-league",
       "name": "Laser Tuesday Night League - 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -836,6 +850,7 @@
       "season": "2011",
       "slug": "national-18-cock-of-the-north",
       "name": "National 18 Cock of the North 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -850,6 +865,7 @@
       "season": "2011",
       "slug": "national-18-cock-of-the-north-practice-races",
       "name": "National 18 Cock of the North Practice Races 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -864,6 +880,7 @@
       "season": "2011",
       "slug": "national-18-national-championships",
       "name": "National 18 Championships 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -886,6 +903,7 @@
       "season": "2011",
       "slug": "optimist-at-home",
       "name": "Optimist At Home 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -900,6 +918,7 @@
       "season": "2011",
       "slug": "optimist-august-league-saturday",
       "name": "Optimist Aug - Saturday League 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -914,6 +933,7 @@
       "season": "2011",
       "slug": "optimist-august-league-tuesday",
       "name": "Optimist Aug - Tuesday League 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -928,6 +948,7 @@
       "season": "2011",
       "slug": "optimist-cobbler-league",
       "name": "Optimist Cobbler League 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -950,6 +971,7 @@
       "season": "2011",
       "slug": "optimist-july-league-saturday",
       "name": "Optimist Jul - Saturday League 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -964,6 +986,7 @@
       "season": "2011",
       "slug": "optimist-july-league-tuesday",
       "name": "Optimist Jul - Tuesday League 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -978,6 +1001,7 @@
       "season": "2011",
       "slug": "optimist-june-league-tuesday",
       "name": "Optimist Jun - Tuesday League 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -992,6 +1016,7 @@
       "season": "2011",
       "slug": "optimist-may-june-league-saturday",
       "name": "Optimist May/Jun - Saturday League 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -1006,6 +1031,7 @@
       "season": "2011",
       "slug": "optimist-overall-results",
       "name": "Optimist Overall Results 2011",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -1020,6 +1046,7 @@
       "season": "2011",
       "slug": "optimist-september-saturday-burns-trophy",
       "name": "Optimist Sept - 2011 Saturdays - Burns Trophy",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -1034,6 +1061,7 @@
       "season": "2011",
       "slug": "rs-feva-at-home",
       "name": "RS Feva At Home 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -1048,6 +1076,7 @@
       "season": "2011",
       "slug": "rs-feva-leinster-championships",
       "name": "RS Feva Leinster Championships 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -1062,6 +1091,7 @@
       "season": "2011",
       "slug": "rs-feva-national-championships",
       "name": "RS Feva National Championships 2011",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -1076,6 +1106,7 @@
       "season": "2012",
       "slug": "1720-nationals",
       "name": "1720 Nationals 2012",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "CH Marine"
@@ -1095,6 +1126,7 @@
       "season": "2012",
       "slug": "aghada-race",
       "name": "Aghada Race 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ECHO All In",
@@ -1117,6 +1149,7 @@
       "season": "2012",
       "slug": "april-white-sail-league",
       "name": "White Sail April League 2012",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -1144,6 +1177,7 @@
       "season": "2012",
       "slug": "at-home",
       "name": "At Home Regatta 2012",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "Neville Jewellers"
@@ -1213,6 +1247,7 @@
       "season": "2012",
       "slug": "autumn-regatta",
       "name": "Autumn Regatta 2012",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "CH Marine"
@@ -1317,6 +1352,7 @@
       "season": "2012",
       "slug": "cork-week",
       "name": "Cork Week 2012",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -1439,6 +1475,7 @@
       "season": "2012",
       "slug": "gas-rigs-race",
       "name": "Gas Rigs Race 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ECHO All In",
@@ -1475,6 +1512,7 @@
       "season": "2012",
       "slug": "jazz-race",
       "name": "Jazz Race 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -1497,6 +1535,7 @@
       "season": "2012",
       "slug": "july-august-september-league",
       "name": "July/August/September League 2012",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Airport View Parking"
@@ -1566,6 +1605,7 @@
       "season": "2012",
       "slug": "june-league",
       "name": "June League 2012",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -1635,6 +1675,7 @@
       "season": "2012",
       "slug": "ladies-race",
       "name": "Ladies Race 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ECHO All In",
@@ -1657,6 +1698,7 @@
       "season": "2012",
       "slug": "laser-week",
       "name": "Laser Week 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7 Rig",
@@ -1701,6 +1743,7 @@
       "season": "2012",
       "slug": "may-league",
       "name": "May League 2012",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Halsey Sailmakers"
@@ -1777,6 +1820,7 @@
       "season": "2012",
       "slug": "naval-race",
       "name": "Annual Naval Service Race 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -1841,6 +1885,7 @@
       "season": "2012",
       "slug": "rnli-series",
       "name": "RNLI Series 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ECHO All In",
@@ -1863,6 +1908,7 @@
       "season": "2012",
       "slug": "round-the-island-race",
       "name": "Round the Island Race 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ECHO All In",
@@ -1885,6 +1931,7 @@
       "season": "2012",
       "slug": "scora-league",
       "name": "SCORA League 2012",
+      "category": "Open Events",
       "pages": [
         {
           "name": "IRC 0",
@@ -1963,6 +2010,7 @@
       "season": "2012",
       "slug": "shorthanded-race-june",
       "name": "Shorthanded Race (June) 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ECHO All In",
@@ -1985,6 +2033,7 @@
       "season": "2012",
       "slug": "shorthanded-race-september",
       "name": "Shorthanded Race (September) 2012",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ECHO",
@@ -2007,6 +2056,7 @@
       "season": "2012",
       "slug": "super-league",
       "name": "Super League 2012",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Heineken"
@@ -2076,6 +2126,7 @@
       "season": "2012",
       "slug": "white-sail-summer-league",
       "name": "White Sail Summer League 2012",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -2095,6 +2146,7 @@
       "season": "2012",
       "slug": "winter-league",
       "name": "Winter League 2012",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Marshall Marine Textiles"
@@ -2178,6 +2230,7 @@
       "season": "2013",
       "slug": "420-national-championships",
       "name": "420 National Championships 2013",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -2192,6 +2245,7 @@
       "season": "2013",
       "slug": "at-home",
       "name": "At Home Regatta 2013",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "MSL Group"
@@ -2250,6 +2304,7 @@
       "season": "2013",
       "slug": "autumn-regatta",
       "name": "Autumn Regatta 2013",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "CH Marine"
@@ -2347,6 +2402,7 @@
       "season": "2013",
       "slug": "class-3-cork-harbour-combined-league",
       "name": "Class 3 Cork Harbour Combined League 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC",
@@ -2369,6 +2425,7 @@
       "season": "2013",
       "slug": "cobh-race",
       "name": "Cobh Race 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC",
@@ -2405,6 +2462,7 @@
       "season": "2013",
       "slug": "jazz-race",
       "name": "Jazz Race 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -2427,6 +2485,7 @@
       "season": "2013",
       "slug": "july-august-september-league",
       "name": "July/August/Sept League 2013",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Airport View Parking"
@@ -2503,6 +2562,7 @@
       "season": "2013",
       "slug": "june-league",
       "name": "June League 2013",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -2579,6 +2639,7 @@
       "season": "2013",
       "slug": "laser-and-topper-frostbites",
       "name": "Laser and Topper Frostbites 2013",
+      "category": "Open Events",
       "pages": [
         {
           "name": "4.7",
@@ -2623,6 +2684,7 @@
       "season": "2013",
       "slug": "laser-national-championships",
       "name": "Laser National Championships 2013",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Standard Rig",
@@ -2652,6 +2714,7 @@
       "season": "2013",
       "slug": "may-league",
       "name": "May League 2013",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Halsey Sailmakers"
@@ -2729,6 +2792,7 @@
       "season": "2013",
       "slug": "optimist-at-home",
       "name": "Optimist At Home 2013",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -2742,6 +2806,7 @@
       "season": "2013",
       "slug": "optimist-august-league-tuesday",
       "name": "Optimist August Tuesday League 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -2762,6 +2827,7 @@
       "season": "2013",
       "slug": "optimist-august-september-league-saturday",
       "name": "Optimist August-September Saturday League 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -2782,6 +2848,7 @@
       "season": "2013",
       "slug": "optimist-cobbler-league",
       "name": "Optimist Cobbler League 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Regatta Fleet",
@@ -2802,6 +2869,7 @@
       "season": "2013",
       "slug": "optimist-july-league-saturday",
       "name": "Optimist July Saturday League 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -2822,6 +2890,7 @@
       "season": "2013",
       "slug": "optimist-july-league-tuesday",
       "name": "Optimist July Tuesday League 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -2842,6 +2911,7 @@
       "season": "2013",
       "slug": "optimist-june-league-saturday",
       "name": "Optimist June-Saturday League 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -2856,6 +2926,7 @@
       "season": "2013",
       "slug": "optimist-june-league-tuesday",
       "name": "Optimist June-Tuesday League 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -2870,6 +2941,7 @@
       "season": "2013",
       "slug": "optimist-overall-results",
       "name": "Optimist Overall Results 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -2883,6 +2955,7 @@
       "season": "2013",
       "slug": "orienteering-race",
       "name": "Orienteering Race 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC",
@@ -2905,6 +2978,7 @@
       "season": "2013",
       "slug": "ringabella-race",
       "name": "Ringabella Race 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC",
@@ -2955,6 +3029,7 @@
       "season": "2013",
       "slug": "rnli-race",
       "name": "RNLI Race 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC",
@@ -2977,6 +3052,7 @@
       "season": "2013",
       "slug": "scora-league",
       "name": "SCORA League 2013",
+      "category": "Open Events",
       "pages": [
         {
           "name": "IRC 0/1",
@@ -3041,6 +3117,7 @@
       "season": "2013",
       "slug": "shorthanded-race",
       "name": "Shorthanded Race 2013",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC",
@@ -3063,6 +3140,7 @@
       "season": "2013",
       "slug": "super-league",
       "name": "Super League 2013",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Heineken"
@@ -3125,6 +3203,7 @@
       "season": "2013",
       "slug": "topper-munster-championships",
       "name": "Topper Munster Championships 2013",
+      "category": "Open Events",
       "pages": [
         {
           "name": "4.2 Sail",
@@ -3151,6 +3230,7 @@
       "season": "2013",
       "slug": "white-sail-summer-league",
       "name": "White Sail Summer League 2013",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Marshall Marine Textiles"
@@ -3170,6 +3250,7 @@
       "season": "2013",
       "slug": "winter-league",
       "name": "Winter League 2013",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -3189,6 +3270,7 @@
       "season": "2014",
       "slug": "april-white-sail-league",
       "name": "White Sail Aprilleague 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Marshall Marine Textiles"
@@ -3216,6 +3298,7 @@
       "season": "2014",
       "slug": "at-home",
       "name": "At Home Regatta 2014",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "MSL Group"
@@ -3285,6 +3368,7 @@
       "season": "2014",
       "slug": "at-home-dinghies",
       "name": "At Home 2014",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Optimist Copper Fleet",
@@ -3340,6 +3424,7 @@
       "season": "2014",
       "slug": "august-league",
       "name": "August Leagues 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "MSL Group"
@@ -3402,6 +3487,7 @@
       "season": "2014",
       "slug": "autumn-series",
       "name": "Autumn Series 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "CH Marine"
@@ -3506,6 +3592,7 @@
       "season": "2014",
       "slug": "cobbler-league",
       "name": "Cobbler League 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -3526,6 +3613,7 @@
       "season": "2014",
       "slug": "cork-week",
       "name": "Cork Week 2014",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -3604,6 +3692,7 @@
       "season": "2014",
       "slug": "july-league",
       "name": "July Leagues 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Marshall Marine Textiles"
@@ -3701,6 +3790,7 @@
       "season": "2014",
       "slug": "june-league",
       "name": "June Leagues 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -3791,6 +3881,7 @@
       "season": "2014",
       "slug": "laser-frostbites",
       "name": "Laser Frostbites 2014",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Standard Fleet",
@@ -3820,6 +3911,7 @@
       "season": "2014",
       "slug": "march-league",
       "name": "March League 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Crosshaven Boatyard"
@@ -3854,6 +3946,7 @@
       "season": "2014",
       "slug": "may-league",
       "name": "May Leagues 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Halsey Sailmakers"
@@ -3937,6 +4030,7 @@
       "season": "2014",
       "slug": "mirror-southerns",
       "name": "Mirror Southerns 2014",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -3950,6 +4044,7 @@
       "season": "2014",
       "slug": "naval-race",
       "name": "Naval Race 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -4014,6 +4109,7 @@
       "season": "2014",
       "slug": "optimist-july-august-league-saturday",
       "name": "Optimist July/August Saturday league 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -4034,6 +4130,7 @@
       "season": "2014",
       "slug": "optimist-july-august-league-tuesday",
       "name": "Optimist July/August Tuesday League 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -4054,6 +4151,7 @@
       "season": "2014",
       "slug": "optimist-june-league-saturday",
       "name": "Optimist June Saturday League 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -4074,6 +4172,7 @@
       "season": "2014",
       "slug": "optimist-june-league-tuesday",
       "name": "Optimist June Tuesday League 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -4094,6 +4193,7 @@
       "season": "2014",
       "slug": "optimist-overall-results",
       "name": "Optimist Overall Results 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -4107,6 +4207,7 @@
       "season": "2014",
       "slug": "optimist-september-league",
       "name": "Optimist September League 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -4127,6 +4228,7 @@
       "season": "2014",
       "slug": "pursuit-race-july",
       "name": "Pursuit Race (July) 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -4141,6 +4243,7 @@
       "season": "2014",
       "slug": "pursuit-race-may",
       "name": "Pursuit Race (May) 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -4155,6 +4258,7 @@
       "season": "2014",
       "slug": "round-the-island-race",
       "name": "Round the Island Race 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Irish Examiner"
@@ -4196,6 +4300,7 @@
       "season": "2014",
       "slug": "rs-southerns",
       "name": "RS Southerns 2014",
+      "category": "Open Events",
       "pages": [
         {
           "name": "200",
@@ -4231,6 +4336,7 @@
       "season": "2014",
       "slug": "sb20-irish-national-championships",
       "name": "SB20 Irish National Championships 2014",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -4245,6 +4351,7 @@
       "season": "2014",
       "slug": "scora-class-3-championships",
       "name": "SCORA Class 3 Championships 2014",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -4259,6 +4366,7 @@
       "season": "2014",
       "slug": "scora-league",
       "name": "SCORA League 2014",
+      "category": "Open Events",
       "pages": [
         {
           "name": "IRC 0",
@@ -4337,6 +4445,7 @@
       "season": "2014",
       "slug": "september-league",
       "name": "September Leagues 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1 and 2",
@@ -4394,6 +4503,7 @@
       "season": "2014",
       "slug": "sunday-morning-league",
       "name": "Sunday Morning Leagues 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "North Sails"
@@ -4456,6 +4566,7 @@
       "season": "2014",
       "slug": "super-league",
       "name": "Super League 2014",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -4534,6 +4645,7 @@
       "season": "2014",
       "slug": "winter-league",
       "name": "Winter League 2014",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -4617,6 +4729,7 @@
       "season": "2015",
       "slug": "1720-european-championship",
       "name": "1720 European Championship 2015",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -4636,6 +4749,7 @@
       "season": "2015",
       "slug": "2-race-series",
       "name": "2 Race Series 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -4677,6 +4791,7 @@
       "season": "2015",
       "slug": "aghada-race",
       "name": "Aghada Race 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -4699,6 +4814,7 @@
       "season": "2015",
       "slug": "april-white-sail-league",
       "name": "April White Sail League 2015",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Crosshaven Boatyard"
@@ -4726,6 +4842,7 @@
       "season": "2015",
       "slug": "at-home",
       "name": "At Home Regatta 2015",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "MSL Group"
@@ -4802,6 +4919,7 @@
       "season": "2015",
       "slug": "at-home-dinghies",
       "name": "At Home 2015",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Optimist Regatta Fleet",
@@ -4861,6 +4979,7 @@
       "season": "2015",
       "slug": "august-league",
       "name": "August Leagues 2015",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "MSL Group"
@@ -4937,6 +5056,7 @@
       "season": "2015",
       "slug": "autumn-series",
       "name": "Autumn Series 2015",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "CH Marine"
@@ -5041,6 +5161,7 @@
       "season": "2015",
       "slug": "coastal-and-two-handed-league",
       "name": "Coastal and Two handed League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -5063,6 +5184,7 @@
       "season": "2015",
       "slug": "irish-youth-nationals",
       "name": "Irish Youth Nationals 2015",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Irish Youth Nationals - Topper",
@@ -5101,6 +5223,7 @@
       "season": "2015",
       "slug": "j24-southern-championships",
       "name": "J24 Southern Championships 2015",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "North Sails"
@@ -5120,6 +5243,7 @@
       "season": "2015",
       "slug": "july-league",
       "name": "July Leagues 2015",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Marshall Marine Textiles"
@@ -5196,6 +5320,7 @@
       "season": "2015",
       "slug": "june-league",
       "name": "June Leagues 2015",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -5272,6 +5397,7 @@
       "season": "2015",
       "slug": "may-league",
       "name": "May Leagues 2015",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -5348,6 +5474,7 @@
       "season": "2015",
       "slug": "midsummer-madness",
       "name": "Midsummer Madness 2015",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Marine Motors"
@@ -5389,6 +5516,7 @@
       "season": "2015",
       "slug": "national-18-august-league",
       "name": "National 18 August Evening League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimate",
@@ -5415,6 +5543,7 @@
       "season": "2015",
       "slug": "national-18-july-league",
       "name": "National 18 July Evening League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimate",
@@ -5441,6 +5570,7 @@
       "season": "2015",
       "slug": "national-18-june-league",
       "name": "National 18 June Evening League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimate",
@@ -5467,6 +5597,7 @@
       "season": "2015",
       "slug": "national-18-may-league",
       "name": "National 18 May Evening League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -5480,6 +5611,7 @@
       "season": "2015",
       "slug": "national-18-overall-league",
       "name": "National 18 Overall League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimate",
@@ -5506,6 +5638,7 @@
       "season": "2015",
       "slug": "national-18-september-league",
       "name": "National 18 September Evening League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimate",
@@ -5532,6 +5665,7 @@
       "season": "2015",
       "slug": "optimist-april-may-league-main-fleet",
       "name": "Optimist April/May League Main Fleet 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -5545,6 +5679,7 @@
       "season": "2015",
       "slug": "optimist-at-home",
       "name": "Optimist At Home 2015",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Regatta Fleet",
@@ -5565,6 +5700,7 @@
       "season": "2015",
       "slug": "optimist-cobbler-league",
       "name": "Optimist Cobbler League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -5585,6 +5721,7 @@
       "season": "2015",
       "slug": "optimist-july-august-league-saturday",
       "name": "Optimist July/August Saturday League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -5605,6 +5742,7 @@
       "season": "2015",
       "slug": "optimist-july-august-league-tuesday",
       "name": "Optimist July/August Tuesday League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -5625,6 +5763,7 @@
       "season": "2015",
       "slug": "optimist-june-league-saturday-copper-fleet",
       "name": "Optimist June League Saturday Copper Fleet 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -5638,6 +5777,7 @@
       "season": "2015",
       "slug": "optimist-june-league-saturday-main-fleet",
       "name": "Optimist June Saturday League Main Fleet 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -5651,6 +5791,7 @@
       "season": "2015",
       "slug": "optimist-june-league-tuesday",
       "name": "Optimist June Tuesday League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -5671,6 +5812,7 @@
       "season": "2015",
       "slug": "optimist-may-league-copper-fleet",
       "name": "Optimist May League Copper Fleet 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -5684,6 +5826,7 @@
       "season": "2015",
       "slug": "optimist-overall-results",
       "name": "Optimist Overall Results 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -5697,6 +5840,7 @@
       "season": "2015",
       "slug": "optimist-september-league",
       "name": "Optimist September League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -5717,6 +5861,7 @@
       "season": "2015",
       "slug": "py500",
       "name": "PY500 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -5731,6 +5876,7 @@
       "season": "2015",
       "slug": "sb20-southern-championships",
       "name": "SB20 Southern Championships 2015",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -5745,6 +5891,7 @@
       "season": "2015",
       "slug": "scora-league",
       "name": "SCORA League 2015",
+      "category": "Open Events",
       "pages": [
         {
           "name": "IRC 1",
@@ -5809,6 +5956,7 @@
       "season": "2015",
       "slug": "september-league",
       "name": "September Leagues 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -5880,6 +6028,7 @@
       "season": "2015",
       "slug": "sunday-morning-league",
       "name": "Sunday Morning Leagues 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -5949,6 +6098,7 @@
       "season": "2015",
       "slug": "super-league",
       "name": "Super League 2015",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -6020,6 +6170,7 @@
       "season": "2015",
       "slug": "winter-league",
       "name": "Winter League 2015",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -6047,6 +6198,7 @@
       "season": "2016",
       "slug": "aghada-trophy-race",
       "name": "Aghada Trophy Race 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -6118,6 +6270,7 @@
       "season": "2016",
       "slug": "april-white-sail-league",
       "name": "April White Sail League 2016",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Crosshaven Boatyard"
@@ -6145,6 +6298,7 @@
       "season": "2016",
       "slug": "at-home",
       "name": "At Home Regatta 2016",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "Mater Private"
@@ -6214,6 +6368,7 @@
       "season": "2016",
       "slug": "august-league",
       "name": "August Leagues 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -6292,6 +6447,7 @@
       "season": "2016",
       "slug": "autumn-series",
       "name": "Autumn Series 2016",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "CH Marine"
@@ -6382,6 +6538,7 @@
       "season": "2016",
       "slug": "coastal-and-two-handed-league",
       "name": "Coastal and Two handed League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -6404,6 +6561,7 @@
       "season": "2016",
       "slug": "cork-week",
       "name": "Cork Week 2016",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -6587,6 +6745,7 @@
       "season": "2016",
       "slug": "irish-topper-nationals",
       "name": "Irish Topper Nationals 2016",
+      "category": "Open Events",
       "pages": [
         {
           "name": "5.3 Fleet",
@@ -6609,6 +6768,7 @@
       "season": "2016",
       "slug": "j24-southern-championships",
       "name": "J24 Southern Championships 2016",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "North Sails"
@@ -6628,6 +6788,7 @@
       "season": "2016",
       "slug": "july-league",
       "name": "July Leagues 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -6706,6 +6867,7 @@
       "season": "2016",
       "slug": "june-league",
       "name": "June Leagues 2016",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -6789,6 +6951,7 @@
       "season": "2016",
       "slug": "laser-frostbites",
       "name": "Laser Frostbites 2016",
+      "category": "Open Events",
       "pages": [
         {
           "name": "4.7 Fleet",
@@ -6811,6 +6974,7 @@
       "season": "2016",
       "slug": "march-league",
       "name": "March League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -6834,6 +6998,7 @@
       "season": "2016",
       "slug": "may-league",
       "name": "May Leagues 2016",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -6903,6 +7068,7 @@
       "season": "2016",
       "slug": "mirror-europeans",
       "name": "Mirror Europeans 2016",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -6916,6 +7082,7 @@
       "season": "2016",
       "slug": "mixed-dinghy-april-may-league",
       "name": "Mixed Dinghy April/May League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -6930,6 +7097,7 @@
       "season": "2016",
       "slug": "national-18-august-league",
       "name": "National 18 August League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -6943,6 +7111,7 @@
       "season": "2016",
       "slug": "national-18-donnelly-trophy",
       "name": "National 18 Donnelly Trophy 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -6956,6 +7125,7 @@
       "season": "2016",
       "slug": "national-18-july-league",
       "name": "National 18 July League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -6969,6 +7139,7 @@
       "season": "2016",
       "slug": "national-18-june-league",
       "name": "National 18 June League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -6982,6 +7153,7 @@
       "season": "2016",
       "slug": "national-18-may-league",
       "name": "National 18 May League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -6995,6 +7167,7 @@
       "season": "2016",
       "slug": "national-18-national-championships",
       "name": "National 18 Irish National Championships 2016",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Ultimates",
@@ -7015,6 +7188,7 @@
       "season": "2016",
       "slug": "national-18-september-league",
       "name": "National 18 September League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -7028,6 +7202,7 @@
       "season": "2016",
       "slug": "naval-race",
       "name": "Naval Race 2016",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Marshall Marine Textiles"
@@ -7055,6 +7230,7 @@
       "season": "2016",
       "slug": "optimist-april-may-league-copper-fleet",
       "name": "Optimist April/May League Copper Fleet 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -7069,6 +7245,7 @@
       "season": "2016",
       "slug": "optimist-april-may-league-saturday",
       "name": "Optimist April May Saturday league 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -7082,6 +7259,7 @@
       "season": "2016",
       "slug": "optimist-at-home",
       "name": "Optimist At Home 2016",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -7102,6 +7280,7 @@
       "season": "2016",
       "slug": "optimist-cobbler-league",
       "name": "Optimist Cobbler League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -7122,6 +7301,7 @@
       "season": "2016",
       "slug": "optimist-final-june-league-tuesday",
       "name": "Optimist Final June Tuesday league 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -7135,6 +7315,7 @@
       "season": "2016",
       "slug": "optimist-july-august-league-saturday",
       "name": "Optimist July August Saturday League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -7155,6 +7336,7 @@
       "season": "2016",
       "slug": "optimist-july-august-tuesday-league",
       "name": "Optimist July August Tuesday Night League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -7175,6 +7357,7 @@
       "season": "2016",
       "slug": "optimist-june-league-saturday-final",
       "name": "Optimist June Saturday League Final 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -7188,6 +7371,7 @@
       "season": "2016",
       "slug": "optimist-june-saturday-copper-league",
       "name": "Optimist June Saturday Copper League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -7201,6 +7385,7 @@
       "season": "2016",
       "slug": "optimist-junetuesday-copper-league",
       "name": "Optimist JuneTuesday Copper League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -7214,6 +7399,7 @@
       "season": "2016",
       "slug": "optimist-overall-results",
       "name": "Optimist Overall Results 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -7228,6 +7414,7 @@
       "season": "2016",
       "slug": "optimist-september-league",
       "name": "Optimist September League .. 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -7248,6 +7435,7 @@
       "season": "2016",
       "slug": "rnli-series",
       "name": "RNLI Series 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -7298,6 +7486,7 @@
       "season": "2016",
       "slug": "scora-league",
       "name": "SCORA League 2016",
+      "category": "Open Events",
       "pages": [
         {
           "name": "IRC 1",
@@ -7362,6 +7551,7 @@
       "season": "2016",
       "slug": "september-league",
       "name": "September Leagues 2016",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -7445,6 +7635,7 @@
       "season": "2016",
       "slug": "skills-for-gold-regatta",
       "name": "Skills For Gold Regatta 2016",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Optimist Class",
@@ -7481,6 +7672,7 @@
       "season": "2016",
       "slug": "sunday-morning-league",
       "name": "Sunday Morning Leagues 2016",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "North Sails"
@@ -7508,6 +7700,7 @@
       "season": "2016",
       "slug": "super-league",
       "name": "Super League 2016",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -7586,6 +7779,7 @@
       "season": "2016",
       "slug": "topper-bill-jones-memorial-trophy-league-frostbites",
       "name": "Topper Bill Jones Memorial Trophy League / Frostbites 2016",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -7600,6 +7794,7 @@
       "season": "2016",
       "slug": "winter-league",
       "name": "Winter League 2016",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -7690,6 +7885,7 @@
       "season": "2017",
       "slug": "april-white-sail-league",
       "name": "Whitesail April League 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail IRC",
@@ -7712,6 +7908,7 @@
       "season": "2017",
       "slug": "at-home",
       "name": "At Home Regatta 2017",
+      "category": "Open Events",
       "pages": [
         {
           "name": "IRC All In",
@@ -7797,6 +7994,7 @@
       "season": "2017",
       "slug": "at-home-dinghies",
       "name": "At Home 2017",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Mixed Dinghies",
@@ -7829,6 +8027,7 @@
       "season": "2017",
       "slug": "august-september-league",
       "name": "August/September Leagues 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -7914,6 +8113,7 @@
       "season": "2017",
       "slug": "autumn-series",
       "name": "Autumn Series 2017",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "CH Marine"
@@ -8004,6 +8204,7 @@
       "season": "2017",
       "slug": "cork-dinghy-fest",
       "name": "Cork Dinghy Fest 2017",
+      "category": "Open Events",
       "pages": [
         {
           "name": "420 National Championship",
@@ -8026,6 +8227,7 @@
       "season": "2017",
       "slug": "irish-topper-winter-championships",
       "name": "Irish Topper Winter Championships 2017",
+      "category": "Open Events",
       "pages": [
         {
           "name": "5.3 Fleet",
@@ -8048,6 +8250,7 @@
       "season": "2017",
       "slug": "july-league",
       "name": "July Leagues 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -8133,6 +8336,7 @@
       "season": "2017",
       "slug": "june-league",
       "name": "June Leagues 2017",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -8209,6 +8413,7 @@
       "season": "2017",
       "slug": "laser-frostbite-series",
       "name": "Laser Frostbite Series 2017",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Laser 4.7 Fleet",
@@ -8231,6 +8436,7 @@
       "season": "2017",
       "slug": "may-league",
       "name": "May Leagues 2017",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -8314,6 +8520,7 @@
       "season": "2017",
       "slug": "national-18-august-league",
       "name": "National 18 August 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -8334,6 +8541,7 @@
       "season": "2017",
       "slug": "national-18-donnelly-trophy",
       "name": "National 18 Donnelly Trophy 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8347,6 +8555,7 @@
       "season": "2017",
       "slug": "national-18-july-league",
       "name": "National 18 July 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -8373,6 +8582,7 @@
       "season": "2017",
       "slug": "national-18-june-league",
       "name": "National 18 June 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -8399,6 +8609,7 @@
       "season": "2017",
       "slug": "national-18-may-league",
       "name": "National 18 May League 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8412,6 +8623,7 @@
       "season": "2017",
       "slug": "national-18-september-league",
       "name": "National 18 September 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -8432,6 +8644,7 @@
       "season": "2017",
       "slug": "naval-race",
       "name": "Naval Race 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC All In",
@@ -8468,6 +8681,7 @@
       "season": "2017",
       "slug": "optimist-cobbler-league",
       "name": "Optimist Cobbler League 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -8488,6 +8702,7 @@
       "season": "2017",
       "slug": "optimist-july-august-league-saturday-copper-fleet",
       "name": "Optimist July August League Saturday Copper Fleet 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8501,6 +8716,7 @@
       "season": "2017",
       "slug": "optimist-july-august-league-saturday-main-fleet",
       "name": "Optimist July August Saturday League Main Fleet 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8514,6 +8730,7 @@
       "season": "2017",
       "slug": "optimist-july-august-league-tuesday-copper-fleet",
       "name": "Optimist July August Tuesday League Copper Fleet 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8527,6 +8744,7 @@
       "season": "2017",
       "slug": "optimist-july-august-tuesday-main-fleet",
       "name": "Optimist July August Tuesday Night Main Fleet 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8540,6 +8758,7 @@
       "season": "2017",
       "slug": "optimist-june",
       "name": "Optimist June 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8553,6 +8772,7 @@
       "season": "2017",
       "slug": "optimist-june-league-saturday",
       "name": "Optimist June League Saturday 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -8573,6 +8793,7 @@
       "season": "2017",
       "slug": "optimist-league-main-fleet",
       "name": "Optimist League Main Fleet 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8586,6 +8807,7 @@
       "season": "2017",
       "slug": "optimist-may",
       "name": "Optimist May 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8599,6 +8821,7 @@
       "season": "2017",
       "slug": "optimist-may-league-copper-fleet",
       "name": "Optimist May League Copper Fleet 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8612,6 +8835,7 @@
       "season": "2017",
       "slug": "optimist-overall-results",
       "name": "Optimist Overall Results 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8625,6 +8849,7 @@
       "season": "2017",
       "slug": "optimist-september-league",
       "name": "Optimist September League 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -8645,6 +8870,7 @@
       "season": "2017",
       "slug": "optimist-skills-for-gold-regatta",
       "name": "Optimist Skills for Gold Regatta 2017",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -8658,6 +8884,7 @@
       "season": "2017",
       "slug": "sportsboats-april-league",
       "name": "Sportsboats April League 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8672,6 +8899,7 @@
       "season": "2017",
       "slug": "sportsboats-may-league",
       "name": "Sportsboats May League 2017",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -8686,6 +8914,7 @@
       "season": "2017",
       "slug": "sunday-morning-league",
       "name": "Sunday Morning Leagues 2017",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "North Sails"
@@ -8727,6 +8956,7 @@
       "season": "2017",
       "slug": "super-league",
       "name": "Super League 2017",
+      "category": "Club Racing",
       "startDate": "2017-05-04",
       "endDate": "2017-09-07",
       "datesFrom": "Its race pages: 125 of 126 start between 4 May and 7 September 2017. IRC 2's race 1 page gives 29 July 2016 — inferred, a start carried over from the year before, as its results are this season's.",
@@ -8801,6 +9031,7 @@
       "season": "2017",
       "slug": "topper-frostbite-series-and-bill-jones-trophy",
       "name": "Topper Frostbite Series & Bill Jones Trophy 2017",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Topper 4.2 Fleet",
@@ -8823,6 +9054,7 @@
       "season": "2017",
       "slug": "weekend-series",
       "name": "Weekend Series 2017",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -8885,6 +9117,7 @@
       "season": "2017",
       "slug": "winter-league",
       "name": "Winter League 2017",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -8975,6 +9208,7 @@
       "season": "2018",
       "slug": "2-race-series",
       "name": "2 race Series 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -9018,6 +9252,7 @@
       "season": "2018",
       "slug": "april-league",
       "name": "April League 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Crosshaven Boatyard"
@@ -9040,6 +9275,7 @@
       "season": "2018",
       "slug": "at-home",
       "name": "At Home Regatta 2018",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "Mater Private"
@@ -9083,6 +9319,7 @@
       "season": "2018",
       "slug": "august-september-combined-league",
       "name": "August/September Combined League 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -9105,6 +9342,7 @@
       "season": "2018",
       "slug": "august-september-league-ihs",
       "name": "August/September leagues IHS 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -9123,6 +9361,7 @@
       "season": "2018",
       "slug": "august-september-league-thursday",
       "name": "August/September leagues Thursday 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -9176,6 +9415,7 @@
       "season": "2018",
       "slug": "autumn-series",
       "name": "Autumn Series 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "1720",
@@ -9243,6 +9483,7 @@
       "season": "2018",
       "slug": "coastal-series",
       "name": "Coastal Series 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -9260,6 +9501,7 @@
       "season": "2018",
       "slug": "cork-week",
       "name": "Cork Week 2018",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -9376,6 +9618,7 @@
       "season": "2018",
       "slug": "cork-week-club-regatta",
       "name": "Cork Week Club Regatta 2018",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -9436,6 +9679,7 @@
       "season": "2018",
       "slug": "cork-week-harbour-race-all-in",
       "name": "Cork Week Harbour Race - All In 2018",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -9455,6 +9699,7 @@
       "season": "2018",
       "slug": "cork-week-inshore-series",
       "name": "Cork Week Inshore Series 2018",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -9571,6 +9816,7 @@
       "season": "2018",
       "slug": "cork-week-wrecks-series",
       "name": "Cork Week Wrecks Series 2018",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -9687,6 +9933,7 @@
       "season": "2018",
       "slug": "irish-laser-connacht-championships",
       "name": "Irish Laser Connacht Championships 2018",
+      "category": "Open Events",
       "pages": [
         {
           "name": "4.7",
@@ -9722,6 +9969,7 @@
       "season": "2018",
       "slug": "july-combined-league-and-mbsc-at-home",
       "name": "July Combined League & MBSC At Home 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Ronan Enright Solicitors"
@@ -9740,6 +9988,7 @@
       "season": "2018",
       "slug": "july-league-friday-ihs",
       "name": "July League Friday IHS 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Ronan Enright Solicitors"
@@ -9758,6 +10007,7 @@
       "season": "2018",
       "slug": "july-league-thursday",
       "name": "July League Thursday 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Ronan Enright Solicitors"
@@ -9811,6 +10061,7 @@
       "season": "2018",
       "slug": "june-league-friday",
       "name": "June Leagues Friday 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -9833,6 +10084,7 @@
       "season": "2018",
       "slug": "june-league-thursday",
       "name": "June Leagues Thursday 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -9886,6 +10138,7 @@
       "season": "2018",
       "slug": "may-league-friday",
       "name": "May League Friday 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -9904,6 +10157,7 @@
       "season": "2018",
       "slug": "may-league-thursday",
       "name": "May League Thursday 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -9957,6 +10211,7 @@
       "season": "2018",
       "slug": "national-18-april-league",
       "name": "National 18 April League 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -9970,6 +10225,7 @@
       "season": "2018",
       "slug": "national-18-august-league",
       "name": "National 18 August 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -9990,6 +10246,7 @@
       "season": "2018",
       "slug": "national-18-donnelly-trophy",
       "name": "National 18 Donnelly Trophy 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -10003,6 +10260,7 @@
       "season": "2018",
       "slug": "national-18-july-league",
       "name": "National 18 July 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -10023,6 +10281,7 @@
       "season": "2018",
       "slug": "national-18-june-league",
       "name": "National 18 June 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -10049,6 +10308,7 @@
       "season": "2018",
       "slug": "national-18-may-league",
       "name": "National 18 May 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -10075,6 +10335,7 @@
       "season": "2018",
       "slug": "national-18-national-championships",
       "name": "National 18 National Championships (Baltimore) 2018",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -10088,6 +10349,7 @@
       "season": "2018",
       "slug": "national-18-september-league",
       "name": "National 18 September 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Ultimates",
@@ -10108,6 +10370,7 @@
       "season": "2018",
       "slug": "national-18-south-coast-championships",
       "name": "National 18 South Coast Championships 2018",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -10121,6 +10384,7 @@
       "season": "2018",
       "slug": "optimist-at-home",
       "name": "Optimist At Home 2018",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -10134,6 +10398,7 @@
       "season": "2018",
       "slug": "optimist-cobbler",
       "name": "Optimist Cobbler 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -10154,6 +10419,7 @@
       "season": "2018",
       "slug": "optimist-july-august-league-saturday-main-fleet",
       "name": "Optimist July August League Saturday Main Fleet 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -10167,6 +10433,7 @@
       "season": "2018",
       "slug": "optimist-july-august-tuesday",
       "name": "Optimist July August Tuesday Night 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -10187,6 +10454,7 @@
       "season": "2018",
       "slug": "optimist-june-league-saturday",
       "name": "Optimist June Saturday League 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -10207,6 +10475,7 @@
       "season": "2018",
       "slug": "optimist-june-tuesday-league",
       "name": "Optimist June Tuesday Night League 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -10220,6 +10489,7 @@
       "season": "2018",
       "slug": "optimist-may-league",
       "name": "Optimist May League 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -10240,6 +10510,7 @@
       "season": "2018",
       "slug": "optimist-september-league-copper-league",
       "name": "Optimist September League Copper League 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -10253,6 +10524,7 @@
       "season": "2018",
       "slug": "optimist-september-league-main-fleet",
       "name": "Optimist September League Main Fleet 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -10266,6 +10538,7 @@
       "season": "2018",
       "slug": "royal-sprints",
       "name": "Royal Sprints 2018",
+      "category": "Open Events",
       "pages": [
         {
           "name": "29'er",
@@ -10292,6 +10565,7 @@
       "season": "2018",
       "slug": "september-combined-league",
       "name": "September Combined Leagues 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "IRC 1",
@@ -10356,6 +10630,7 @@
       "season": "2018",
       "slug": "sunday-morning-league",
       "name": "Sunday Morning Leagues 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "North Sails"
@@ -10378,6 +10653,7 @@
       "season": "2018",
       "slug": "topper-and-laser-frostbites-november",
       "name": "Topper & Laser Frostbites November 2018",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Laser 4.7",
@@ -10422,6 +10698,7 @@
       "season": "2018",
       "slug": "topper-may-league",
       "name": "Topper May League 2018",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "5.3",
@@ -10442,6 +10719,7 @@
       "season": "2018",
       "slug": "topper-southern-championships",
       "name": "Topper Southern Championships 2018",
+      "category": "Open Events",
       "pages": [
         {
           "name": "4.2",
@@ -10468,6 +10746,7 @@
       "season": "2018",
       "slug": "winter-series",
       "name": "Winter Series 2018",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -10511,6 +10790,7 @@
       "season": "2019",
       "slug": "april-white-sail-league",
       "name": "April WS League 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Crosshaven Boatyard"
@@ -10533,6 +10813,7 @@
       "season": "2019",
       "slug": "at-home",
       "name": "At Home Regatta 2019",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Spinnaker",
@@ -10567,6 +10848,7 @@
       "season": "2019",
       "slug": "at-home-dinghies",
       "name": "At Home Regatta 2019",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Topper",
@@ -10593,6 +10875,7 @@
       "season": "2019",
       "slug": "august-september-league-friday",
       "name": "Aug/Sept League Friday 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -10611,6 +10894,7 @@
       "season": "2019",
       "slug": "august-september-league-thursday",
       "name": "Aug/Sept League Thursday 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -10644,6 +10928,7 @@
       "season": "2019",
       "slug": "cork-autumn-series",
       "name": "Cork Autumn Series 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Horgan's Quay"
@@ -10716,6 +11001,7 @@
       "season": "2019",
       "slug": "cork-dinghy-fest",
       "name": "Cork Dinghy Fest 2019",
+      "category": "Open Events",
       "pages": [
         {
           "name": "29er Southerns",
@@ -10796,6 +11082,7 @@
       "season": "2019",
       "slug": "cork-harbour-june-combined-league",
       "name": "Cork Harbour June Combined League 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -10813,6 +11100,7 @@
       "season": "2019",
       "slug": "frostbites-november",
       "name": "Frostbites November 2019",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Topper 5.3",
@@ -10833,6 +11121,7 @@
       "season": "2019",
       "slug": "frostbites-november-laser-4-7",
       "name": "Frostbites November 2019 - Laser 4.7",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Girls",
@@ -10859,6 +11148,7 @@
       "season": "2019",
       "slug": "frostbites-november-laser-radials",
       "name": "Frostbites November 2019 - Laser Radials",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Girls",
@@ -10885,6 +11175,7 @@
       "season": "2019",
       "slug": "harbour-league",
       "name": "Harbour Leagues 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "North Sails"
@@ -10918,6 +11209,7 @@
       "season": "2019",
       "slug": "july-league-friday",
       "name": "July League Friday 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Ronan Enright Solicitors"
@@ -10936,6 +11228,7 @@
       "season": "2019",
       "slug": "july-league-thursday",
       "name": "July League Thursday 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Ronan Enright Solicitors"
@@ -10969,6 +11262,7 @@
       "season": "2019",
       "slug": "july-mbsc-combined-league",
       "name": "July MBSC Combined League 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Ronan Enright Solicitors"
@@ -10991,6 +11285,7 @@
       "season": "2019",
       "slug": "june-league-friday",
       "name": "June League Friday 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -11009,6 +11304,7 @@
       "season": "2019",
       "slug": "june-league-thursday",
       "name": "June League Thursday 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -11042,6 +11338,7 @@
       "season": "2019",
       "slug": "may-league-friday",
       "name": "May League Friday 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -11060,6 +11357,7 @@
       "season": "2019",
       "slug": "may-league-thursday",
       "name": "May League Thursday 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "UK Sailmakers"
@@ -11093,6 +11391,7 @@
       "season": "2019",
       "slug": "mermaid-national-championships",
       "name": "Mermaid National Championships 2019",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -11128,6 +11427,7 @@
       "season": "2019",
       "slug": "optimist-at-home",
       "name": "Optimist At Home 2019",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Main Fleet",
@@ -11154,6 +11454,7 @@
       "season": "2019",
       "slug": "optimist-cobbler-league",
       "name": "Optimist Cobbler League 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -11174,6 +11475,7 @@
       "season": "2019",
       "slug": "optimist-july-and-august-saturday",
       "name": "Optimist July & August Saturdays 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -11194,6 +11496,7 @@
       "season": "2019",
       "slug": "optimist-july-and-august-tuesday",
       "name": "Optimist July & August Tuesdays 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -11214,6 +11517,7 @@
       "season": "2019",
       "slug": "optimist-june-saturday",
       "name": "Optimist June Saturdays 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -11234,6 +11538,7 @@
       "season": "2019",
       "slug": "optimist-june-tuesday",
       "name": "Optimist June Tuesdays 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -11254,6 +11559,7 @@
       "season": "2019",
       "slug": "optimist-may-saturday",
       "name": "Optimist May Saturdays 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -11274,6 +11580,7 @@
       "season": "2019",
       "slug": "optimist-september",
       "name": "Optimist September 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -11294,6 +11601,7 @@
       "season": "2019",
       "slug": "round-the-island-race",
       "name": "Round The Island Race 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -11322,6 +11630,7 @@
       "season": "2019",
       "slug": "september-combined-league",
       "name": "September Combined Leagues 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -11350,6 +11659,7 @@
       "season": "2019",
       "slug": "topper-june-saturday",
       "name": "Topper June Sat 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.2",
@@ -11370,6 +11680,7 @@
       "season": "2019",
       "slug": "topper-june-tuesday",
       "name": "Topper June Tues 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.2",
@@ -11390,6 +11701,7 @@
       "season": "2019",
       "slug": "topper-may-saturday",
       "name": "Topper May Sat 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.2",
@@ -11410,6 +11722,7 @@
       "season": "2019",
       "slug": "topper-september-saturday-5-3",
       "name": "Topper September Sat 5.3 2019",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -11423,6 +11736,7 @@
       "season": "2019",
       "slug": "winter-series",
       "name": "winter Series 2019",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "O'Leary Insurance Group"
@@ -11456,6 +11770,7 @@
       "season": "2020",
       "slug": "1720-southern-championships",
       "name": "1720 Southern Championships 2020",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -11469,6 +11784,7 @@
       "season": "2020",
       "slug": "august-september-league-friday",
       "name": "Aug/Sept League Fridays 2020",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -11487,6 +11803,7 @@
       "season": "2020",
       "slug": "august-september-league-sunday",
       "name": "Aug/Sept League Sundays 2020",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -11520,6 +11837,7 @@
       "season": "2020",
       "slug": "august-september-league-thursday",
       "name": "Aug/Sept League Thursdays 2020",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Fitzgerald's Menswear"
@@ -11553,6 +11871,7 @@
       "season": "2020",
       "slug": "autumn-league",
       "name": "Autumn League 2020",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "AIB"
@@ -11625,6 +11944,7 @@
       "season": "2020",
       "slug": "class-2-training-race",
       "name": "Class 2 Training Race 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -11642,6 +11962,7 @@
       "season": "2020",
       "slug": "coastal-race",
       "name": "Coastal Race 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -11670,6 +11991,7 @@
       "season": "2020",
       "slug": "coolmore-race",
       "name": "Coolmore Race 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -11683,6 +12005,7 @@
       "season": "2020",
       "slug": "july-league-friday",
       "name": "July League Fridays 2020",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -11701,6 +12024,7 @@
       "season": "2020",
       "slug": "july-league-sunday",
       "name": "July League Sundays 2020",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -11734,6 +12058,7 @@
       "season": "2020",
       "slug": "july-league-thursday",
       "name": "July League Thursdays 2020",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "Union Chandlery"
@@ -11767,6 +12092,7 @@
       "season": "2020",
       "slug": "laser-august-pop-up-event",
       "name": "Laser August Pop Up Event 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7",
@@ -11802,6 +12128,7 @@
       "season": "2020",
       "slug": "laser-august-saturday",
       "name": "Laser August Saturdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7",
@@ -11828,6 +12155,7 @@
       "season": "2020",
       "slug": "laser-august-tuesday",
       "name": "Laser August Tuesdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7",
@@ -11854,6 +12182,7 @@
       "season": "2020",
       "slug": "laser-july-saturday",
       "name": "Laser July Saturdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7",
@@ -11880,6 +12209,7 @@
       "season": "2020",
       "slug": "laser-july-thursday",
       "name": "Laser July Thursdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7",
@@ -11906,6 +12236,7 @@
       "season": "2020",
       "slug": "laser-september-saturday",
       "name": "Laser September Saturdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7",
@@ -11932,6 +12263,7 @@
       "season": "2020",
       "slug": "national-18-august-league",
       "name": "National 18 August Wednesday League 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -11945,6 +12277,7 @@
       "season": "2020",
       "slug": "national-18-dognose-trophy",
       "name": "National 18 Dognose Trophy 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -11958,6 +12291,7 @@
       "season": "2020",
       "slug": "national-18-donnelly-trophy",
       "name": "National 18 Donnelly Trophy 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -11971,6 +12305,7 @@
       "season": "2020",
       "slug": "national-18-july-league",
       "name": "National 18 July Wednesday League 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -11984,6 +12319,7 @@
       "season": "2020",
       "slug": "national-18-national-championships",
       "name": "National 18 Irish National Championships 2020",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -11997,6 +12333,7 @@
       "season": "2020",
       "slug": "national-18-september-league",
       "name": "National 18 September Wednesday League 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12010,6 +12347,7 @@
       "season": "2020",
       "slug": "national-18-south-coast-championships",
       "name": "National 18 Southcoast Championships 2020",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -12023,6 +12361,7 @@
       "season": "2020",
       "slug": "naval-race",
       "name": "Naval Race 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -12051,6 +12390,7 @@
       "season": "2020",
       "slug": "optimist-august-saturday",
       "name": "Optimist August Saturdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12071,6 +12411,7 @@
       "season": "2020",
       "slug": "optimist-august-tuesday",
       "name": "Optimist August Tuesdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12091,6 +12432,7 @@
       "season": "2020",
       "slug": "optimist-burns-trophy-september",
       "name": "Optimist Burns Trophy September 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12111,6 +12453,7 @@
       "season": "2020",
       "slug": "optimist-june-july-saturday",
       "name": "Optimist June July Saturdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12131,6 +12474,7 @@
       "season": "2020",
       "slug": "optimist-june-july-tuesday",
       "name": "Optimist June July Tuesdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12151,6 +12495,7 @@
       "season": "2020",
       "slug": "optimist-skills-for-gold-july",
       "name": "Optimist Skills for Gold July 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12164,6 +12509,7 @@
       "season": "2020",
       "slug": "py1000",
       "name": "PY1000 2020",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "AIB"
@@ -12182,6 +12528,7 @@
       "season": "2020",
       "slug": "topper-july-august-league-saturday",
       "name": "Topper JulyAug Saturday League 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12195,6 +12542,7 @@
       "season": "2020",
       "slug": "topper-july-august-tuesday",
       "name": "Topper JulyAugust Tuesdays 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.2",
@@ -12221,6 +12569,7 @@
       "season": "2020",
       "slug": "topper-september-league-saturday",
       "name": "Topper September Saturday League 2020",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12234,6 +12583,7 @@
       "season": "2021",
       "slug": "august-september-friday-ihs",
       "name": "Aug/Sept Friday IHS 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12247,6 +12597,7 @@
       "season": "2021",
       "slug": "august-september-naval-race",
       "name": "Aug/Sept Naval Race 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -12275,6 +12626,7 @@
       "season": "2021",
       "slug": "august-september-sunday",
       "name": "Aug/Sept Sunday 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail",
@@ -12292,6 +12644,7 @@
       "season": "2021",
       "slug": "august-september-thursday",
       "name": "Aug/Sept Thursday 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail",
@@ -12320,6 +12673,7 @@
       "season": "2021",
       "slug": "autumn-league",
       "name": "Autumn League 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker 2",
@@ -12388,6 +12742,7 @@
       "season": "2021",
       "slug": "ilca-topper-frostbite-league-and-november-sprint",
       "name": "ILCA/Topper Frostbite League & November Sprint 2021",
+      "category": "Open Events",
       "pages": [
         {
           "name": "ILCA",
@@ -12408,6 +12763,7 @@
       "season": "2021",
       "slug": "july-friday-ihs",
       "name": "July Friday IHS 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12421,6 +12777,7 @@
       "season": "2021",
       "slug": "july-sunday",
       "name": "July Sundays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -12449,6 +12806,7 @@
       "season": "2021",
       "slug": "july-thursday",
       "name": "July Thursday 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -12477,6 +12835,7 @@
       "season": "2021",
       "slug": "june-friday-ihs",
       "name": "June Friday IHS 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12490,6 +12849,7 @@
       "season": "2021",
       "slug": "june-thursday",
       "name": "June Thursday 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -12518,6 +12878,7 @@
       "season": "2021",
       "slug": "laser-june-july-saturday",
       "name": "Laser June July Saturdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.7",
@@ -12544,6 +12905,7 @@
       "season": "2021",
       "slug": "laser-june-july-tuesday",
       "name": "Laser June July Tuesdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12557,6 +12919,7 @@
       "season": "2021",
       "slug": "laser-september-saturday",
       "name": "Laser Sept Saturdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12570,6 +12933,7 @@
       "season": "2021",
       "slug": "national-18-august-league",
       "name": "National 18 August League 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12583,6 +12947,7 @@
       "season": "2021",
       "slug": "national-18-july-league",
       "name": "National 18 July League 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12596,6 +12961,7 @@
       "season": "2021",
       "slug": "national-18-june-league",
       "name": "National 18 June League 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12609,6 +12975,7 @@
       "season": "2021",
       "slug": "national-18-national-championships",
       "name": "National 18 Irish Nationals 2021",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "CH Marine"
@@ -12627,6 +12994,7 @@
       "season": "2021",
       "slug": "optimist-july-august-saturday",
       "name": "Optimist July-August Saturdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12647,6 +13015,7 @@
       "season": "2021",
       "slug": "optimist-july-august-tuesday",
       "name": "Optimist July-August Tuesdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12667,6 +13036,7 @@
       "season": "2021",
       "slug": "optimist-june-saturday",
       "name": "Optimist June Saturdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12687,6 +13057,7 @@
       "season": "2021",
       "slug": "optimist-june-tuesday",
       "name": "Optimist June Tuesdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12707,6 +13078,7 @@
       "season": "2021",
       "slug": "optimist-october-cobbler-league",
       "name": "Optimist October Cobbler League 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet Senior",
@@ -12733,6 +13105,7 @@
       "season": "2021",
       "slug": "optimist-september-burns-trophy",
       "name": "Optimist September Burns Trophy 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -12753,6 +13126,7 @@
       "season": "2021",
       "slug": "topper-june-july-saturday",
       "name": "Topper June July Saturdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.2",
@@ -12779,6 +13153,7 @@
       "season": "2021",
       "slug": "topper-june-july-tuesday",
       "name": "Topper June July Tuesdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "4.2",
@@ -12805,6 +13180,7 @@
       "season": "2021",
       "slug": "topper-october-saturday",
       "name": "Topper October Saturdays 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -12818,6 +13194,7 @@
       "season": "2021",
       "slug": "tricentenary-regatta",
       "name": "Tricentenary Regatta 2021",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "AIB"
@@ -12860,6 +13237,7 @@
       "season": "2021",
       "slug": "tricentenary-regatta-dinghies",
       "name": "Tricentenary Regatta 2021",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "AIB"
@@ -12927,6 +13305,7 @@
       "season": "2021",
       "slug": "winter-league",
       "name": "Winter League 2021",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail",
@@ -12944,6 +13323,7 @@
       "season": "2022",
       "slug": "april-league",
       "name": "April League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail",
@@ -12961,6 +13341,7 @@
       "season": "2022",
       "slug": "at-home",
       "name": "At Home 2022",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Spinnaker 2",
@@ -13009,6 +13390,7 @@
       "season": "2022",
       "slug": "at-home-dinghies",
       "name": "At Home Regatta 2022",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Oppies Main Fleet",
@@ -13059,6 +13441,7 @@
       "season": "2022",
       "slug": "august-september-friday",
       "name": "Aug Sept Fridays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13072,6 +13455,7 @@
       "season": "2022",
       "slug": "august-september-league",
       "name": "Aug Sept League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -13100,6 +13484,7 @@
       "season": "2022",
       "slug": "autumn-league",
       "name": "Autumn League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker 1",
@@ -13157,6 +13542,7 @@
       "season": "2022",
       "slug": "coolmore-race",
       "name": "Coolmore Race 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13170,6 +13556,7 @@
       "season": "2022",
       "slug": "cork-week",
       "name": "Cork Week 2022",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -13296,6 +13683,7 @@
       "season": "2022",
       "slug": "ilca-and-toppers-frostbites",
       "name": "ILCA & Toppers Frostbites 2022",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Toppers",
@@ -13328,6 +13716,7 @@
       "season": "2022",
       "slug": "ilca-tri-series",
       "name": "ILCA Tri-series 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ILCA4 Boat",
@@ -13354,6 +13743,7 @@
       "season": "2022",
       "slug": "july-league",
       "name": "July League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -13382,6 +13772,7 @@
       "season": "2022",
       "slug": "june-july-friday",
       "name": "June July Fridays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13395,6 +13786,7 @@
       "season": "2022",
       "slug": "june-league",
       "name": "June League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -13423,6 +13815,7 @@
       "season": "2022",
       "slug": "june-tuesday-ilca-league",
       "name": "June Tuesday ILCA League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ILCA4 Boat",
@@ -13458,6 +13851,7 @@
       "season": "2022",
       "slug": "june-tuesday-topper-league",
       "name": "June Tuesday Topper League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13471,6 +13865,7 @@
       "season": "2022",
       "slug": "may-june-saturday-ilca-league",
       "name": "May-June Saturday ILCA league 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ILCA4 Boat",
@@ -13506,6 +13901,7 @@
       "season": "2022",
       "slug": "may-june-saturday-topper-league",
       "name": "May-June Saturday Topper League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13519,6 +13915,7 @@
       "season": "2022",
       "slug": "may-league",
       "name": "May League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -13547,6 +13944,7 @@
       "season": "2022",
       "slug": "may-league-friday",
       "name": "May League Fridays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13560,6 +13958,7 @@
       "season": "2022",
       "slug": "national-18-april-league",
       "name": "National 18 April 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13573,6 +13972,7 @@
       "season": "2022",
       "slug": "national-18-may-league",
       "name": "National 18 May 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13586,6 +13986,7 @@
       "season": "2022",
       "slug": "naval-race",
       "name": "Naval Race 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -13612,6 +14013,7 @@
       "season": "2022",
       "slug": "offshore-series",
       "name": "Offshore Series 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -13640,6 +14042,7 @@
       "season": "2022",
       "slug": "optimist-july-august-saturday",
       "name": "Optimist July/August Saturdays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -13660,6 +14063,7 @@
       "season": "2022",
       "slug": "optimist-july-august-tuesday",
       "name": "Optimist July/August Tuesdays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -13680,6 +14084,7 @@
       "season": "2022",
       "slug": "optimist-june-saturday",
       "name": "Optimist June Saturdays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -13700,6 +14105,7 @@
       "season": "2022",
       "slug": "optimist-june-tuesday",
       "name": "Optimist June Tuesdays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -13720,6 +14126,7 @@
       "season": "2022",
       "slug": "optimist-may-saturday",
       "name": "Optimist May Saturdays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -13740,6 +14147,7 @@
       "season": "2022",
       "slug": "optimist-october-cobbler-league",
       "name": "Optimist October Cobbler League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet Senior",
@@ -13766,6 +14174,7 @@
       "season": "2022",
       "slug": "optimist-september-burns-trophy",
       "name": "Optimist September Burns Trophy 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -13786,6 +14195,7 @@
       "season": "2022",
       "slug": "py1000",
       "name": "PY1000 2022",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "RAMEN"
@@ -13817,6 +14227,7 @@
       "season": "2022",
       "slug": "super-league-friday",
       "name": "Super League Fridays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -13830,6 +14241,7 @@
       "season": "2022",
       "slug": "super-league-thursday",
       "name": "Super League Thursdays 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -13858,6 +14270,7 @@
       "season": "2022",
       "slug": "winter-league",
       "name": "Winter League 2022",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail",
@@ -13875,6 +14288,7 @@
       "season": "2023",
       "slug": "29er-southerns",
       "name": "29er Southerns 2023",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -13888,6 +14302,7 @@
       "season": "2023",
       "slug": "at-home",
       "name": "At Home 2023",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Spinnaker",
@@ -13926,6 +14341,7 @@
       "season": "2023",
       "slug": "at-home-dinghies",
       "name": "At Home Regatta 2023",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Feva Sunday Racing",
@@ -13976,6 +14392,7 @@
       "season": "2023",
       "slug": "at-home-ilca-passage-race",
       "name": "At Home Regatta 2023 - ILCA Passage Race Blackrock to RCYC",
+      "category": "Open Events",
       "pages": [
         {
           "name": "ILCA 4",
@@ -14011,6 +14428,7 @@
       "season": "2023",
       "slug": "august-league-thursday",
       "name": "August League Thursdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -14039,6 +14457,7 @@
       "season": "2023",
       "slug": "august-september-league-friday",
       "name": "Aug-Sept League Fridays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14052,6 +14471,7 @@
       "season": "2023",
       "slug": "autumn-league",
       "name": "Autumn League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker 1",
@@ -14109,6 +14529,7 @@
       "season": "2023",
       "slug": "dinghy-frostbites",
       "name": "Dinghy Frostbites 2023",
+      "category": "Open Events",
       "sponsors": [
         {
           "name": "Carrigaline Court"
@@ -14167,6 +14588,7 @@
       "season": "2023",
       "slug": "ilca-defrosters",
       "name": "ILCA Defrosters 2023",
+      "category": "Open Events",
       "pages": [
         {
           "name": "ILCA 4",
@@ -14202,6 +14624,7 @@
       "season": "2023",
       "slug": "ilca-july-august-tuesday-racing",
       "name": "ILCA Jul/Aug Tues Racing 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ILCA 4",
@@ -14237,6 +14660,7 @@
       "season": "2023",
       "slug": "ilca-june-league-saturday",
       "name": "ILCA June Sat League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ILCA 4",
@@ -14272,6 +14696,7 @@
       "season": "2023",
       "slug": "ilca-june-league-tuesday",
       "name": "ILCA June Tues League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ILCA 4",
@@ -14298,6 +14723,7 @@
       "season": "2023",
       "slug": "ilca-may-league",
       "name": "ILCA May League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "ILCA 4",
@@ -14333,6 +14759,7 @@
       "season": "2023",
       "slug": "july-league-friday",
       "name": "July League Fridays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14346,6 +14773,7 @@
       "season": "2023",
       "slug": "july-league-thursday",
       "name": "July League Thursdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -14374,6 +14802,7 @@
       "season": "2023",
       "slug": "june-league-friday",
       "name": "June League Fridays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14387,6 +14816,7 @@
       "season": "2023",
       "slug": "june-league-thursday",
       "name": "June League Thursdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -14415,6 +14845,7 @@
       "season": "2023",
       "slug": "may-league-friday",
       "name": "May League Fridays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14428,6 +14859,7 @@
       "season": "2023",
       "slug": "may-league-thursday",
       "name": "May League Thursdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail",
@@ -14456,6 +14888,7 @@
       "season": "2023",
       "slug": "national-18-april-league",
       "name": "National 18 April League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14469,6 +14902,7 @@
       "season": "2023",
       "slug": "national-18-juneleague",
       "name": "National 18 JuneLeague 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14482,6 +14916,7 @@
       "season": "2023",
       "slug": "national-18-may-league",
       "name": "National 18 May League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14495,6 +14930,7 @@
       "season": "2023",
       "slug": "national-18-national-championships",
       "name": "National 18 National Championship 2023",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -14508,6 +14944,7 @@
       "season": "2023",
       "slug": "naval-race",
       "name": "Naval Race 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail",
@@ -14536,6 +14973,7 @@
       "season": "2023",
       "slug": "ntw",
       "name": "NTW 2023",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Senior",
@@ -14574,6 +15012,7 @@
       "season": "2023",
       "slug": "offshore-coastal-series",
       "name": "Offshore-Coastal Series 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -14602,6 +15041,7 @@
       "season": "2023",
       "slug": "optimist-july-august-saturday",
       "name": "Optimist JulyAug Saturdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Copper Fleet",
@@ -14622,6 +15062,7 @@
       "season": "2023",
       "slug": "optimist-july-august-tuesday",
       "name": "Optimist JulyAug Tuesdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -14642,6 +15083,7 @@
       "season": "2023",
       "slug": "optimist-june-main-fleet-saturday",
       "name": "Optimist June Main fleet Saturdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14655,6 +15097,7 @@
       "season": "2023",
       "slug": "optimist-june-main-fleet-tuesday",
       "name": "Optimist June Main Fleet Tuesdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14668,6 +15111,7 @@
       "season": "2023",
       "slug": "optimist-may-league",
       "name": "Optimist May League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -14688,6 +15132,7 @@
       "season": "2023",
       "slug": "optimist-october-cobbler-league",
       "name": "Optimist October Cobbler League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Junior Main Fleet",
@@ -14708,6 +15153,7 @@
       "season": "2023",
       "slug": "optimist-october-cobbler-league-regatta",
       "name": "Optimist October Cobbler League Regatta 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14721,6 +15167,7 @@
       "season": "2023",
       "slug": "super-league-friday",
       "name": "Super League Fridays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14734,6 +15181,7 @@
       "season": "2023",
       "slug": "super-league-thursday",
       "name": "Super League Thursdays 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -14762,6 +15210,7 @@
       "season": "2023",
       "slug": "topper-worlds-4-2-fleet",
       "name": "Topper Worlds 2023 - 4.2 fleet",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Gold Flight",
@@ -14788,6 +15237,7 @@
       "season": "2023",
       "slug": "topper-worlds-5-3-fleet",
       "name": "Topper Worlds 2023 - 5.3 fleet",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Gold Flight",
@@ -14823,6 +15273,7 @@
       "season": "2023",
       "slug": "winter-league",
       "name": "Winter League 2023",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "White Sail",
@@ -14840,6 +15291,7 @@
       "season": "2024",
       "slug": "at-home",
       "name": "At Home 2024",
+      "category": "Open Events",
       "pages": [
         {
           "name": "White Sail 1",
@@ -14888,6 +15340,7 @@
       "season": "2024",
       "slug": "at-home-dinghies",
       "name": "At Home Regatta 2024",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Optimist Main Fleet Sunday Racing",
@@ -14908,6 +15361,7 @@
       "season": "2024",
       "slug": "august-september-league-friday",
       "name": "Aug / Sept League Fridays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -14921,6 +15375,7 @@
       "season": "2024",
       "slug": "august-september-league-thursday",
       "name": "Aug / Sept League Thursdays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -14949,6 +15404,7 @@
       "season": "2024",
       "slug": "autumn-league",
       "name": "Autumn League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Class 1",
@@ -14997,6 +15453,7 @@
       "season": "2024",
       "slug": "coolmore-race",
       "name": "Coolmore Race 2024",
+      "category": "Club Racing",
       "sponsors": [
         {
           "name": "AIB"
@@ -15018,6 +15475,7 @@
       "season": "2024",
       "slug": "cork-week",
       "name": "Cork Week 2024",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -15130,6 +15588,7 @@
       "season": "2024",
       "slug": "june-coastal-race",
       "name": "June Coastal Race 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -15147,6 +15606,7 @@
       "season": "2024",
       "slug": "june-combined-league-friday",
       "name": "June Combined League Fridays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15184,6 +15644,7 @@
       "season": "2024",
       "slug": "june-july-league-friday",
       "name": "June / July League Fridays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15197,6 +15658,7 @@
       "season": "2024",
       "slug": "june-july-league-thursday",
       "name": "June / July League Thursdays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -15225,6 +15687,7 @@
       "season": "2024",
       "slug": "may-coastal-race",
       "name": "May Coastal Race 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -15242,6 +15705,7 @@
       "season": "2024",
       "slug": "may-league-friday",
       "name": "May League Fridays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15255,6 +15719,7 @@
       "season": "2024",
       "slug": "may-league-thursday",
       "name": "May League Thursdays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -15283,6 +15748,7 @@
       "season": "2024",
       "slug": "mixed-dinghy-june-league",
       "name": "Mixed Dinghy June League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15296,6 +15762,7 @@
       "season": "2024",
       "slug": "national-18-april-league",
       "name": "National 18 April League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15309,6 +15776,7 @@
       "season": "2024",
       "slug": "national-18-july-league",
       "name": "National 18 July League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15322,6 +15790,7 @@
       "season": "2024",
       "slug": "national-18-june-league",
       "name": "National 18 June League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15335,6 +15804,7 @@
       "season": "2024",
       "slug": "national-18-lowflow-may-league",
       "name": "National 18 LowFlow May League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15348,6 +15818,7 @@
       "season": "2024",
       "slug": "national-18-national-championships",
       "name": "National 18 National Championship 2024",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -15361,6 +15832,7 @@
       "season": "2024",
       "slug": "naval-race",
       "name": "Naval Race 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15397,6 +15869,7 @@
       "season": "2024",
       "slug": "optimist-july-august-saturday-main-fleet",
       "name": "Optimist July August Saturday Main fleet 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15410,6 +15883,7 @@
       "season": "2024",
       "slug": "optimist-july-august-tuesday",
       "name": "Optimist July August Tuesday 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -15430,6 +15904,7 @@
       "season": "2024",
       "slug": "optimist-june-saturday",
       "name": "Optimist June Saturdays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -15450,6 +15925,7 @@
       "season": "2024",
       "slug": "optimist-june-tuesday-main-fleet",
       "name": "Optimist June Tuesdays Main fleet 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15463,6 +15939,7 @@
       "season": "2024",
       "slug": "optimist-may-league",
       "name": "Optimist May League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -15483,6 +15960,7 @@
       "season": "2024",
       "slug": "optimist-october-cobbler-league",
       "name": "Optimist October Cobbler League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet Senior",
@@ -15503,6 +15981,7 @@
       "season": "2024",
       "slug": "optimist-october-cobbler-league-regatta-fleet",
       "name": "Optimist October Cobbler League Regatta fleet 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15516,6 +15995,7 @@
       "season": "2024",
       "slug": "optimist-september-burns-trophy",
       "name": "Optimist September Burns Trophy 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -15536,6 +16016,7 @@
       "season": "2024",
       "slug": "round-the-island-race",
       "name": "Round the Island Race 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15563,6 +16044,7 @@
       "season": "2024",
       "slug": "super-league-friday",
       "name": "Super League Fridays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -15576,6 +16058,7 @@
       "season": "2024",
       "slug": "super-league-thursday",
       "name": "Super League Thursdays 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -15604,6 +16087,7 @@
       "season": "2024",
       "slug": "winter-league",
       "name": "Winter League 2024",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -15621,6 +16105,7 @@
       "season": "2025",
       "slug": "april-league-non-spinnaker",
       "name": "April League 2025 - Non-Spinnaker",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -15638,6 +16123,7 @@
       "season": "2025",
       "slug": "at-home",
       "name": "At Home 2025",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Spinnaker 1",
@@ -15704,6 +16190,7 @@
       "season": "2025",
       "slug": "at-home-dinghies",
       "name": "At Home 2025",
+      "category": "Open Events",
       "pages": [
         {
           "name": "420",
@@ -15775,6 +16262,7 @@
       "season": "2025",
       "slug": "august-september-friday-ns-league",
       "name": "Aug-Sept Friday NS League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -15792,6 +16280,7 @@
       "season": "2025",
       "slug": "august-september-league-thursday",
       "name": "Aug-Sept Thursday League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -15829,6 +16318,7 @@
       "season": "2025",
       "slug": "autumn-league",
       "name": "Autumn League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker 1",
@@ -15905,6 +16395,7 @@
       "season": "2025",
       "slug": "cork-dinghy-fest",
       "name": "Dinghy Fest 2025",
+      "category": "Open Events",
       "pages": [
         {
           "name": "420",
@@ -15931,6 +16422,7 @@
       "season": "2025",
       "slug": "frostbite-series-ilcas-and-420s",
       "name": "Frostbite Series 2025 - ILCAs and 420s",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -15944,6 +16436,7 @@
       "season": "2025",
       "slug": "frostbite-series-toppers-and-fevas",
       "name": "Frostbite Series 2025 - Toppers and Fevas",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -15957,6 +16450,7 @@
       "season": "2025",
       "slug": "j24-southern-championships",
       "name": "J24 Southern Championships 2025",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -15970,6 +16464,7 @@
       "season": "2025",
       "slug": "july-friday-ns-league",
       "name": "July Friday NS League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -15987,6 +16482,7 @@
       "season": "2025",
       "slug": "july-league-saturday",
       "name": "July Saturday League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16015,6 +16511,7 @@
       "season": "2025",
       "slug": "july-league-thursday",
       "name": "July Thursday League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16052,6 +16549,7 @@
       "season": "2025",
       "slug": "june-friday-combined-league",
       "name": "June Friday Combined League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Combined",
@@ -16106,6 +16604,7 @@
       "season": "2025",
       "slug": "june-league-saturday",
       "name": "June Saturday League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16134,6 +16633,7 @@
       "season": "2025",
       "slug": "june-league-thursday",
       "name": "June Thursday League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16171,6 +16671,7 @@
       "season": "2025",
       "slug": "may-friday-ns-league",
       "name": "May Friday NS League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16188,6 +16689,7 @@
       "season": "2025",
       "slug": "may-league-saturday",
       "name": "May Saturday League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16225,6 +16727,7 @@
       "season": "2025",
       "slug": "may-league-thursday",
       "name": "May Thursday League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16262,6 +16765,7 @@
       "season": "2025",
       "slug": "optimist-july-august-saturday",
       "name": "Optimist July/August Saturday's 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -16282,6 +16786,7 @@
       "season": "2025",
       "slug": "optimist-july-august-tuesday",
       "name": "Optimist July/August Tuesday's 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -16302,6 +16807,7 @@
       "season": "2025",
       "slug": "optimist-june-league-saturday",
       "name": "Optimist June league Saturday's 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -16322,6 +16828,7 @@
       "season": "2025",
       "slug": "optimist-june-league-tuesday",
       "name": "Optimist June league Tuesday's 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -16342,6 +16849,7 @@
       "season": "2025",
       "slug": "optimist-may-league",
       "name": "Optimist May league 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -16362,6 +16870,7 @@
       "season": "2025",
       "slug": "optimist-mervue-october",
       "name": "Optimist Mervue October 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -16375,6 +16884,7 @@
       "season": "2025",
       "slug": "optimist-mervue-october-league",
       "name": "Optimist Mervue October League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet Senior",
@@ -16395,6 +16905,7 @@
       "season": "2025",
       "slug": "optimist-september-burns-trophy",
       "name": "Optimist September Burns Trophy 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -16415,6 +16926,7 @@
       "season": "2025",
       "slug": "super-league-friday",
       "name": "Super League Fridays 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -16428,6 +16940,7 @@
       "season": "2025",
       "slug": "super-league-saturday",
       "name": "Super League Saturdays 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16456,6 +16969,7 @@
       "season": "2025",
       "slug": "super-league-thursday",
       "name": "Super League Thursdays 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16484,6 +16998,7 @@
       "season": "2025",
       "slug": "winter-league",
       "name": "Winter League 2025",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker 1",
@@ -16512,6 +17027,7 @@
       "season": "2026",
       "slug": "1720-april-league",
       "name": "1720 April League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -16525,6 +17041,7 @@
       "season": "2026",
       "slug": "420-munsters",
       "name": "420 Munsters 2026",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -16538,6 +17055,7 @@
       "season": "2026",
       "slug": "april-league",
       "name": "April League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16566,6 +17084,7 @@
       "season": "2026",
       "slug": "at-home",
       "name": "At Home 2026",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Spinnaker",
@@ -16624,6 +17143,7 @@
       "season": "2026",
       "slug": "august-league-friday",
       "name": "August Friday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker Class 1",
@@ -16652,6 +17172,7 @@
       "season": "2026",
       "slug": "august-league-thursday",
       "name": "August Thursday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -16682,6 +17203,7 @@
       "season": "2026",
       "slug": "cork-week",
       "name": "Cork Week 2026",
+      "category": "Open Events",
       "eventUrl": "https://www.corkweek.ie",
       "eventLogoUrl": "https://logos.sailscoring.ie/cork-week.png",
       "pages": [
@@ -16816,6 +17338,7 @@
       "season": "2026",
       "slug": "july-league-friday",
       "name": "July Friday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker Class 1",
@@ -16851,6 +17374,7 @@
       "season": "2026",
       "slug": "july-league-thursday",
       "name": "July Thursday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16891,6 +17415,7 @@
       "season": "2026",
       "slug": "june-around-spike-race",
       "name": "June Around Spike Race 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -16919,6 +17444,7 @@
       "season": "2026",
       "slug": "june-cork-harbour-combined-league",
       "name": "June Cork Harbour Combined League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker Class 1",
@@ -16954,6 +17480,7 @@
       "season": "2026",
       "slug": "june-league-friday",
       "name": "June Friday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -16999,6 +17526,7 @@
       "season": "2026",
       "slug": "june-league-thursday",
       "name": "June Thursday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -17027,6 +17555,7 @@
       "season": "2026",
       "slug": "may-league-friday",
       "name": "May Friday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker Class 1",
@@ -17062,6 +17591,7 @@
       "season": "2026",
       "slug": "may-league-saturday",
       "name": "May Saturday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Spinnaker",
@@ -17090,6 +17620,7 @@
       "season": "2026",
       "slug": "may-league-thursday",
       "name": "May Thursday League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Non-Spinnaker",
@@ -17137,6 +17668,7 @@
       "season": "2026",
       "slug": "mixed-dinghy-summer-league",
       "name": "Mixed Dinghy Summer League 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -17150,6 +17682,7 @@
       "season": "2026",
       "slug": "optimist-at-home",
       "name": "Optimist At Home 2026",
+      "category": "Open Events",
       "pages": [
         {
           "name": "Overall",
@@ -17163,6 +17696,7 @@
       "season": "2026",
       "slug": "optimist-august-league-tuesday",
       "name": "Optimist August League Tuesdays 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -17176,6 +17710,7 @@
       "season": "2026",
       "slug": "optimist-burns-trophy-september",
       "name": "Optimist Burns Trophy September 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -17189,6 +17724,7 @@
       "season": "2026",
       "slug": "optimist-burns-trophy-september-copper-fleet",
       "name": "Optimist Burns Trophy September Copper Fleet 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -17202,6 +17738,7 @@
       "season": "2026",
       "slug": "optimist-july-league-tuesday",
       "name": "Optimist July League Tuesdays 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Main Fleet",
@@ -17222,6 +17759,7 @@
       "season": "2026",
       "slug": "optimist-may-league-main-fleet",
       "name": "Optimist May League Main Fleet 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -17235,6 +17773,7 @@
       "season": "2026",
       "slug": "optimist-mervue-main",
       "name": "Optimist Mervue Main 2026",
+      "category": "Club Racing",
       "pages": [
         {
           "name": "Overall",
@@ -17248,6 +17787,7 @@
       "season": "2026",
       "slug": "topper-traveller-series",
       "name": "Topper Traveller Series 2026",
+      "category": "Open Events",
       "pages": [
         {
           "name": "5.3m",

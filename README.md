@@ -68,7 +68,8 @@ The published pages land at `/p/rcyc/<season>/<event>[/<page>]`, e.g.
 2. Add the page to its series in `sources/series.json` — or a new series: a
    permanent `key`, the `season` and `slug` its URL is built from (a
    recurring event keeps the slug it has in other years, CLARIFICATIONS §2),
-   a display `name`, the `sponsors` from the index heading, and its pages. A
+   a display `name`, its `category` (CLARIFICATIONS §13), the `sponsors`
+   from the index heading, and its pages. A
    page's `title` is its heading (Sailwave's `<h1>`, or Sail100's first);
    run `pnpm emit-as-published` with a guess and it will tell you the real
    one. A page drawn from a file with several standings sections lists them

@@ -72,6 +72,10 @@ export interface Sponsor {
   kind?: 'sponsor' | 'donor';
 }
 
+/** An event open to visiting boats, or the club's own racing. */
+export const CATEGORIES = ['Open Events', 'Club Racing'] as const;
+export type Category = (typeof CATEGORIES)[number];
+
 export interface ArchiveSeries {
   /** Stable per-series key. The series id is UUIDv5 over it, so it is
    *  permanent: renaming one re-mints the id and orphans the ingested
@@ -83,6 +87,10 @@ export interface ArchiveSeries {
   slug: string;
   /** Display name for the series. */
   name: string;
+  /** The workspace category the series is filed under — the same two the
+   *  club's own Sail Scoring series use (CLARIFICATIONS §13). Re-filed on
+   *  every ingest. */
+  category: Category;
   /** The event's own website and logo, where it has one apart from the
    *  club's — Cork Week. */
   eventUrl?: string;

@@ -29,7 +29,7 @@ import { seriesIdForKey } from '../../sailscoring/lib/archive-kit/ids';
 import { parseSail100Html, parseSail100RaceHtml } from '../../sailscoring/lib/archive-kit/sail100-html';
 import { parseSailwaveHtml, type SailwavePage } from '../../sailscoring/lib/archive-kit/sailwave-html';
 
-import { captureFile, readSeriesFile, type ArchivePage, type ArchiveSeries } from './series';
+import { CATEGORIES, captureFile, readSeriesFile, type ArchivePage, type ArchiveSeries } from './series';
 
 const OUT = 'as-published.config.json';
 const REPO_KEY = 'rcyc-archive';
@@ -352,6 +352,10 @@ function buildSeries(series: ArchiveSeries) {
     // that names a helm keeps it.
     ownerNames: true as const,
     ...(series.detail ? { detail: series.detail } : {}),
+    // Filed beside the club's own Sail Scoring series, so a season that holds
+    // both lists them under the same headings rather than an Uncategorized
+    // bucket.
+    category: series.category,
     fleets,
     // A multi-page event's pages sit in an interior folder; pin its display
     // label where title-casing the segment would mangle it.
@@ -377,6 +381,9 @@ function main(): void {
     }
     const path = `${series.season}/${series.slug}`;
     if (paths.has(path)) throw new Error(`duplicate published path: ${path}`);
+    if (!CATEGORIES.includes(series.category)) {
+      throw new Error(`${series.key}: category must be one of ${CATEGORIES.join(', ')}`);
+    }
     paths.add(path);
     // A file split into several class pages is listed once per page, so a
     // URL may repeat; it may not be both published and skipped.

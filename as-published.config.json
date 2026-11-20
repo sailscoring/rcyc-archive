@@ -16,6 +16,7 @@
       "endDate": "2004-07-16",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 0",
@@ -192,6 +193,7 @@
       "endDate": "2006-07-21",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC Super 0",
@@ -341,6 +343,7 @@
       "endDate": "2008-07-18",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC Super 0",
@@ -520,6 +523,7 @@
       "endDate": "2010-07-16",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Super 0",
@@ -619,6 +623,7 @@
       "endDate": "2011-06-11",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -640,6 +645,7 @@
       "endDate": "2011-07-10",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -661,6 +667,7 @@
       "endDate": "2011-08-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -681,6 +688,7 @@
       "startDate": "2011-03-19",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7",
@@ -714,6 +722,7 @@
       "endDate": "2011-11-03",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7 Fleet",
@@ -752,6 +761,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "4.7",
@@ -790,6 +800,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "4.7",
@@ -829,6 +840,7 @@
       "endDate": "2011-10-03",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -850,6 +862,7 @@
       "endDate": "2011-08-20",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -871,6 +884,7 @@
       "endDate": "2011-08-12",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -892,6 +906,7 @@
       "endDate": "2011-07-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -912,6 +927,7 @@
       "startDate": "2011-07-24",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -933,6 +949,7 @@
       "endDate": "2011-07-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -965,6 +982,7 @@
       "endDate": "2011-08-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -986,6 +1004,7 @@
       "endDate": "2011-08-20",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -1007,6 +1026,7 @@
       "endDate": "2011-08-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -1028,6 +1048,7 @@
       "endDate": "2011-10-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -1061,6 +1082,7 @@
       "endDate": "2011-07-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -1082,6 +1104,7 @@
       "endDate": "2011-07-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -1103,6 +1126,7 @@
       "endDate": "2011-06-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -1124,6 +1148,7 @@
       "endDate": "2011-06-18",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -1145,6 +1170,7 @@
       "endDate": "2011-10-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -1166,6 +1192,7 @@
       "endDate": "2011-09-24",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -1187,6 +1214,7 @@
       "endDate": "2011-08-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -1208,6 +1236,7 @@
       "endDate": "2011-08-13",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -1229,6 +1258,7 @@
       "endDate": "2011-08-14",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -1255,6 +1285,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -1275,6 +1306,7 @@
       "startDate": "2012-07-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ECHO All In",
@@ -1313,6 +1345,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail IHS",
@@ -1351,6 +1384,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -1425,6 +1459,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -1525,6 +1560,7 @@
       "endDate": "2012-07-13",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 0",
@@ -1639,6 +1675,7 @@
       "startDate": "2012-07-21",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ECHO All In",
@@ -1683,6 +1720,7 @@
       "startDate": "2012-10-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -1721,6 +1759,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -1795,6 +1834,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -1863,6 +1903,7 @@
       "startDate": "2012-09-22",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ECHO All In",
@@ -1895,6 +1936,7 @@
       "startDate": "2012",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7 Rig",
@@ -1961,6 +2003,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -2033,6 +2076,7 @@
       "startDate": "2012-09-08",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -2101,6 +2145,7 @@
       "startDate": "2012-06-09",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ECHO All In",
@@ -2133,6 +2178,7 @@
       "startDate": "2012-06-16",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ECHO All In",
@@ -2166,6 +2212,7 @@
       "endDate": "2012-10-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 0",
@@ -2246,6 +2293,7 @@
       "startDate": "2012-06-05",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ECHO All In",
@@ -2278,6 +2326,7 @@
       "startDate": "2012-09-06",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ECHO",
@@ -2316,6 +2365,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -2390,6 +2440,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -2416,6 +2467,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -2497,6 +2549,7 @@
       "endDate": "2013-08-11",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -2526,6 +2579,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -2587,6 +2641,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -2680,6 +2735,7 @@
       "endDate": "2013-06-13",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC",
@@ -2712,6 +2768,7 @@
       "startDate": "2013-07-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC",
@@ -2756,6 +2813,7 @@
       "startDate": "2013-10-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -2794,6 +2852,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -2874,6 +2933,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -2948,6 +3008,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "4.7",
@@ -3009,6 +3070,7 @@
       "endDate": "2013-08-25",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Standard Rig",
@@ -3059,6 +3121,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -3133,6 +3196,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -3152,6 +3216,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -3182,6 +3247,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -3212,6 +3278,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Regatta Fleet",
@@ -3242,6 +3309,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -3272,6 +3340,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -3302,6 +3371,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -3321,6 +3391,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -3340,6 +3411,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -3359,6 +3431,7 @@
       "startDate": "2013-08-10",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC",
@@ -3391,6 +3464,7 @@
       "startDate": "2013-07-20",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC",
@@ -3447,6 +3521,7 @@
       "startDate": "2013-08-24",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC",
@@ -3480,6 +3555,7 @@
       "endDate": "2013-10-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 0/1",
@@ -3548,6 +3624,7 @@
       "startDate": "2013-06-04",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC",
@@ -3586,6 +3663,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -3648,6 +3726,7 @@
       "startDate": "2013",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "4.2 Sail",
@@ -3694,6 +3773,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -3720,6 +3800,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -3746,6 +3827,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail IRC",
@@ -3784,6 +3866,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -3853,6 +3936,7 @@
       "endDate": "2014-08-31",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Optimist Copper Fleet",
@@ -3919,6 +4003,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1 and 2",
@@ -3984,6 +4069,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -4079,6 +4165,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -4117,6 +4204,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -4195,6 +4283,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1/2 Combined",
@@ -4292,6 +4381,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1 Combined",
@@ -4379,6 +4469,7 @@
       "endDate": "2014-11-16",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Standard Fleet",
@@ -4423,6 +4514,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ECHO (All In)",
@@ -4467,6 +4559,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -4547,6 +4640,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -4566,6 +4660,7 @@
       "startDate": "2014-09-13",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -4634,6 +4729,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -4664,6 +4760,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -4694,6 +4791,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -4724,6 +4822,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -4754,6 +4853,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -4773,6 +4873,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -4803,6 +4904,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -4822,6 +4924,7 @@
       "startDate": "2014-05-03",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -4847,6 +4950,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -4891,6 +4995,7 @@
       "startDate": "2014",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "200",
@@ -4942,6 +5047,7 @@
       "endDate": "2014-07-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -4962,6 +5068,7 @@
       "startDate": "2014-08-23",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -4983,6 +5090,7 @@
       "endDate": "2014-10-25",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 0",
@@ -5064,6 +5172,7 @@
       "endDate": "2014-09-19",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1 and 2",
@@ -5131,6 +5240,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -5190,6 +5300,7 @@
       "endDate": "2014-09-19",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -5276,6 +5387,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "All In IRC",
@@ -5360,6 +5472,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -5385,6 +5498,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -5429,6 +5543,7 @@
       "startDate": "2015-06-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -5467,6 +5582,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail IRC",
@@ -5505,6 +5621,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -5577,6 +5694,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Optimist Regatta Fleet",
@@ -5654,6 +5772,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -5732,6 +5851,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -5831,6 +5951,7 @@
       "endDate": "2015-09-20",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -5863,6 +5984,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Irish Youth Nationals - Topper",
@@ -5918,6 +6040,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -5944,6 +6067,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -6023,6 +6147,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -6102,6 +6227,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -6180,6 +6306,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -6224,6 +6351,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimate",
@@ -6264,6 +6392,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimate",
@@ -6304,6 +6433,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimate",
@@ -6344,6 +6474,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -6363,6 +6494,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimate",
@@ -6403,6 +6535,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimate",
@@ -6443,6 +6576,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -6462,6 +6596,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Regatta Fleet",
@@ -6492,6 +6627,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -6522,6 +6658,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -6552,6 +6689,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -6582,6 +6720,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -6601,6 +6740,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -6620,6 +6760,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -6650,6 +6791,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -6669,6 +6811,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -6688,6 +6831,7 @@
       "startDate": "2015",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -6718,6 +6862,7 @@
       "startDate": "2015-03-14",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -6739,6 +6884,7 @@
       "endDate": "2015-06-07",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -6760,6 +6906,7 @@
       "endDate": "2015-10-24",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -6829,6 +6976,7 @@
       "endDate": "2015-09-18",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -6907,6 +7055,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -6971,6 +7120,7 @@
       "endDate": "2015-09-18",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -7051,6 +7201,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "All In ECHO",
@@ -7082,6 +7233,7 @@
       "startDate": "2016-06-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -7162,6 +7314,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail IRC",
@@ -7200,6 +7353,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -7267,6 +7421,7 @@
       "endDate": "2016-08-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -7351,6 +7506,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -7438,6 +7594,7 @@
       "endDate": "2016-09-18",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -7478,6 +7635,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Harbour Race for IRC",
@@ -7643,6 +7801,7 @@
       "endDate": "2016-07-04",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "5.3 Fleet",
@@ -7681,6 +7840,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -7702,6 +7862,7 @@
       "endDate": "2016-07-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -7786,6 +7947,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -7866,6 +8028,7 @@
       "endDate": "2016-11-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "4.7 Fleet",
@@ -7899,6 +8062,7 @@
       "seriesNote": "The club lists these results under 2015, at the 2015 March League's address, but they are the 2016 March League's: the pages are headed 2016 and were generated in March 2016. The 2015 March League's own results are lost.",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -7937,6 +8101,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -8005,6 +8170,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -8025,6 +8191,7 @@
       "endDate": "2016-05-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8045,6 +8212,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8064,6 +8232,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8083,6 +8252,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8102,6 +8272,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8121,6 +8292,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8140,6 +8312,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Ultimates",
@@ -8170,6 +8343,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8194,6 +8368,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC",
@@ -8226,6 +8401,7 @@
       "startDate": "2016-04-23",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8246,6 +8422,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8265,6 +8442,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -8295,6 +8473,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -8325,6 +8504,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8344,6 +8524,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -8374,6 +8555,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -8404,6 +8586,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8423,6 +8606,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8442,6 +8626,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8461,6 +8646,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -8480,6 +8666,7 @@
       "startDate": "2016",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -8510,6 +8697,7 @@
       "startDate": "2016-08-21",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -8567,6 +8755,7 @@
       "endDate": "2016-10-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC 1",
@@ -8641,6 +8830,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -8719,6 +8909,7 @@
       "startDate": "2016-06-24",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Optimist Class",
@@ -8769,6 +8960,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -8802,6 +8994,7 @@
       "endDate": "2016-09-16",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -8883,6 +9076,7 @@
       "endDate": "2016-11-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -8909,6 +9103,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "All In IRC",
@@ -8996,6 +9191,7 @@
       "endDate": "2017-04-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail IRC",
@@ -9029,6 +9225,7 @@
       "endDate": "2017-08-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "IRC All In",
@@ -9113,6 +9310,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Mixed Dinghies",
@@ -9154,6 +9352,7 @@
       "endDate": "2017-09-08",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -9236,6 +9435,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -9323,6 +9523,7 @@
       "endDate": "2017-07-02",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "420 National Championship",
@@ -9356,6 +9557,7 @@
       "endDate": "2017-02-05",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "5.3 Fleet",
@@ -9389,6 +9591,7 @@
       "endDate": "2017-07-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -9478,6 +9681,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -9550,6 +9754,7 @@
       "endDate": "2017-11-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Laser 4.7 Fleet",
@@ -9588,6 +9793,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -9666,6 +9872,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -9696,6 +9903,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -9715,6 +9923,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -9750,6 +9959,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -9785,6 +9995,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -9804,6 +10015,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -9834,6 +10046,7 @@
       "startDate": "2017-09-24",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -9878,6 +10091,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -9908,6 +10122,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -9927,6 +10142,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -9946,6 +10162,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -9965,6 +10182,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -9984,6 +10202,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10003,6 +10222,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -10033,6 +10253,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10052,6 +10273,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10071,6 +10293,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10090,6 +10313,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10109,6 +10333,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -10139,6 +10364,7 @@
       "startDate": "2017",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -10159,6 +10385,7 @@
       "endDate": "2017-04-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10179,6 +10406,7 @@
       "startDate": "2017-05-07",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10205,6 +10433,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC All In",
@@ -10249,6 +10478,7 @@
       "endDate": "2017-09-07",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -10323,6 +10553,7 @@
       "endDate": "2017-11-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Topper 4.2 Fleet",
@@ -10360,6 +10591,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "1720",
@@ -10428,6 +10660,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "All In IRC",
@@ -10515,6 +10748,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10585,6 +10819,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10620,6 +10855,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Spinnaker 1",
@@ -10691,6 +10927,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10726,6 +10963,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10752,6 +10990,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "All In",
@@ -10833,6 +11072,7 @@
       "endDate": "2018-10-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "1720",
@@ -10940,6 +11180,7 @@
       "endDate": "2018-06-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -10972,6 +11213,7 @@
       "endDate": "2018-07-20",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Beaufort Cup",
@@ -11143,6 +11385,7 @@
       "startDate": "2018-07-21",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "All In",
@@ -11240,6 +11483,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -11271,6 +11515,7 @@
       "startDate": "2018-07-19",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Beaufort Cup",
@@ -11443,6 +11688,7 @@
       "endDate": "2018-07-17",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Beaufort Cup",
@@ -11613,6 +11859,7 @@
       "endDate": "2018-06-17",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "4.7",
@@ -11671,6 +11918,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -11695,6 +11943,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -11721,6 +11970,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "All In",
@@ -11807,6 +12057,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -11842,6 +12093,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "All In",
@@ -11928,6 +12180,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -11954,6 +12207,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12034,6 +12288,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12053,6 +12308,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -12083,6 +12339,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12102,6 +12359,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -12132,6 +12390,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -12167,6 +12426,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -12202,6 +12462,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -12221,6 +12482,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Ultimates",
@@ -12251,6 +12513,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -12270,6 +12533,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -12289,6 +12553,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -12321,6 +12586,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12340,6 +12606,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -12370,6 +12637,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -12400,6 +12668,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12419,6 +12688,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -12449,6 +12719,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12468,6 +12739,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12487,6 +12759,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "29'er",
@@ -12523,6 +12796,7 @@
       "endDate": "2018-09-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "IRC 1",
@@ -12597,6 +12871,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12626,6 +12901,7 @@
       "startDate": "2018-11-04",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Laser 4.7",
@@ -12690,6 +12966,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "5.3",
@@ -12720,6 +12997,7 @@
       "startDate": "2018",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "4.2",
@@ -12768,6 +13046,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "All In",
@@ -12839,6 +13118,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12869,6 +13149,7 @@
       "endDate": "2019-08-25",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -12925,6 +13206,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Topper",
@@ -12966,6 +13248,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -12992,6 +13275,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -13048,6 +13332,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "1720",
@@ -13154,6 +13439,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "29er Southerns",
@@ -13263,6 +13549,7 @@
       "endDate": "2019-05-31",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -13292,6 +13579,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Topper 5.3",
@@ -13322,6 +13610,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Girls",
@@ -13362,6 +13651,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Girls",
@@ -13408,6 +13698,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -13464,6 +13755,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -13490,6 +13782,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -13546,6 +13839,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -13581,6 +13875,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -13607,6 +13902,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -13663,6 +13959,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -13689,6 +13986,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -13739,6 +14037,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -13792,6 +14091,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -13830,6 +14130,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -13862,6 +14163,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -13894,6 +14196,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -13926,6 +14229,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -13958,6 +14262,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -13990,6 +14295,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -14022,6 +14328,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -14054,6 +14361,7 @@
       "startDate": "2019-06-15",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14105,6 +14413,7 @@
       "endDate": "2019-09-07",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14155,6 +14464,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.2",
@@ -14187,6 +14497,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.2",
@@ -14219,6 +14530,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.2",
@@ -14250,6 +14562,7 @@
       "startDate": "2019",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -14276,6 +14589,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14327,6 +14641,7 @@
       "endDate": "2020-08-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -14352,6 +14667,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -14378,6 +14694,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14433,6 +14750,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14488,6 +14806,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "1720 Class",
@@ -14594,6 +14913,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14623,6 +14943,7 @@
       "startDate": "2020-09-05",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14673,6 +14994,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -14698,6 +15020,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -14724,6 +15047,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14780,6 +15104,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -14830,6 +15155,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7",
@@ -14883,6 +15209,7 @@
       "startDate": "2020-08-08",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7",
@@ -14925,6 +15252,7 @@
       "startDate": "2020-08-11",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7",
@@ -14967,6 +15295,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7",
@@ -15010,6 +15339,7 @@
       "endDate": "2020-07-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7",
@@ -15053,6 +15383,7 @@
       "endDate": "2020-09-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7",
@@ -15095,6 +15426,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15114,6 +15446,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15133,6 +15466,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15152,6 +15486,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15171,6 +15506,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -15190,6 +15526,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15209,6 +15546,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -15228,6 +15566,7 @@
       "startDate": "2020-09-19",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -15278,6 +15617,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -15310,6 +15650,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -15342,6 +15683,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -15374,6 +15716,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -15406,6 +15749,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -15438,6 +15782,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15463,6 +15808,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15482,6 +15828,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15501,6 +15848,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.2",
@@ -15541,6 +15889,7 @@
       "startDate": "2020",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15560,6 +15909,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15580,6 +15930,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -15631,6 +15982,7 @@
       "endDate": "2021-08-22",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail",
@@ -15661,6 +16013,7 @@
       "endDate": "2021-09-09",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail",
@@ -15711,6 +16064,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker 2",
@@ -15821,6 +16175,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "ILCA",
@@ -15853,6 +16208,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15874,6 +16230,7 @@
       "endDate": "2021-07-11",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -15925,6 +16282,7 @@
       "endDate": "2021-07-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -15975,6 +16333,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -15995,6 +16354,7 @@
       "startDate": "2021-06-24",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -16045,6 +16405,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.7",
@@ -16085,6 +16446,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -16104,6 +16466,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -16123,6 +16486,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -16142,6 +16506,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -16161,6 +16526,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -16185,6 +16551,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -16204,6 +16571,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -16236,6 +16604,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -16268,6 +16637,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -16300,6 +16670,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -16332,6 +16703,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet Senior",
@@ -16370,6 +16742,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -16402,6 +16775,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.2",
@@ -16442,6 +16816,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "4.2",
@@ -16482,6 +16857,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -16506,6 +16882,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -16572,6 +16949,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Laser 4.7's",
@@ -16637,6 +17015,7 @@
       "startDate": "2021",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail",
@@ -16666,6 +17045,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail",
@@ -16695,6 +17075,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Spinnaker 2",
@@ -16775,6 +17156,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Oppies Main Fleet",
@@ -16838,6 +17220,7 @@
       "endDate": "2022-09-16",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -16859,6 +17242,7 @@
       "endDate": "2022-09-15",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -16910,6 +17294,7 @@
       "endDate": "2022-10-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker 1",
@@ -17001,6 +17386,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -17028,6 +17414,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Beaufort Cup",
@@ -17217,6 +17604,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Toppers",
@@ -17261,6 +17649,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ILCA4 Boat",
@@ -17303,6 +17692,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -17354,6 +17744,7 @@
       "endDate": "2022-07-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -17374,6 +17765,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -17425,6 +17817,7 @@
       "endDate": "2022-06-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ILCA4 Boat",
@@ -17476,6 +17869,7 @@
       "endDate": "2022-06-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -17495,6 +17889,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ILCA4 Boat",
@@ -17546,6 +17941,7 @@
       "endDate": "2022-06-18",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -17565,6 +17961,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -17615,6 +18012,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -17635,6 +18033,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -17654,6 +18053,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -17673,6 +18073,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -17716,6 +18117,7 @@
       "endDate": "2022-09-18",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -17766,6 +18168,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -17798,6 +18201,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -17830,6 +18234,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -17862,6 +18267,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -17894,6 +18300,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -17926,6 +18333,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet Senior",
@@ -17964,6 +18372,7 @@
       "startDate": "2022",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -18001,6 +18410,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Class 1",
@@ -18042,6 +18452,7 @@
       "endDate": "2022-09-16",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -18063,6 +18474,7 @@
       "endDate": "2022-09-15",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -18114,6 +18526,7 @@
       "endDate": "2022-12-11",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail",
@@ -18143,6 +18556,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -18162,6 +18576,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -18227,6 +18642,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Feva Sunday Racing",
@@ -18288,6 +18704,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "ILCA 4",
@@ -18339,6 +18756,7 @@
       "endDate": "2023-09-14",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -18390,6 +18808,7 @@
       "endDate": "2023-09-15",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -18410,6 +18829,7 @@
       "startDate": "2023-11-04",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker 1",
@@ -18506,6 +18926,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "420",
@@ -18581,6 +19002,7 @@
       "startDate": "2023-02-18",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "ILCA 4",
@@ -18634,6 +19056,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ILCA 4",
@@ -18687,6 +19110,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ILCA 4",
@@ -18740,6 +19164,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ILCA 4",
@@ -18783,6 +19208,7 @@
       "endDate": "2023-05-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "ILCA 4",
@@ -18837,6 +19263,7 @@
       "endDate": "2023-07-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -18858,6 +19285,7 @@
       "endDate": "2023-07-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -18909,6 +19337,7 @@
       "endDate": "2023-06-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -18930,6 +19359,7 @@
       "endDate": "2023-06-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -18981,6 +19411,7 @@
       "endDate": "2023-05-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19002,6 +19433,7 @@
       "endDate": "2023-05-25",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail",
@@ -19052,6 +19484,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19071,6 +19504,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19090,6 +19524,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19109,6 +19544,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -19128,6 +19564,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail",
@@ -19178,6 +19615,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Senior",
@@ -19228,6 +19666,7 @@
       "endDate": "2023-07-23",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -19278,6 +19717,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Copper Fleet",
@@ -19310,6 +19750,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -19342,6 +19783,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19362,6 +19804,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19382,6 +19825,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -19414,6 +19858,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Junior Main Fleet",
@@ -19446,6 +19891,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19467,6 +19913,7 @@
       "endDate": "2023-09-15",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19488,6 +19935,7 @@
       "endDate": "2023-09-14",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -19538,6 +19986,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Gold Flight",
@@ -19580,6 +20029,7 @@
       "startDate": "2023",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Gold Flight",
@@ -19634,6 +20084,7 @@
       "endDate": "2023-12-03",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "White Sail",
@@ -19663,6 +20114,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "White Sail 1",
@@ -19743,6 +20195,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Optimist Main Fleet Sunday Racing",
@@ -19776,6 +20229,7 @@
       "endDate": "2024-09-13",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19797,6 +20251,7 @@
       "endDate": "2024-09-12",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -19848,6 +20303,7 @@
       "endDate": "2024-10-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Class 1",
@@ -19936,6 +20392,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -19962,6 +20419,7 @@
       ],
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Beaufort Cup",
@@ -20120,6 +20578,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -20150,6 +20609,7 @@
       "endDate": "2024-06-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20212,6 +20672,7 @@
       "endDate": "2024-07-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20233,6 +20694,7 @@
       "endDate": "2024-07-25",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -20283,6 +20745,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -20313,6 +20776,7 @@
       "endDate": "2024-05-31",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20334,6 +20798,7 @@
       "endDate": "2024-05-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -20385,6 +20850,7 @@
       "endDate": "2024-06-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20405,6 +20871,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20424,6 +20891,7 @@
       "startDate": "2024-07-10",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20445,6 +20913,7 @@
       "endDate": "2024-06-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20465,6 +20934,7 @@
       "endDate": "2024-05-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20484,6 +20954,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -20503,6 +20974,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20560,6 +21032,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20580,6 +21053,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -20612,6 +21086,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -20644,6 +21119,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20664,6 +21140,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -20696,6 +21173,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet Senior",
@@ -20728,6 +21206,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20748,6 +21227,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -20780,6 +21260,7 @@
       "startDate": "2024",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20827,6 +21308,7 @@
       "endDate": "2024-09-13",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -20848,6 +21330,7 @@
       "endDate": "2024-09-12",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -20899,6 +21382,7 @@
       "endDate": "2024-12-01",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -20928,6 +21412,7 @@
       "startDate": "2025-04-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -20957,6 +21442,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Spinnaker 1",
@@ -21059,6 +21545,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "420",
@@ -21157,6 +21644,7 @@
       "endDate": "2025-09-12",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21187,6 +21675,7 @@
       "endDate": "2025-09-11",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -21249,6 +21738,7 @@
       "endDate": "2025-10-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker 1",
@@ -21366,6 +21856,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "420",
@@ -21408,6 +21899,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -21428,6 +21920,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -21448,6 +21941,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -21469,6 +21963,7 @@
       "endDate": "2025-07-25",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21499,6 +21994,7 @@
       "endDate": "2025-07-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21550,6 +22046,7 @@
       "endDate": "2025-07-31",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21612,6 +22109,7 @@
       "endDate": "2025-06-27",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Combined",
@@ -21691,6 +22189,7 @@
       "startDate": "2025-06-01",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21742,6 +22241,7 @@
       "endDate": "2025-06-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21804,6 +22304,7 @@
       "endDate": "2025-05-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21834,6 +22335,7 @@
       "endDate": "2025-05-31",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21896,6 +22398,7 @@
       "endDate": "2025-05-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -21957,6 +22460,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -21989,6 +22493,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -22021,6 +22526,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -22053,6 +22559,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -22085,6 +22592,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -22117,6 +22625,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -22137,6 +22646,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet Senior",
@@ -22169,6 +22679,7 @@
       "startDate": "2025",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -22201,6 +22712,7 @@
       "endDate": "2025-09-12",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -22222,6 +22734,7 @@
       "endDate": "2025-07-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -22273,6 +22786,7 @@
       "endDate": "2025-09-11",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -22324,6 +22838,7 @@
       "endDate": "2025-12-07",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker 1",
@@ -22374,6 +22889,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -22394,6 +22910,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -22414,6 +22931,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -22464,6 +22982,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -22559,6 +23078,7 @@
       "startDate": "2026-08-14",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker Class 1",
@@ -22610,6 +23130,7 @@
       "endDate": "2026-09-10",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -22671,6 +23192,7 @@
       "endDate": "2026-07-16",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Etchells",
@@ -22888,6 +23410,7 @@
       "endDate": "2026-07-31",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker Class 1",
@@ -22942,6 +23465,7 @@
       "endDate": "2026-07-30",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -23015,6 +23539,7 @@
       "startDate": "2026-06-13",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -23066,6 +23591,7 @@
       "endDate": "2026-06-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker Class 1",
@@ -23120,6 +23646,7 @@
       "endDate": "2026-06-26",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -23189,6 +23716,7 @@
       "endDate": "2026-06-25",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -23240,6 +23768,7 @@
       "endDate": "2026-05-29",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker Class 1",
@@ -23293,6 +23822,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Spinnaker",
@@ -23344,6 +23874,7 @@
       "endDate": "2026-05-28",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Non-Spinnaker",
@@ -23420,6 +23951,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -23440,6 +23972,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "Overall",
@@ -23460,6 +23993,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -23480,6 +24014,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -23500,6 +24035,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -23520,6 +24056,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Main Fleet",
@@ -23552,6 +24089,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -23572,6 +24110,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Club Racing",
       "fleets": [
         {
           "name": "Overall",
@@ -23592,6 +24131,7 @@
       "startDate": "2026",
       "source": "sailwave",
       "ownerNames": true,
+      "category": "Open Events",
       "fleets": [
         {
           "name": "5.3m",
