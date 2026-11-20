@@ -42,7 +42,8 @@ pnpm typecheck
 1. `sources/series.json` lists each as-published series and the pages it is
    made of, by the URL the club's index links, with the event's sponsors as
    the index names them.
-2. `pnpm capture` fetches the index pages, then each results page.
+2. `pnpm capture` fetches the index pages, then each results page, then
+   the race pages each Sail100 page marked `races` links.
 3. `pnpm emit-as-published` reads every capture through the app's decoder and
    its Sailwave and Sail100 parsers. It checks each page still carries the
    heading recorded for it, that every standings section and race table of
@@ -85,7 +86,9 @@ Dinghy Frostbites, the Autumn League — are not archived here.
 
 Every result the club's index pages link, 2011–2026, and Cork Week 2004–2026:
 **540 series, 1,677 pages**, about 25,000 competitor rows. 202 linked pages
-are not carried, each for a stated reason (CLARIFICATIONS §5).
+are not carried, each for a stated reason (CLARIFICATIONS §5). 777 Sail100
+class pages publish their races below the standings, 5,589 race tables, from
+the race pages the club linked (§8); 280 series are dated by their races.
 
 | Season | Series | Pages |
 |--------|-------:|------:|
@@ -116,10 +119,8 @@ The 2004–2010 seasons are Cork Week alone; the club's own pages start in
 - ⬜ **Set the repo's CI secrets** (`APP_REPO_TOKEN`,
   `SAILSCORING_ARCHIVIST_TOKEN` for the `rcyc` workspace). Until then the
   workflow succeeds having done nothing.
-- ⬜ **Sail100 race pages** — would date the 2011–2018 series and publish
-  their race detail (CLARIFICATIONS §10).
 - ⬜ **The competitor-identity manifest** — not started.
-- ⬜ **The questions for the club** in CLARIFICATIONS §11.
+- ⬜ **The questions for the club** in CLARIFICATIONS §12.
 
 ## Relationship to the app repo
 

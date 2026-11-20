@@ -57,6 +57,13 @@ export interface ArchivePage {
   /** A note rendered on this page alone: what its figures cannot say for
    *  themselves. */
   note?: string;
+  /** A Sail100 standings page whose race columns link each race's own page:
+   *  those pages are captured beside it, and their results published below
+   *  the standings, one table per race. */
+  races?: true;
+  /** Why a Sail100 standings page that links its races' pages does not
+   *  publish them — say, a race page no longer on the server. */
+  noRaces?: string;
 }
 
 export interface Sponsor {

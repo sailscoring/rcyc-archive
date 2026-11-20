@@ -98,19 +98,27 @@ the club's index names few sponsors after 2020, and the pages' titles
 
 The club's indexes list no dates. A series is dated, in order of trust:
 
-1. by races whose labels give a day, a month and a year ("23/04/2018"), when
-   all of them fall in the season;
+1. by races whose labels give a day, a month and a year ("23/04/2018"), or
+   whose Sail100 race pages give their start ("Start: Fri 2 May 14
+   19:05:00", §8), when all of them fall in the season;
 2. by races whose labels give a day and a month by name ("30th Sep R1",
    "Sun 3rd Nov", "Aug 13th"), in the season's year — *inferred*, from the
    season page the result is listed on. Not used where the labels run from
    one winter into the next;
 3. by the season alone.
 
-127 series are dated by their races; the other 406 by the season. Sail100
-standings pages carry no race dates at all: each race's own page, linked
-from its column, carries its start, but those pages are not captured (§10).
-The 2018 April League's race labels say 2014 — *inferred*, the file was built
-from an earlier year's — so it is dated by the season.
+280 series are dated by their races, one is pinned, and the other 259 are
+dated by the season. A Sail100 standings page carries no race dates; the
+race pages its columns link do, and those of the 777 pages that publish them
+(§8) date their series. Of the rest, 168 are Sailwave files whose race
+labels state no date, 87 Sail100 pages that link no race pages, and 4
+Sail100 series whose race pages are not published (§8); most of them, 212,
+are dinghy events. The 2018 April League's race labels say
+2014 — *inferred*, the file was built from an earlier year's — so it is
+dated by the season. The 2017 Super League is pinned to 4 May – 7 September
+2017: 125 of its 126 race pages fall between them, and IRC 2's race 1 page
+says 29 July 2016 — *inferred*, a start carried over from the year before,
+as its results are this season's.
 
 ## 5. What the club's pages link to but this archive does not carry
 
@@ -141,15 +149,21 @@ generation stamp, and its heading, say what it now holds:
 - The 2015 March League's two pages hold the **2016** March League (headed
   2016, generated March 2016). They are archived as March League 2016, with
   a note; the 2015 league's own results are lost.
-- The 2013 May League's 1720 page holds the **March League 2014's** 1720
-  results (headed "March League 1720", generated 9 March 2014) — and the
-  March League 2014's own 1720 link is an entry list. The page is archived
-  as March League 2014's 1720 class.
+- The 2013 May League's 1720 page is headed "Crosshaven Boat Yard – March
+  League 1720" and was generated on 9 March 2014, but its results are the
+  **2013 May League's**: its six race pages, generated at the same moment,
+  start between 3 and 30 May 2013, and every boat's points in them match the
+  standings. The club re-headed the file for the next season and published
+  it again. It is archived as the May League 2013's 1720 class, with a note;
+  the March League 2014's own 1720 link is an entry list.
 - The 2013 April White Sail League's two pages hold the 2014 league's, which
   the 2014 pages also publish. Not carried.
 - The 2013 At Home's IRC 3, the 2013 Super League's ECHO 2, the 2014 March
   League's IRC All In, two 2014 Sunday League pages and the 2015 Sunday
   League's two All In pages each hold the next year's. Not carried.
+
+Every other page here holds the following year's racing by its race
+pages' own start dates, not only by its heading and stamp.
 
 Pages regenerated later with their own year's heading (the 2012 July–
 September League's IRC 2 and 3, the 2015 Autumn Series, the SCORA leagues
@@ -171,27 +185,47 @@ no `<h1>`, so the heading `series.json` records for each is its bold first
 line, "Cork Week IRC1". A score after a code is published as it stands
 ("APS5.6").
 
-## 8. Names in the standings
+## 8. The Sail100 race pages
+
+Each column of a Sail100 standings page links that race's own page: its
+start, and each boat's finish time, elapsed time, handicap, corrected time,
+place and points. Those pages are captured beside their standings, and a
+class's races are published as tables below its standings, on the same page
+— one table per race, headed as the race page heads it ("Race 3", "Navy
+Race") with its start line.
+
+858 standings pages link their races' pages, 6,101 in all. The 777 whose
+every race page was captured, and agrees with the standings — every boat's
+points in the race page are those in its column — publish them: 5,589 race
+tables. The other 81 publish their standings alone, each with the reason in
+`series.json` (`noRaces`):
+
+| Pages | Why |
+|------:|-----|
+| 55 | A race page disagrees with the standings. Almost always it is an earlier version: the club regenerated the standings after a correction, a protest or a late entry, and did not publish the race's page again — the race page's Sail100 stamp is the older. |
+| 24 | A race page is no longer on the server (134 race pages: 131 answer 404, 3 are empty) — among them every race of the 2013 Optimist June leagues and of 2017's Friday Night IHS, and 70 of the 2016 Optimist ranking's 72, whose other two links reach another event's races. |
+| 2 | A race's link reaches another event's race, or another year's. |
+
+A race page that agrees with its standings is published as it stands, with
+the boats and columns it lists; one that lists a boat the standings do not,
+or misses one, counts as disagreeing.
+
+## 9. Names in the standings
 
 Keelboat standings list boat and owner, never a helm; a row is named by its
 owner, as in the other cruiser archives (`ownerNames`). A row that names a
 helm — every dinghy page — keeps it.
 
-## 9. Encoding
+## 10. Encoding
 
 98 pages are windows-1252 and the rest UTF-8; each is read by what it
 declares.
 
-## 10. Not done yet
+## 11. Not done yet
 
-- **Sail100 race pages.** Each Sail100 standings column links its race's own
-  page, with finish times, corrected times and the race's date. Capturing
-  them (an estimated 7,000 pages, at the capture's pace some three hours)
-would date the 2011–2018 series and publish their
-  race detail, as `bray-archive` does.
 - **The competitor-identity manifest.**
 
-## 11. Questions for the club
+## 12. Questions for the club
 
 1. Do the 2013 May League 1720, the 2015 March League, and the other
    overwritten pages (§6) survive anywhere — in a `.blw` file, or a backup

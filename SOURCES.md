@@ -57,7 +57,12 @@ Two programs made the pages:
   2016: one page per class, a
   standings table under two `<h1>`s — the sponsor or club, then the event and
   class ("UK Halsey Sailmakers" / "May League IRC 1") — with a column per
-  race linking that race's own page. The race pages are not captured. A
+  race linking that race's own page — the race's start, and each boat's
+  finish, elapsed and corrected times, handicap, place and points. The
+  race pages of a page marked `races` in `series.json` are captured beside
+  it (CLARIFICATIONS §8). They head the race in an `<h1>` under the
+  standings' two ("Race 3"), with an `<h2>` start line; Cork Week 2004's
+  and 2006's in bold lines and plain text. A
   one-off race is sometimes published as a race page alone, and a class set
   up but never sailed as an entry list ("Entries: 6", no places). Cork Week
   2004 and 2006 are an older Sail100: no `<h1>` — the class is a bold line

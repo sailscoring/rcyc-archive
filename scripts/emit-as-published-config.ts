@@ -21,7 +21,8 @@
  * public URL.
  */
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
 
 import { decodeCapture } from '../../sailscoring/lib/archive-kit/capture-encoding';
 import { seriesIdForKey } from '../../sailscoring/lib/archive-kit/ids';
@@ -59,11 +60,16 @@ function isoDate(year: number, month: number, day: number): string | null {
 /**
  * A race's date, read from the label the club typed for it — only where the
  * label states a day, a month and a year: "07/04/2019", "2/5/2024",
- * "25th May 2019", "26th Aug 2026". A label with no year ("R1") dates
- * nothing, and neither does a mistyped one ("06/0625").
+ * "25th May 2019", "26th Aug 2026" — or a Sail100 race page's start line,
+ * "Start: Fri 2 May 14 19:05:00", whose year is two digits. A label with no
+ * year ("R1") dates nothing, and neither does a mistyped one ("06/0625").
  */
 function dateIn(label: string): string | null {
-  let m = /\b(\d{1,2})(?:st|nd|rd|th)?\s+([a-z]{3})[a-z]*\.?\s+(\d{4})\b/i.exec(label);
+  let m = /^Start:\s+[a-z]{3}\s+(\d{1,2})\s+([a-z]{3})\s+(\d{2})\s+\d{2}:\d{2}/i.exec(label);
+  if (m && MONTHS.includes(m[2].toLowerCase())) {
+    return isoDate(Number(m[3]), MONTHS.indexOf(m[2].toLowerCase()) + 1, Number(m[1]));
+  }
+  m = /\b(\d{1,2})(?:st|nd|rd|th)?\s+([a-z]{3})[a-z]*\.?\s+(\d{4})\b/i.exec(label);
   if (m && MONTHS.includes(m[2].toLowerCase())) {
     return isoDate(Number(m[3]), MONTHS.indexOf(m[2].toLowerCase()) + 1, Number(m[1]));
   }
@@ -125,9 +131,28 @@ function parse(page: ArchivePage): { file: string; page: SailwavePage; text: str
   return { file, page: parsed.get(file)!, text: texts.get(file)! };
 }
 
-/** A Sail100 page — up to 2017, the club's format: one standings table, or
- *  one race published on its own. A Sail100 standings page carries no race
- *  dates; each race's own page does, but those are not captured. */
+/** The race pages a Sail100 standings page links, read as the app's
+ *  generator reads them — by the link, beside the standings' capture — and
+ *  checked to be the captures `pnpm capture` wrote. Returns their start
+ *  lines, which date the series. */
+function linkedRaceCaptions(page: ArchivePage, file: string, links: Array<string | null>): string[] {
+  return links.map((link, i) => {
+    if (!link) throw new Error(`${file}: race column ${i + 1} links no page — it cannot be marked "races"`);
+    const raceFile = captureFile(new URL(link, page.url).href);
+    if (raceFile !== join(dirname(file), link)) {
+      throw new Error(`${file}: the generator would read race link "${link}" from ${join(dirname(file), link)}, not ${raceFile}`);
+    }
+    if (!existsSync(raceFile)) throw new Error(`${raceFile}: not captured — run pnpm capture`);
+    const race = parseSail100RaceHtml(decodeCapture(readFileSync(raceFile), { encoding: page.encoding }).text);
+    if (!race) throw new Error(`${raceFile}: no race table`);
+    return race.caption ?? '';
+  });
+}
+
+/** A Sail100 page — up to 2018, the club's format: one standings table, or
+ *  one race published on its own. A standings page carries no race dates;
+ *  the race pages its columns link do, and a page marked `races` publishes
+ *  them below its standings. */
 function sail100Fleet(page: ArchivePage, subPath: string, file: string, text: string) {
   if (page.sections || page.raceSections) throw new Error(`${file}: sections are for Sailwave pages`);
   const encoding = page.encoding ? { encoding: page.encoding } : {};
@@ -137,8 +162,20 @@ function sail100Fleet(page: ArchivePage, subPath: string, file: string, text: st
   if (standings.summaries.length > 1) throw new Error(`${file}: ${standings.summaries.length} Sail100 standings tables`);
   if (standings.summaries.length === 1) {
     checkTitle(file, standings.title, page);
+    const links = standings.raceLinks[0];
+    if (page.races && page.noRaces) throw new Error(`${file}: marked both "races" and "noRaces"`);
+    if (page.races) {
+      return {
+        fleet: { name: page.name, subPath, file, ...encoding, linkedRaces: true as const, ...displayOnly },
+        labels: linkedRaceCaptions(page, file, links).filter(Boolean),
+      };
+    }
+    if (links.some(Boolean) && !page.noRaces) {
+      throw new Error(`${file}: links its races' pages — mark the page "races", or say in "noRaces" why not`);
+    }
     return { fleet: { name: page.name, subPath, file, ...encoding, ...displayOnly }, labels: [] };
   }
+  if (page.races || page.noRaces) throw new Error(`${file}: "races" and "noRaces" are for standings pages`);
   const race = parseSail100RaceHtml(text);
   if (!race || race.rows.length === 0) throw new Error(`${file}: neither Sail100 standings nor a race`);
   checkTitle(file, race.title, page);

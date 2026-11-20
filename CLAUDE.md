@@ -78,18 +78,28 @@ Then, from the app checkout:
    season's files, and it sometimes builds a page from an earlier year's
    file, so a page's address, heading and race labels can name the wrong
    year (CLARIFICATIONS §6). Sail100's closing timestamp and Sailwave's
-   "Results are provisional as of …" say when the page was last generated.
+   "Results are provisional as of …" say when the page was last generated —
+   not whose results it holds: a file re-headed for the next season can
+   still carry the last one's. A Sail100 page's race pages give each race's
+   start; read them before deciding a page holds another year.
 
-8. **The index pages are hand-written; read them, don't trust a pattern.**
+8. **A Sail100 page publishes its race pages only where they agree with
+   it.** Mark a standings page `races` when every race page it links was
+   captured and every boat's points in each match its column; otherwise
+   give the reason in `noRaces` (CLARIFICATIONS §8). The club often
+   regenerated standings without re-publishing the races' pages, so a race
+   page can be an earlier version that contradicts the standings above it.
+
+9. **The index pages are hand-written; read them, don't trust a pattern.**
    Headings come as bold lines, `<h2>`s, sponsor links and list items that
    head nested lists; months head events in some years and events head
    classes in others (CLARIFICATIONS §1). `scripts/club-index.ts` attaches
    each link to the heading above it — check what it attached before
    grouping a new season's links into series.
 
-9. **Record every judgement call in [`CLARIFICATIONS.md`](CLARIFICATIONS.md).**
-   State what is verified, mark what is inferred, and put the rest to the
-   club as a question.
+10. **Record every judgement call in [`CLARIFICATIONS.md`](CLARIFICATIONS.md).**
+    State what is verified, mark what is inferred, and put the rest to the
+    club as a question.
 
 ## Relationship to the app repo
 
